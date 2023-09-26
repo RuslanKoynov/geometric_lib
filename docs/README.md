@@ -25,10 +25,14 @@ from rectangle import area as rectangle_area, perimeter as rectangle_perimeter
 
 # Вычисление площади и периметра треугольника
 triangle_area = area(5, 8)
+
 triangle_perimeter = perimeter(3, 4, 5)
 
 # Вычисление площади и периметра квадрата
 rectangle_side_A = 6
+
 rectangle_side_B = 8
+
 rectangle_area_result = rectangle_area(square_side_A, square_side_B)
+
 rectangle_perimeter_result = rectangle_perimeter(square_side)

@@ -30,4 +30,13 @@
 - perimeter(a) - returns a perimeter of the square  
     perimeter(5) -> 20
 - perimeter(a, h) - returns a perimeter of the triangle  
-    perimeter(20, 20, 20) -> 60
+    perimeter(20, 20, 20) -> 60  
+
+
+# History of changes
+65efac2 - docs: update README  
+8dc83ec - docs: add comments  
+6279c96 - Added triangle.py and fixed rectangle.py  
+4d6a270 - Added rectangle.py  
+d078c8d - L-03: Docs added  
+8ba9aeb - L-03: Circle and square added  

@@ -1,10 +1,42 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+# Rectangle formulas
+## def area(a, b):
+    """
+    Вычисляет площадь прямоугольника.
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+    :param a: Длина стороны A прямоугольника.
+    :param b: Длина стороны B прямоугольника.
+    :return: Площадь прямоугольника.
+    """
+    return a * b
+
+## def perimeter(a, b):
+    """
+    Вычисляет периметр прямоугольника.
+
+    :param a: Длина стороны A прямоугольника.
+    :param b: Длина стороны B прямоугольника.
+    :return: Периметр прямоугольника.
+    """
+    return (a + b) * 2
+
+# Triangle formulas
+## def area(a, h):
+    """
+    Вычисляет площадь треугольника.
+
+    :param a: Длина основания треугольника.
+    :param h: Высота треугольника.
+    :return: Площадь треугольника.
+    """
+    return a * h / 2
+
+## def perimeter(a, b, c):
+    """
+    Вычисляет периметр треугольника.
+
+    :param a: Длина стороны A.
+    :param b: Длина стороны B.
+    :param c: Длина стороны C.
+    :return: Периметр треугольника.
+    """
+    return a + b + c

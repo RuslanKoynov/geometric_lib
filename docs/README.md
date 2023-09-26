@@ -19,8 +19,9 @@
 
 Пример использования:
 
-## python
+# python
 from triangle import area, perimeter
+
 from rectangle import area as rectangle_area, perimeter as rectangle_perimeter
 
 # Вычисление площади и периметра треугольника

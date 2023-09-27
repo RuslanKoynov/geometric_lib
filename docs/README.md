@@ -25,7 +25,7 @@ _Принимает длинну стороны квадрата - a, возвр
 - Triangle: P = abc:
 _Принимает три стороны треугольника - a,b,c: возвращает периметр треугольника_
 
-#Project change history with commit hashes (except for the last entry)
+### Project change history with commit hashes (except for the last entry)
 
 **commit fe66bde323bb17810a4e05b19400b8d736f05501 (origin/main, origin/HEAD, main)**
 Author: Nikita Boronin <hlupikaz@gmail.com>

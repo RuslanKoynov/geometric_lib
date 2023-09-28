@@ -1,10 +1,7 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+﻿# General description
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+1. Clone global repository for local
+2. Added other files with program for calculate area and perimeter.
+3. Used commits and push for secure our project.
+4. After all, merge main branch with other branch and pull request.
+

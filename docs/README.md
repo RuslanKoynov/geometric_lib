@@ -65,10 +65,17 @@
     perimeter(4, 5, 6) -> 15
 
     area(4, 4) -> 8
-7b24cf7 (HEAD -> lab_2) add documentation to libraries
+#
+20edb66 (HEAD -> lab_2) add documentation to libraries
+
 fde323d (origin/main, origin/HEAD, main) fix rectangle.py file
+
 1a5aa5b add triangle.py file
+
 85efe12 add rectangle.py file
+
 d078c8d L-03: Docs added
+
 8ba9aeb L-03: Circle and square added
+
 

@@ -1,4 +1,4 @@
-# documentation
+# Documentation
 
 ## Math formulas
 
@@ -14,19 +14,19 @@
 - Square: P = 4a
 - Triangle: P = a + b + c
 
-## general description of the solution
-In general, the solution consists of two stages:
+## General description of the solution
+In general, the solution consists of three stages:
 1. The function receives a certain number(s), which are the length of some elements of the figure.
 2. Mathematical operations are performed with the given number(s), with the help of which the area or volume of the figure is calculated (depending on the formulas).
 3. The program returns the result.
 
-## functions
+## Functions
 
 > Programming language - Python.
 
 ### Ciecle
 
-*** Program: ***
+***Program:***
 
 ```python
 import math
@@ -48,20 +48,23 @@ def perimeter(r):
     return 2 * math.pi * r
 ```
 
-*** Example of a call: ***
+***Example of a call:***
 
 ```python
 r = 3
 print("Area = ", area(r))
 print("Perimeter = ", perimeter(r))
 ```
+
+```markdown
 output:
 Area = 28,27433
 Perimeter = 18,84956
+```
 
 ## Rectangle
 
-*** Program: ***
+***Program:***
 
 ```python
  def area(a, b):
@@ -79,7 +82,7 @@ def perimeter(a, b):
     return 2 * (a + b) 
 ```
 
-*** Example of a call: ***
+***Example of a call:***
 
 ```python
 a = 5
@@ -88,13 +91,15 @@ print("Area = ", area(a, b))
 print("Perimeter = ", perimeter(a, b))
 ```
 
+```markdown
 output:
 Area = 30
 Perimeter = 22
+```
 
 ## Square
 
-*** Program: ***
+***Program:***
 
 ```python
 def area(a):
@@ -112,7 +117,7 @@ def perimeter(a):
     return 4 * a
 ```
 
-*** Example of a call: ***
+***Example of a call:***
 
 ```python
 a = 5
@@ -120,13 +125,15 @@ print("Area = ", area(a))
 print("Perimeter = ", perimeter(a))
 ```
 
+```markdown
 output:
 Area = 25
 Perimeter = 20
+```
 
 ## Triangle
 
-*** Program: ***
+***Program:***
 
 ```python
 def area(a, h): 
@@ -144,7 +151,7 @@ def perimeter(a, b, c):
     return a + b + c
 ```
 
-*** Example of a call: ***
+***Example of a call:***
 
 ```python
 a = 3
@@ -155,11 +162,19 @@ print("Area = ", area(a, h))
 print("Perimeter = ", perimeter(a, b, c))
 ```
 
+```markdown
 output:
 Area = 6
 Perimeter = 12
+```
 
 ## Commit history
+
+commit 537eaaeef88c0cf240f0175d7c857924349acdca (HEAD -> documentation_409950)
+Author: Yandolav <yandolav@mail.ru>
+Date:   Sun Oct 1 14:19:55 2023 +0300
+
+    docs: Added a section with commit history
 
 commit 36a6e9282fa6a647badd316bf4601be432e70cfd (HEAD -> documentation_409950)
 Author: Yandolav <yandolav@mail.ru>

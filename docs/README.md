@@ -1,3 +1,9 @@
+# Общее описание решения
+1) В репзитории создал ветку documentation_409511
+2) Создал файлы (rectangle_with_comments.py и triangle_with_comments.py) и написал комментарии, описывающие работу функций
+3) Добавил файл rectangle_with_comments.py и создал коммит с сообщением о том, что был добавлен новый файл
+4) Добавил файл triangle_with_comments.py и создал коммит с сообщением о том, что был добавлен новый файл 
+
 # Math formulas
 ## Area
 - Circle: S = πR²

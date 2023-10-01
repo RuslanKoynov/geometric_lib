@@ -87,3 +87,9 @@ def perimeter(a, b, c):
 - **Пример работы**
 <br>_input: 8 8 8_</br>
 _output: 24_
+- # История изменения проекта с хешами комитов (кроме последней записи)
+- 3830d45eb9221b47023c07792c4d3ea0368545f0 Added file rectangle_with_comments.py
+- f10d9bca3cf8a5b002a3f0f63c8dbf47a00dd9f6 File rectangle.py has been corrected
+- fe2b3736a90cd0a0fbd7421dfd6e8fd0246fdcab Added new file
+- d078c8d9ee6155f3cb0e577d28d337b791de28e2 L-03: Docs added
+- 8ba9aeb3cea847b63a91ac378a2a6db758682460 L-03: Circle and square added

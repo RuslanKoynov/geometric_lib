@@ -135,7 +135,7 @@ def area(a, h):
     Возращает произведение a и h деленное на 2, т.е. площадь треугольника.'''
 
     return a * h / 2 
-    
+
 def perimeter(a, b, c): 
 
     '''Принимает числа a, b и c - стороны треугольника.
@@ -158,3 +158,57 @@ print("Perimeter = ", perimeter(a, b, c))
 output:
 Area = 6
 Perimeter = 12
+
+## Commit history
+
+commit 36a6e9282fa6a647badd316bf4601be432e70cfd (HEAD -> documentation_409950)
+Author: Yandolav <yandolav@mail.ru>
+Date:   Sun Oct 1 14:01:49 2023 +0300
+
+    docs: Added a section related to functions
+
+commit 92633a073463eda446df0e6cb4553a8abaa69ee0
+Author: Yandolav <yandolav@mail.ru>
+Date:   Fri Sep 29 17:19:51 2023 +0300
+
+    docs: added a triangle to mathematical formulas
+
+commit 7d44d7da214edf824bd1fd1e3d258cd77553b6a5
+Author: Yandolav <yandolav@mail.ru>
+Date:   Fri Sep 29 17:10:47 2023 +0300
+
+    docs: added a general description of the solution
+
+commit 3353dd09c85a9659492dfc0fe94454b7bc3d5d62
+Author: Yandolav <yandolav@mail.ru>
+Date:   Fri Sep 29 12:25:58 2023 +0300
+
+    docs: added a description of the functions
+
+commit e3530b2b5cd74404efe1070bfe652d768ff9dae1 (origin/new_features_409950, origin/main, origin/HEAD, main)
+Author: Yandolav <yandolav@mail.ru>
+Date:   Sat Sep 16 19:34:21 2023 +0300
+
+    bug fixed
+
+commit e918e86195f021c59eefff53dc3ee6c83a338d64
+Author: Yandolav <yandolav@mail.ru>
+Date:   Sat Sep 16 19:29:40 2023 +0300
+
+    new file 2
+
+commit 1c4614c4c7d1d0a6bb97d290f41d44121403ad53
+Author: Yandolav <yandolav@mail.ru>
+Date:   Sat Sep 16 19:26:58 2023 +0300
+
+    new file
+
+commit d078c8d9ee6155f3cb0e577d28d337b791de28e2
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:55:29 2021 +0300
+
+    L-03: Docs added
+
+commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:54:08 2021 +0300

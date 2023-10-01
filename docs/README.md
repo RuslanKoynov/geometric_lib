@@ -13,8 +13,8 @@
 
 ## *Примеры*
 
-> area(7) --> 49pi
-> perimeter(4) --> 8pi
+> area(7) --> 49π
+> perimeter(4) --> 8π
 
 **rectangle.py**
 

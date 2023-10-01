@@ -59,8 +59,8 @@ def area(a):
     return a * a
 ```
 - **Пример работы**
-<br>_input: 16_</br>
-*output: 28*
+<br>_input: 5_</br>
+*output: 25*
 - ### Периметр квадрата
 ```
 def perimeter(a): 

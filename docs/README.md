@@ -12,7 +12,7 @@
     perimeter(5) = 31.4159
 
 **Пример кода:**
-```ruby
+```python
 import math
 
 def area(r):

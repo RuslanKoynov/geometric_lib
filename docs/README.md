@@ -52,4 +52,13 @@
 > area(7, 4) --> 14
 > perimeter(4, 4, 4) --> 12
 
+## Математические формулы
+## *Площадь*
+- Circle: S = πR²
+- Rectangle: S = ab
+- Square: S = a²
 
+## *Периметр*
+- Circle: P = 2πR
+- Rectangle: P = 2a + 2b
+- Square: P = 4a

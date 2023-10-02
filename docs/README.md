@@ -11,6 +11,35 @@
 Пример вызова:
     perimeter(5) = 31.4159
 
+**Пример кода:**
+```ruby
+import math
+
+def area(r):
+    '''
+    Возвращает площадь круга по заданомму радиусу
+        Входные данные:
+            r (float) - радиус круга
+
+        Возвращаемое значение:
+            math.pi * r * r (float) - площадь круга
+    '''
+    return math.pi * r * r
+
+
+def perimeter(r):
+    '''
+    Возвращает длину окружности по заданомму радиусу
+        Входные данные:
+            r (float) - радиус круга
+
+        Возвращаемое значение:
+            2 * math.pi * r (float) - длина окружности
+    '''
+
+    return 2 * math.pi * r
+```
+
 ## Rectangle.py
 **def area(a, b)** - Возвращает площадь прямоугольника по заданным сторонам
 Пример вызова:
@@ -40,9 +69,8 @@
     perimeter(2,5,6) = 13
 
 ## История изменений
-**37efa45** (HEAD -> lab-2) Added comments to files
-**510c566** (origin/new_features_409846, new_features_409846, main) fixed mistake
-**c9561f5** New file added
-**d078c8d** (origin/main, origin/HEAD) L-03: Docs added
-**8ba9aeb** L-03: Circle and square added
-
+* **37efa45** (HEAD -> lab-2) Added comments to files
+* **510c566** (origin/new_features_409846, new_features_409846, main) fixed mistake
+* **c9561f5** New file added
+* **d078c8d** (origin/main, origin/HEAD) L-03: Docs added
+* **8ba9aeb** L-03: Circle and square added

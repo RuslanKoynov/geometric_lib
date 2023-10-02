@@ -62,3 +62,11 @@
 - Circle: P = 2πR<br>
 - Rectangle: P = 2a + 2b<br>
 - Square: P = 4a<br>
+
+## *История коммитов*
+* d987557 (HEAD -> lab_2, origin/lab_2) README.md updated
+* 3f7b892 Update python files function description, readme.md
+* b8f1c04 (origin/main, origin/HEAD, main) Edit file
+* b08a51b Add file
+* d078c8d L-03: Docs added
+* 8ba9aeb L-03: Circle and square added

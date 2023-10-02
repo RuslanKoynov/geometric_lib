@@ -5,7 +5,7 @@
 
 ### Круг
 #### Площадь
-```
+```python
 area(r: float) -> float
 ```
 Функция area() принимает радиус круга r и вычисляет его площадь.
@@ -14,7 +14,7 @@ area(r: float) -> float
 $S = πr^2$
 
 Пример использования:
-```
+```python
 import circle
 
 # area of a "ring" between two circles
@@ -25,7 +25,7 @@ A = circle.area(max(r1, r2)) - circle.area(min(r1, r2))
 print("Area of the ring: " + A)
 ```
 #### Периметр
-```
+```python
 perimeter(r: float) -> float
 ```
 Функция perimeter() принимает радиус окружности r и вычисляет её длину.
@@ -34,7 +34,7 @@ perimeter(r: float) -> float
 $P = 2πr$
 
 Пример использования:
-```
+```python
 import circle
 
 r = float(input("Radius: "))
@@ -44,7 +44,7 @@ print("Perimeter of the circle: " + p)
 
 ### Прямоугольник
 #### Площадь
-```
+```python
 area(a: float, b: float) -> float
 ```
 Функция area() принимает стороны прямоугольника и вычисляет его площадь.
@@ -53,7 +53,7 @@ area(a: float, b: float) -> float
 $S = ab$
 
 Пример использования:
-```
+```python
 import rectangle
 
 a = float(input("a: "))
@@ -63,7 +63,7 @@ print("Area: " + rectangle.area(a, b))
 ```
 
 #### Периметр
-```
+```python
 perimeter(a: float, b: float) -> float
 ```
 Функция perimeter() принимает стороны прямоугольника и вычисляет его периметр.
@@ -72,7 +72,7 @@ perimeter(a: float, b: float) -> float
 $P = 2(a+b)$
 
 Пример использования:
-```
+```python
 import rectangle
 
 a = float(input("a: "))
@@ -84,7 +84,7 @@ print("Perimeter of the rectangle: " + p)
 
 ### Квадрат
 #### Площадь
-```
+```python
 area(a: float) -> float
 ```
 Функция area() принимает сторону квадрата и вычисляет его площадь.
@@ -93,7 +93,7 @@ area(a: float) -> float
 $S = a^2$
 
 Пример использования:
-```
+```python
 import square
 
 a = float(input("Side of square: "))
@@ -102,7 +102,7 @@ area = square.area(a)
 print("Area of the square: " + area)
 ```
 #### Периметр
-```
+```python
 perimeter(a: float) -> float
 ```
 Функция perimeter() принимает сторону квадрата и вычисляет его периметр.
@@ -111,7 +111,7 @@ perimeter(a: float) -> float
 $P = 4a$
 
 Пример использования:
-```
+```python
 import square
 
 a = float(input("Side of square: "))
@@ -122,7 +122,7 @@ print("Perimeter of the square: " + p)
 
 ### Треугольник
 #### Площадь
-```
+```python
 area(a: float, h: float) -> float
 ```
 Функция area() принимает сторону треугольника и вычисляет его площадь.
@@ -131,7 +131,7 @@ area(a: float, h: float) -> float
 $S = \dfrac{ah}{2}$
 
 Пример использования:
-```
+```python
 import triangle
 
 a = float(input("Side of triangle: "))
@@ -142,7 +142,7 @@ print("Area of the triangle: " + area)
 ```
 
 #### Периметр
-```
+```python
 perimeter(a: float, b: float, c: float) -> float
 ```
 Функция perimeter() принимает стороны треугольника и вычисляет его периметр.
@@ -151,7 +151,7 @@ perimeter(a: float, b: float, c: float) -> float
 $P = a + b + c$
 
 Пример использования:
-```
+```python
 import triangle
 
 a = float(input("Side 1: "))
@@ -163,7 +163,7 @@ print("Perimeter of the triangle: " + p)
 ```
 
 #### Длина медианы
-```
+```python
 median(a: float, b: float, c: float) -> float
 ```
 Функция median() принимает стороны треугольника a, b и c и вычисляет длину его медианы, проведённой к стороне a.
@@ -172,7 +172,7 @@ median(a: float, b: float, c: float) -> float
 $m = \dfrac{\sqrt{2b^2 + 2c^2 - a^2}}{2}$
 
 Пример использования:
-```
+```python
 import triangle
 
 a = float(input("Side 1: "))

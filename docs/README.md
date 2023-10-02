@@ -13,11 +13,11 @@
 
 ### *Примеры*
 
-```
+```python
 print(area(7))
 ```
 Вывод: 49π<br>
-```
+```python
 print(perimeter(4))
 ```
 Вывод: 8π<br>
@@ -31,11 +31,11 @@ print(perimeter(4))
 
 ### *Примеры*
 
-```
+```python
 print(area(7, 4))
 ``` 
 Вывод: 28<br>
-```
+```python
 print(perimeter(4, 3))
 ```
 Вывод: 14<br>
@@ -48,11 +48,11 @@ print(perimeter(4, 3))
 - def perimeter(a): принимает длину стороны квадрата и возвращает периметр квадрата
 
 ### #*Примеры*
-```
+```python
 print(area(7))
 ```
 Вывод 49<br>
-```
+```python
 print(perimeter(5))
 ```
 Вывод: 20<br>
@@ -66,11 +66,11 @@ print(perimeter(5))
 
 ### *Примеры*
 
-```
+```python
 print(area(7, 4))
 ```
 Вывод: 14<br>
-```
+```python
 print(perimeter(4, 4, 4))
 ```
 Вывод: 12<br>

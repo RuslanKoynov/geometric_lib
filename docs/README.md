@@ -1,14 +1,3 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
-
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
-
 # circle.py
 ## def area(r):
 - считает по радиусу площадь круга
@@ -50,4 +39,3 @@
 - commit 66a87e0d2744b4008f51fa5f30a8bcf435bc57df documentation
 - commit 9c8192bae3dda90eeacb7485a9e586310c2d350f documentation
 - commit 9c8192bae3dda90eeacb7485a9e586310c2d350f documentation
-  

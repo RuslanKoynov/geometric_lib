@@ -6,142 +6,191 @@
 ### Круг
 #### Площадь
 ```
-area(float r) -> float
+area(r: float) -> float
 ```
 Функция area() принимает радиус круга r и вычисляет его площадь.
 Для вычисления используется формула:
 
 $S = πr^2$
 
-Примеры использования:
+Пример использования:
 ```
-A = area(1) # A = π
-B = area(3) # B = 9π
+import circle
+
+# area of a "ring" between two circles
+r1 = float(input())
+r2 = float(input())
+
+A = circle.area(max(r1, r2)) - circle.area(min(r1, r2))
+print("Area of the ring: " + A)
 ```
 #### Периметр
 ```
-perimeter(float r) -> float
+perimeter(r: float) -> float
 ```
 Функция perimeter() принимает радиус окружности r и вычисляет её длину.
 Для вычисления используется формула:
 
 $P = 2πr$
 
-Примеры использования:
+Пример использования:
 ```
-A = perimeter(1) # A = 2π
-B = perimeter(3) # B = 6π
+import circle
+
+r = float(input("Radius: "))
+p = circle.perimeter(r)
+print("Perimeter of the circle: " + p)
 ```
 
 ### Прямоугольник
 #### Площадь
 ```
-area(float a, float b) -> float
+area(a: float, b: float) -> float
 ```
 Функция area() принимает стороны прямоугольника и вычисляет его площадь.
 Для вычисления используется формула:
 
 $S = ab$
 
-Примеры использования:
+Пример использования:
 ```
-A = area(2, 2.5) # A = 5
-B = area(3, 12) # B = 36
+import rectangle
+
+a = float(input("a: "))
+b = float(input("b: "))
+
+print("Area: " + rectangle.area(a, b))
 ```
+
 #### Периметр
 ```
-perimeter(float a, float b) -> float
+perimeter(a: float, b: float) -> float
 ```
 Функция perimeter() принимает стороны прямоугольника и вычисляет его периметр.
 Для вычисления используется формула:
 
 $P = 2(a+b)$
 
-Примеры использования:
+Пример использования:
 ```
-A = perimeter(4, 1) # A = 10
-B = perimeter(3, 12.5) # B = 31
+import rectangle
+
+a = float(input("a: "))
+b = float(input("b: "))
+p = rectangle.perimeter(a, b)
+
+print("Perimeter of the rectangle: " + p)
 ```
 
 ### Квадрат
 #### Площадь
 ```
-area(float a) -> float
+area(a: float) -> float
 ```
 Функция area() принимает сторону квадрата и вычисляет его площадь.
 Для вычисления используется формула:
 
 $S = a^2$
 
-Примеры использования:
+Пример использования:
 ```
-A = area(2) # A = 4
-B = area(1.5) # B = 2.25
+import square
+
+a = float(input("Side of square: "))
+area = square.area(a)
+
+print("Area of the square: " + area)
 ```
 #### Периметр
 ```
-perimeter(float a) -> float
+perimeter(a: float) -> float
 ```
 Функция perimeter() принимает сторону квадрата и вычисляет его периметр.
 Для вычисления используется формула:
 
 $P = 4a$
 
-Примеры использования:
+Пример использования:
 ```
-A = perimeter(4) # A = 16
-B = perimeter(2.5) # B = 10
+import square
+
+a = float(input("Side of square: "))
+p = square.perimeter(a)
+
+print("Perimeter of the square: " + p)
 ```
 
 ### Треугольник
 #### Площадь
 ```
-area(float a, float h) -> float
+area(a: float, h: float) -> float
 ```
 Функция area() принимает сторону треугольника и вычисляет его площадь.
 Для вычисления используется формула:
 
 $S = \dfrac{ah}{2}$
 
-Примеры использования:
+Пример использования:
 ```
-A = area(2, 4) # A = 4
-B = area(1.5, 8) # B = 6
+import triangle
+
+a = float(input("Side of triangle: "))
+h = float(input("Altitude of triangle: "))
+area = triangle.area(a, h)
+
+print("Area of the triangle: " + area)
 ```
+
 #### Периметр
 ```
-perimeter(float a, float b, float c) -> float
+perimeter(a: float, b: float, c: float) -> float
 ```
 Функция perimeter() принимает стороны треугольника и вычисляет его периметр.
 Для вычисления используется формула:
 
 $P = a + b + c$
 
-Примеры использования:
+Пример использования:
 ```
-A = perimeter(4, 3, 5) # A = 12
-B = perimeter(6, 8, 10) # B = 24
+import triangle
+
+a = float(input("Side 1: "))
+a = float(input("Side 2: "))
+a = float(input("Side 3: "))
+p = triangle.perimeter(a, b, c)
+
+print("Perimeter of the triangle: " + p)
 ```
 
 #### Длина медианы
 ```
-median(float a, float b, float c) -> float
+median(a: float, b: float, c: float) -> float
 ```
 Функция median() принимает стороны треугольника a, b и c и вычисляет длину его медианы, проведённой к стороне a.
 Для вычисления используется формула:
 
 $m = \dfrac{\sqrt{2b^2 + 2c^2 - a^2}}{2}$
 
-Примеры использования:
+Пример использования:
 ```
-A = median(1, 1, 1) # A = sqrt(3) / 2
+import triangle
+
+a = float(input("Side 1: "))
+a = float(input("Side 2: "))
+a = float(input("Side 3: "))
+p = triangle.media(a, b, c)
+
+print("Length of the median: " + p)
 ```
 
 ## История изменений
-Здесь представлена история изменений проекта с соответствующими хэшами коммитов git.
-* Создание проекта: 03/04/2021 (8ba9aeb3cea847b63a91ac378a2a6db758682460)
-* Добавление раздела docs: 03/04/2021 (d078c8d9ee6155f3cb0e577d28d337b791de28e2)
-* Добавление функций для прямогульника: 09/04/2023 (dbbfec49ea17da1589f034ad8dc03418a807fa16)
-* Добавление функций для треугольника: 09/04/2023 (e8928cf6dd206b39e6714b9496144df8f8322b4c)
-* Исправление ошибки в вычислении периметра для прямоугольника: 09/04/2023 (476f3b3c3fd62d67fb962e673bfd53761d0e4192)
-* Добавление функции вычисления медианы для треугольника: 09/21/2023 (2f37286da940cdffc977388a1461f25603d97546)
+
+|Событие                                                     |Дата      |Коммит                                  |
+|------------------------------------------------------------|----------|----------------------------------------|
+|Создание проекта                                            |03/04/2021|8ba9aeb3cea847b63a91ac378a2a6db758682460|
+|Добавление раздела docs                                     |03/04/2021|d078c8d9ee6155f3cb0e577d28d337b791de28e2|
+|Добавление функций для прямогульника                        |09/04/2023|dbbfec49ea17da1589f034ad8dc03418a807fa16|
+|Добавление функций для треугольника                         |09/04/2023|e8928cf6dd206b39e6714b9496144df8f8322b4c|
+|Исправление ошибки в вычислении периметра для прямоугольника|09/04/2023|476f3b3c3fd62d67fb962e673bfd53761d0e4192|
+|Добавление функции вычисления медианы для треугольника      |09/21/2023|2f37286da940cdffc977388a1461f25603d97546|
+|Исправление мелких ошибок                                   |09/21/2023|57f8c577673ecdcc25a0d8983800237c6ca15f40|

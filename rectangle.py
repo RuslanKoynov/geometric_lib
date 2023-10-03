@@ -23,4 +23,3 @@ def perimeter(a, b):
             perimeter (int/float): периметр прямоугольника со сторонами a и b
 '''
     return 2*(a + b)
-print (perimeter(4.5,6.7))

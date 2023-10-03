@@ -138,8 +138,38 @@ Description:
 def perimeter(a):
     return 4 * a
 ```
+## Commits hash:
+```
+commit 9c4e31a1308e8919cad100db77ed60f1c6fb9bbb (HEAD -> main)
+Author: Лимарев Егор <limarevegor@MacBook-Air-Limarev.local>
+Date:   Wed Sep 20 14:28:54 2023 +0300
 
+    delite file
 
+commit 585f88e53d3a5bcbce5b530bf15bf69d3a9a1b46 (origin/main, origin/HEAD, test_1)
+Author: Лимарев Егор <limarevegor@MacBook-Air-Limarev.local>
+Date:   Mon Sep 11 03:26:15 2023 +0300
+
+    fixed error in file
+
+commit 14ba8a8ab57fbb62b847c0a0d870f7012f4c0926
+Author: Лимарев Егор <limarevegor@MacBook-Air-Limarev.local>
+Date:   Mon Sep 11 03:20:31 2023 +0300
+
+    add new file
+
+commit d078c8d9ee6155f3cb0e577d28d337b791de28e2
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:55:29 2021 +0300
+
+    L-03: Docs added
+
+commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:54:08 2021 +0300
+
+    L-03: Circle and square added
+```
 
 
 

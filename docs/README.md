@@ -44,3 +44,10 @@ triangle.py | 1. def area(a, h): Функция запрашивает неки�
 triangle.py | 1. def perimeter(a, b, c): Функция запрашивает некие 3 числа  __a__, __b__, __c__ и далее расчитывает по математической формуле __(a + b + c)__ периметр треугольника | a = 3, b = 3, c = 3 -> perimeter(a, b, c) = 9
 
 ## History of project changes with commit hashes
+
+хеш | автор | дата | описание 
+:-- | :---: | :--: | -------: 
+87e7f5fa217065d707baf8eed3a058f33d5c3053 | dasha <stepina.dk@yandex.ru> | Tue Sep 12 16:43:59 2023 +0300 | "Added new file"
+951ea1a624713f1e5409d33e692b38ce6b382980 | dasha <stepina.dk@yandex.ru> | Tue Sep 12 16:49:59 2023 +0300 | "error edited"
+0cab55ef5e01e8d192bde3932a9098733a39d48e | dasha <stepina.dk@yandex.ru> | Tue Oct 3 15:06:25 2023 +0300 | "comments added"
+ccb1acea373a7d41381c3cbb606fee25c3770e50 | dasha <stepina.dk@yandex.ru> | Wed Oct 4 11:58:01 2023 +0300 | "file added"

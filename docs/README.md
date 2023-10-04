@@ -59,3 +59,12 @@ print(perimeter(2, 4, 6))
 ---
 
 ## Git History
+
+| Hash | Date | Author | Comment |  
+|:------------------------------|:-----------------------------:|------------------------------:|:--------------------------|
+| 8ba9aeb3ce | Thu Mar 4 14:54:08 2021 | smartiqa <info@smartiqa.ru> | Circle and square added |
+| d078c8d9ee | Thu Mar 4 14:55:29 2021 | smartiqa <info@smartiqa.ru> | Docs added |
+| 947953277c | Wed Sep 13 13:52:15 2023 | Nick Durbin <nickdurbin2004@gmail.com> | Added new file |
+| 5919892c50 | Wed Sep 13 13:57:53 2023 | Nick Durbin <nickdurbin2004@gmail.com> | fix: fixed rectangle mistake and added triangle |
+| bd54344024 | Wed Oct 4 12:22:12 2023 | Nick Durbin <nickdurbin2004@gmail.com> | docs: Added comments under every function |
+| 2890456262 | Wed Oct 4 15:41:45 2023 | Nick Durbin <nickdurbin2004@gmail.com> | docs: Added descriptions of whole project|

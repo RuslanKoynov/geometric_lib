@@ -144,6 +144,3 @@ commit d078c8d9ee6155f3cb0e577d28d337b791de28e2
 Author: smartiqa <info@smartiqa.ru>
 Date:   Thu Mar 4 14:55:29 2021 +0300
 ```
-# Заголовок 1
-## Заголовок 2
-### Заголовок 3

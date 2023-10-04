@@ -30,7 +30,14 @@ Description:
  def area(r):  
     return math.pi * r * r
 ```
+Example of using:
+```python
+from circle import area as circle_area_def
 
+radius = 5.0
+circle_area = circle_area_def(radius)
+print(circle_area)
+```
 ### 2. Perimeter
 
 ```
@@ -51,6 +58,15 @@ Description:
 ```python
  def perimeter(r): 
     return 2 * math.pi * r
+```
+Example of using:
+
+```python
+from circle import perimeter as circle_perimeter_def
+
+radius = 5.0
+circle_perimeter = circle_perimeter_def(radius)
+print(circle_perimeter)
 ```
 
 
@@ -76,6 +92,15 @@ Description:
 def area(a, b):
     return a * b
 ```
+Example of using:
+
+```python
+from rectangle import area as rectangle_area_def
+
+a, b = 5, 10
+rectangle_area = rectangle_area_def(a, b)
+print(rectangle_area)
+```
 ### 2. Perimeter
 
 ```
@@ -96,6 +121,14 @@ Description:
 ```python
 def perimeter(a, b):
     return 2 * (a + b)
+```
+Example of using:
+```python
+from rectangle import perimeter as rectangle_perimeter_def
+
+a, b = 5, 10
+rectangle_perimeter = rectangle_perimeter_def(a, b)
+print(rectangle_perimeter)
 ```
 ## Square
 
@@ -118,6 +151,16 @@ Description:
 def area(a):
     return a * a
 ```
+
+Example of using:
+```python
+ from square import area as square_area_def
+
+a = 10
+square_area = square_area_def(a)
+print(square_area)
+
+```
 ### 2. Perimeter
 
 ```
@@ -137,6 +180,14 @@ Description:
 ```python
 def perimeter(a):
     return 4 * a
+```
+Example of using:
+```python
+from square import perimeter as square_perimeter_def
+
+a = 10
+square_perimeter = square_perimeter_def(a)
+print(square_perimeter)
 ```
 ## Commits hash:
 ```

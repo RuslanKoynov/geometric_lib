@@ -83,4 +83,38 @@
      - ![logo](https://github.com/vikaleks/pic/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-10-04%20011205.png)
 
 ## Commit history
-    
+commit 1555f29e73ac47684fe55389f276019aa701daac (HEAD -> main, origin/main, origin/HEAD)
+Author: vikaleks <68038711+vikaleks@users.noreply.github.com>
+Date:   Wed Oct 4 10:49:29 2023 +0300
+
+    Update README.md
+
+commit 8aa44992ba475e733998de92ffaa9db9fbbf1035
+Author: vikaleks <68038711+vikaleks@users.noreply.github.com>
+Date:   Wed Oct 4 01:19:46 2023 +0300
+
+    Update README.md
+
+commit ad5c568e1c11e661d526a8500a8f04b54dd1f0d8 (test, new)
+Author: vikaaaleks <vikaaaleks@mail.ru>
+Date:   Mon Sep 18 21:41:08 2023 +0300
+
+    fixed rectangle.py
+
+commit 6d7d570213c566aa4f4f55a40df75bd8a60d1461
+Author: vikaaaleks <vikaaaleks@mail.ru>
+Date:   Mon Sep 18 21:39:12 2023 +0300
+
+    added new file traingle.py
+
+commit 63c3e89e38aad9d117424efa3eeb0850c52614c6
+Author: vikaaaleks <vikaaaleks@mail.ru>
+Date:   Mon Sep 18 21:35:21 2023 +0300
+
+    added new file rectangle.py
+
+commit d078c8d9ee6155f3cb0e577d28d337b791de28e2 (upstream/main, upstream/HEAD)
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:55:29 2021 +0300
+
+    L-03: Docs added

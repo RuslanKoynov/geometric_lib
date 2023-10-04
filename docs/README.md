@@ -83,6 +83,12 @@
      - ![logo](https://github.com/vikaleks/pic/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-10-04%20011205.png)
 
 ## Commit history
+commit 250e31befe11be6928a12d025dcba558c449c1b5 (HEAD -> main, origin/main, origin/HEAD)
+Author: vikaaaleks <vikaaaleks@mail.ru>
+Date:   Wed Oct 4 14:06:49 2023 +0300
+
+    File declaration
+    
 commit 1555f29e73ac47684fe55389f276019aa701daac (HEAD -> main, origin/main, origin/HEAD)
 Author: vikaleks <68038711+vikaleks@users.noreply.github.com>
 Date:   Wed Oct 4 10:49:29 2023 +0300

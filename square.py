@@ -1,6 +1,10 @@
 def area(a):
-    '''Принимает число a, возвращает квадрат числа a'''
+    '''One number (a) is take as input:
+        a (float) is the side of the square.'''
+    '''Returns the area of the square with an input value.'''
     return a * a
 def perimeter(a):
-    '''Принимает число a, возвращает произведение числа 4 на a'''
+    '''One number (a) is take as input:
+        a (float) is the side of the square.'''
+    '''Returns the perimeter of the square with an input value.'''
     return 4 * a

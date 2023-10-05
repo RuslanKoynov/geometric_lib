@@ -1,6 +1,10 @@
 def area(a, b):
-    '''Принимает числа a и b, возвращает произведение данных чисел'''
+    '''Two numbers (a, b) are taken as input:
+        a, b (all nums are float) are the side of the rectangle.'''
+    '''Returns the area of the square with an input value.'''
     return a * b
-def permiter(a, b):
-    '''Принимает числа a и b, возвращает сумму данных чисел'''
-    return a + b
+def perimeter(a, b):
+    '''Two numbers (a, b) are taken as input:
+        a, b (all nums are float) are the side of the rectangle.'''
+    '''Returns the perimeter of the square with an input value.'''
+    return 2 * (a + b)

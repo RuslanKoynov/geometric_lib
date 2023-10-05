@@ -123,4 +123,66 @@ def perimeter(a, b, c):
 *Input:* a=5, h=10, b=7, c=2
 *Output:* S=25, P=14
 
+## История изменений с хешами комитов(без последнего)
+
+commit 2c85460a17bcd0ab1584398d834d27606f94cb62
+Author: 666daredevil666 <bondarev.alex00555@gmail.com>
+Date:   Thu Oct 5 11:29:01 2023 +0300
+
+    docs:added documentation to README
+
+commit 2fa044f270248a73a2d67628324f34498509b8c2
+Author: 666daredevil666 <bondarev.alex00555@gmail.com>
+Date:   Thu Oct 5 10:55:23 2023 +0300
+
+    docs:added documentation to rectangle
+
+commit 01e85d6a804c8c93ae8ad3814cb4f37f5bb80ad5
+Author: 666daredevil666 <bondarev.alex00555@gmail.com>
+Date:   Thu Oct 5 10:54:45 2023 +0300
+
+    docs:added documentation to triangle
+
+commit 0d660e2ff88132ad844d9adbac9fc6ff8a034d03
+Author: 666daredevil666 <bondarev.alex00555@gmail.com>
+Date:   Thu Oct 5 10:41:22 2023 +0300
+
+    docs:added documentation to triangle
+
+commit eb045a5dc5841cda1004961f59bdf7db1c3bf37f
+Author: 666daredevil666 <bondarev.alex00555@gmail.com>
+Date:   Thu Oct 5 10:27:44 2023 +0300
+
+    docs:added documentation to square
+
+commit 012388c92bbecbb13aecc5870204d7d102c3e1fe
+Author: 666daredevil666 <bondarev.alex00555@gmail.com>
+Date:   Thu Oct 5 10:12:43 2023 +0300
+
+    docs:added documentation to circle
+
+commit 822cfa84360add54150e019a16ba558f07f7a3ce
+Author: 666daredevil666 <bondarev.alex00555@gmail.com>
+Date:   Thu Oct 5 09:54:54 2023 +0300
+
+    docs:added documentation to rectangle
+
+commit 100dc9c6cdf774619b117ed4e1093701d30ac9b9 (origin/main, origin/HEAD, main)
+Author: 666Daredevil666 <142442789+666Daredevil666@users.noreply.github.com>
+Date:   Mon Sep 18 16:17:11 2023 +0300
+
+    fix issue with rectangle
+
+commit fdf9c176a8ba86f73aa9f35d4a994deb3b2e3028
+Author: 666Daredevil666 <142442789+666Daredevil666@users.noreply.github.com>
+Date:   Mon Sep 18 16:14:34 2023 +0300
+
+    feat: add triangle
+
+commit b1d38c534638dc1fdf02b37dd1c2d6cf55a555ef
+Author: 666Daredevil666 <142442789+666Daredevil666@users.noreply.github.com>
+Date:   Mon Sep 18 16:10:41 2023 +0300
+
+    feat: add triangle
+
     

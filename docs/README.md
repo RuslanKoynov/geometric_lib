@@ -81,6 +81,22 @@ output 6
 9364f27 comment block added - коммит добавления коментариев с описанием функции каждого файла репозитория
 ```
 
+```
+3712978 triangle.py added rectangle.py fixed - коммит добавления файла triangle.py и исправления rectangle.py
+```
+
+```
+7da405b rectangle.py added- коммит добавления файла rectangle.py
+```
+
+```
+d078c8d Docks added - коммит добавления файла Docks
+```
+
+```
+8ba9aeb Circle and Square added - коммит добавления файлов Circle и Square
+```
+
 # Math formulas
 ## Area
 - Circle: S = πR²

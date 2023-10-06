@@ -44,3 +44,10 @@ b: ширина прямоугольника
 a: длина прямоугольника
 b: ширина прямоугольника
 Выдаёт: Периметр прямоугольника (рассчитывается как удвоенная сумма длины и ширины)
+
+## Modification history (История изменений) 
+* 10497c948143ceb8e5dc8041e92b268399e2de07 (HEAD -> main) added comments
+* d8a31fa60de3c1b4295674afc8d9b326fd0a92a4 (origin/main, origin/HEAD) Modyfied mistake in rectangle.py
+* cd1179e738f36db9f43fa30ca985619612db76d8 Added new file
+* d078c8d9ee6155f3cb0e577d28d337b791de28e2 L-03: Docs added
+* 8ba9aeb3cea847b63a91ac378a2a6db758682460 L-03: Circle and square added

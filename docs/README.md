@@ -74,6 +74,8 @@ output 1
 ```
 output 6
 ```
+# граф коммитов
+![telegram-cloud-photo-size-2-5260515436821334832-y](https://github.com/mefedraw/geometric_lib/assets/144416623/c9d76c3e-896f-480f-96d4-fec4149cc6be)
 
 
 

@@ -48,9 +48,10 @@ output 1
 ```
 
 - def perimeter(a):
+
 ```
 принимает сторону квадрата - возвращает периметр
-"""
+```
 > perimeter(1)
 ```
 output 4
@@ -73,6 +74,8 @@ output 1
 ```
 output 6
 ```
+
+
 
 # Math formulas
 ## Area

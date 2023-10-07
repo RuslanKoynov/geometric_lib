@@ -3,14 +3,14 @@
 
 ## Features
 **geometric_lib** allows you to work with the following geometric shapes
-- [Circle](https://github.com/f4ke-n0name/geometric_lib#circle)
-- [Rectangle](https://github.com/f4ke-n0name/geometric_lib#rectangle)
-- [Square](https://github.com/f4ke-n0name/geometric_lib#square)
-- [Triangle](https://github.com/f4ke-n0name/geometric_lib#triangle)
+- [Circle](https://github.com/bemooooooooo/geometric_lib/blob/gitlab2#circle.py)
+- [Rectangle](https://github.com/bemooooooooo/geometric_lib/blob/gitlab2#rectangle)
+- [Square](https://github.com/bemooooooooo/geometric_lib/blob/gitlab2#square)
+- [Triangle](https://github.com/bemooooooooo/geometric_lib/blob/gitlab2#triangle)
 
 
 ### Circle
-[Code](https://github.com/f4ke-n0name/geometric_lib/blob/main/circle.py)
+[Code](https://github.com/bemooooooooo/geometric_lib/blob/gitlab2/circle.py)
 ```python
 import math
 
@@ -36,7 +36,7 @@ Output: 18.84955592153876
 
 
 ### Rectangle
-[Code](https://github.com/f4ke-n0name/geometric_lib/blob/main/rectangle.py)
+[Code](https://github.com/bemooooooooo/geometric_lib/blob/gitlab2/rectangle.py)
 ```python
 def area(a, b):
 	'Calculates the area of rectangle'
@@ -52,21 +52,21 @@ def perimeter(a, b):
     'Calculates the perimeter of rectangle'
     return 2 * (a + b)
 ```
-Input: 3 4
+Input: 1 2
 
-Output: 14
+Output: 6
 
 
 ### Square
-[Code](https://github.com/f4ke-n0name/geometric_lib/blob/main/square.py)
+[Code](https://github.com/bemooooooooo/geometric_lib/blob/gitlab2/square.py)
 ```python
 def area(a):
     'Calculates the area of a square'
     return a * a
 ```
-Input: 3
+Input: 6
 
-Output: 9
+Output: 36
 
 
 ```python
@@ -74,22 +74,22 @@ def perimeter(a):
     'Calculates the perimeter of a square'
     return 4 * a
 ```
-Input: 3
+Input: 4
 
-Output: 12
+Output: 16
 
 
 ### Triangle
-[Code](https://github.com/f4ke-n0name/geometric_lib/blob/main/triangle.py)
+[Code](https://github.com/bemooooooooo/geometric_lib/blob/gitlab2/triangle.py)
 
 ```python
 def area(a, h):
     'Calculates the area of triangle'
     return a * h / 2
 ```
-Input: 3 4
+Input: 5 2
 
-Output: 6
+Output: 5
 
 
 ```python
@@ -122,7 +122,7 @@ Project change history with commit hashes:
 
 | Hash  | Commit | Branch |
 | ---------| ------------------------------------------- | ------------------------------- |
-| d3aa15   | added documentation for triangle.py         | (HEAD -> lab-2)                 |
+| d3aa15   | added documentation for triangle.py         | (HEAD -> gitlab2)                 |
 | 63fb83   | added documentation for square.py           | -                               |
 | dc69d3   | added documentation for rectangle.py        | -                               |
 | 5e071d   | added documentation for circle.py           | -                               |

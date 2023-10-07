@@ -120,6 +120,43 @@ Example of a function call:
     input >> 2
     output << 12.566370614359172
 
+## Git commits hashes:
+- commit 226288e0efeca62cd658beed94c6031031fdb8dc (HEAD -> labwork2)
+Author: Alexander Kim <limosha@inbox.ru>
+Date:   Sat Oct 7 09:57:29 2023 +0300
+
+    modified 4 .py files
+
+- commit 69e6f4c1fdaf8c880be2eddf306d1866a32ad187 (origin/new_features_391091, origin/main, origin/HEAD)
+Author: Alexander Kim <limosha@inbox.ru>
+Date:   Tue Sep 19 14:05:34 2023 +0300
+
+    mistake in rectangle.py was fixed
+
+- commit e46bba849a8e8a20002517f1fc95517f0ebedbd8
+Author: Alexander Kim <limosha@inbox.ru>
+Date:   Tue Sep 19 13:59:01 2023 +0300
+
+    second file was added
+
+- commit bad1e46e80ed1cb428a30286f8db7e4ae7947114
+Author: Alexander Kim <limosha@inbox.ru>
+Date:   Tue Sep 19 13:55:22 2023 +0300
+
+    new file was added
+
+- commit d078c8d9ee6155f3cb0e577d28d337b791de28e2
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:55:29 2021 +0300
+
+    L-03: Docs added
+
+- commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:54:08 2021 +0300
+
+    L-03: Circle and square added
+
 ## Additional info:
 
 This documentation was modified using [Visual Studio Code](https://code.visualstudio.com/).

@@ -11,7 +11,7 @@
 
 # Functions
 ## Circle
-- Area: area(r)
+### Area: area(r)
 - Takes parameter r - the radius of the circle
 - Return area of the circle
 - Example: 
@@ -20,7 +20,7 @@ a = 1
 b = area(a)
 print(b) # 3,1415...
 ```
-- Perimeter: perimeter(r)
+### Perimeter: perimeter(r)
 - Takes parameter r - the radius of the circle
 - Return circumference length
 - Example:
@@ -30,7 +30,7 @@ b = perimeter(a)
 print(b) # 6,282...
 ```
 ## Rectangle
-- Area: area(a, b)
+### Area: area(a, b)
 - Takes parameters a, b - the length and width of rectangle
 - Return area of the rectangle
 - Example: 
@@ -40,7 +40,7 @@ b = 2
 c = area(a, b)
 print(c) # 2
 ```
-- Perimeter: perimeter(a, b)
+### Perimeter: perimeter(a, b)
 - Takes parameters a, b - the length and width of rectangle
 - Return perimeter of rectangle
 - Example:
@@ -52,7 +52,7 @@ print(c) # 6
 ```
 
 ## Square
-- Area: area(a)
+### Area: area(a)
 - Takes parameter a - the length of the side of the square
 - Return area of the square
 - Example: 
@@ -61,7 +61,7 @@ a = 2
 b = area(a)
 print(b) # 4 
 ```
-- Perimeter: perimeter(a)
+### Perimeter: perimeter(a)
 - Takes parameter r - the length of the side of the square
 - Return perimeter of the square
 - Example:
@@ -72,7 +72,7 @@ print(b) # 4
 ```
 
 ## Triangle
-- Area: area(a, h)
+### Area: area(a, h)
 - Takes parameters a, h - the length of the side of the triangle and the length of the height drawn to it
 - Return area of the triangle
 - Example: 
@@ -82,7 +82,7 @@ h = 3
 c = area(a, h)
 print(c) # 6
 ```
-- Perimeter: perimeter(a, b, c)
+### Perimeter: perimeter(a, b, c)
 - Takes parameters a, b, c - the lengths of all 3 sides of the triangle
 - Return perimeter of triangle
 - Example:

@@ -36,13 +36,49 @@ perimeter(a) - возвращает периметр квадрата со ст�
 perimeter(8) = 32
 
 ## История изменения проекта с хешами коммитов
-commit d9beddc5d4ed0deec738ec09a5b1b93968ef62d4 (HEAD -> main)
+commit 61e075741cfce9c391abc2b1954c7cd5aae53ff8 (HEAD -> main)
+Author: Sergey Titarenko <serezha.titarenko.2005@gmail.com>
+Date:   Mon Oct 9 10:29:57 2023 +0300
+
+    Добавил примеры вызова каждой функции
+
+commit b42e960ad0f2a8dddc575c99b81b16b5a4933d8a (origin/main, origin/HEAD)
+Author: Sergey Titarenko <serezha.titarenko.2005@gmail.com>
+Date:   Mon Oct 9 00:51:10 2023 +0300
+
+    Добавлена документация
+
+commit d9beddc5d4ed0deec738ec09a5b1b93968ef62d4
 Author: Sergey Titarenko <serezha.titarenko.2005@gmail.com>
 Date:   Sun Oct 8 23:54:29 2023 +0300
 
     Добавил комментарии во все файлы репозитория
 
-commit ac1b64f07544942f7938740f828bb9a4f6ac8f54 (origin/main, origin/HEAD)
+commit ac1b64f07544942f7938740f828bb9a4f6ac8f54
+Author: Sergey Titarenko <serezha.titarenko.2005@gmail.com>
+Date:   Thu Sep 21 13:52:32 2023 +0300
+
+    Mistake has been fixed
+:...skipping...
+commit 61e075741cfce9c391abc2b1954c7cd5aae53ff8 (HEAD -> main)
+Author: Sergey Titarenko <serezha.titarenko.2005@gmail.com>
+Date:   Mon Oct 9 10:29:57 2023 +0300
+
+    Добавил примеры вызова каждой функции
+
+commit b42e960ad0f2a8dddc575c99b81b16b5a4933d8a (origin/main, origin/HEAD)
+Author: Sergey Titarenko <serezha.titarenko.2005@gmail.com>
+Date:   Mon Oct 9 00:51:10 2023 +0300
+
+    Добавлена документация
+
+commit d9beddc5d4ed0deec738ec09a5b1b93968ef62d4
+Author: Sergey Titarenko <serezha.titarenko.2005@gmail.com>
+Date:   Sun Oct 8 23:54:29 2023 +0300
+
+    Добавил комментарии во все файлы репозитория
+
+commit ac1b64f07544942f7938740f828bb9a4f6ac8f54
 Author: Sergey Titarenko <serezha.titarenko.2005@gmail.com>
 Date:   Thu Sep 21 13:52:32 2023 +0300
 

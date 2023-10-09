@@ -1,13 +1,18 @@
+# Greetings
+- Hi! This is .py files for calculating the area and perimeter of some geometric shapes. You can find out more further!
+
 # Math formulas
 ## Area
 - Circle: S = πR²
 - Rectangle: S = ab
 - Square: S = a²
+- Triangle: S = (a * h) / 2
 
 ## Perimeter
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
+- Triangle: P = a + b + c
 
 # Functions
 ## Circle

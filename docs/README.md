@@ -53,3 +53,34 @@
      print(result) \
   > \
   `6`
+
+## История изменений проекта:
+
+- commit fa132ab (HEAD -> main)
+Author: mhgffqwoer <a.yakshevich2005@gmail.com>
+Date:   Wed Oct 4 21:45:20 2023 +0300
+
+  >add documentation
+
+- commit 4969630
+Author: mhgffqwoer <a.yakshevich2005@gmail.com>
+Date:   Sat Sep 16 12:45:45 2023 +0300
+
+  >добавлен новый файл triangle.py и исправлена ошибка в файле rectangle.py
+
+- commit e55b35e
+Author: mhgffqwoer <a.yakshevich2005@gmail.com>
+Date:   Sat Sep 16 12:41:33 2023 +0300
+
+  >добавлен новый файл rectangle.py
+
+- commit d078c8d
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:55:29 2021 +0300
+
+  >L-03: Docs added
+
+- commit 8ba9aeb
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:54:08 2021 +0300
+  >L-03: Circle and square added

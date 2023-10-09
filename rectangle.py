@@ -1,12 +1,15 @@
 
 def area(a, b):
-    '''Returns the area of the rectangle.
+    '''Возвращает площадь прямоугольника.
 
-            Parameters:
+            Параметры:
                 a (int): first side of the rectangle
                 b (int): second side og the rectangle
-            Returns:
+            Возврат:
                 (int): area of the rectangle
+
+            Пример вызова:
+                area(3, 2) = 6
     '''
 
     return a * b 
@@ -20,6 +23,9 @@ def perimeter(a, b):
                 b (int): вторая сторона прямоугольника.
             Возврат:
                 (int): периметр прямоугольника
+
+            Пример вызова:
+                perimeter(3, 2) = 10
     '''
 
     return 2 * (a + b)

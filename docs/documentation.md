@@ -75,3 +75,17 @@ area(4) = 16
    Возвращает: число a умноженное на 4 - периметр квадрата.
 - [x] Пример:
 perimeter(5) = 20
+
+## ***История изменения проекта с хешами комитов***
+| Hashes     | Commits                                           |
+|:-----------|:--------------------------------------------------|
+| _8ba9aeb_  | L-03: Circle and square added                     |
+| _d078c8d_  | L-03: Docs added                                  |
+| _2bbe340_  | add new file(rectangle.py)                        |
+| _3910f90_  | add new file(triangle.py)                         |
+| _bd5acd9_  | fix the error in file(rectangle.py)               |
+| _1f686b8_  | add description of function in file(triangle.py)  |
+| _715183e_  | add description of function in file(rectangle.py) |                
+| _8f1acf6_  | add description of function in file(square.py)    |
+| _a2b0897_  | add description of function in file(circle.py)    |
+| _35e195b_  | docs: added documentation of project              |

@@ -10,6 +10,9 @@ def area(r):
 
         Возвращаемое значение:
             circle_area (float): площадь круга радиуса r
+
+    Пример вызова:
+        area(1) = 3.141592653589793
     '''
     return math.pi * r * r
 
@@ -23,6 +26,9 @@ def perimeter(r):
 
         Возвращаемое значение:
             circle_perimeter (float): периметр окружности радиуса r
+
+    Пример вызова:
+        perimeter(1) = 6.283185307179586
     '''
     return 2 * math.pi * r
 

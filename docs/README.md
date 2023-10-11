@@ -3,14 +3,14 @@
 
 ## Perimeter - Circle: P = 2πR - Rectangle: P = 2a + 2b - Square: P = 4a
 
-#Documentation 
+# Documentation 
 ### Несколько функций вычисляющие периметры и площадим геометрических фигур
 
 ## Circle.py 
 ### функция принимет радиус круга 
 ### функция возвращает умножение числа пи на квадрат радиуса
 
-***Пример ввода/вывода: in 5 out 78,5 ***
+***Пример ввода/вывода: in 5 out 78,5***
 
 ### функция принимет радиус круга 
 ### функция возвращает умножение числа пи на два радиуса
@@ -55,3 +55,8 @@
 | ------- | -----|
 | Added rectangle.py | a196afd22b1b99afaa5bd1654cda093cc536d3a4 |
 | Fixed rectangle.py | d8aede489106ca56f9cc3fa7bafd24d0b53b9e0d |
+| Update rectangle.py | d8aede489106ca56f9cc3fa7bafd24d0b53b9e0d |
+| Update circle.py | d8aede489106ca56f9cc3fa7bafd24d0b53b9e0d|
+| Update triangle.py | d8aede489106ca56f9cc3fa7bafd24d0b53b9e0d|
+| Update square.py | d8aede489106ca56f9cc3fa7bafd24d0b53b9e0d|
+| Updated README.md | d8aede489106ca56f9cc3fa7bafd24d0b53b9e0d |

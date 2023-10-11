@@ -2,9 +2,18 @@ import math
 
 
 def area(r):
+
+    '''
+    принимает число r
+    возвращает число r в квадрате, умноженное на число ПИ
+    '''
     return math.pi * r * r
 
 
-def perimeter(r):
+def perimeter(r):ы
+    '''
+    Принимает число r
+    Возвращает число r умноженное на 2, умноженное на число ПИ
+    '''
     return 2 * math.pi * r
 

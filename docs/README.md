@@ -31,3 +31,9 @@
   perimeter(9) - 36
 - perimeter(a, b, c) - принимает три длины сторон, и возвращает их сумму
   perimeter(9, 9, 9) - 27
+
+## История изменений
+- 646669d added functions discriptions in README.md
+- e2ca723 added discriptions for files
+- d078c8d L-03: Docs added
+- 8ba9aeb L-03: Circle and square added

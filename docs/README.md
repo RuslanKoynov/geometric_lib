@@ -64,3 +64,4 @@
 | c5d7d1215ea63f0dc2f63ebf8f0763b78c565416  | Added Rectangle1.py
 | a7d05926a4c52e3e5081c4b0f56c0b274c22a86e  | Added Triangle1.py and fixed Rectangle1.py
 | df1eca12fc895ca99a6e0aa8006b65a18f61c900  | added comment in Rectangle1.py, Triangle1.py, circle.py, square.py
+| e115b1b2e9dac0decd728df5be8b4a89c2f31a36  | added tables of hashes and commits

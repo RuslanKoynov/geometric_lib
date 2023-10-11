@@ -55,8 +55,8 @@
 | ------- | -----|
 | Added rectangle.py | a196afd22b1b99afaa5bd1654cda093cc536d3a4 |
 | Fixed rectangle.py | d8aede489106ca56f9cc3fa7bafd24d0b53b9e0d |
-| Update rectangle.py | d8aede489106ca56f9cc3fa7bafd24d0b53b9e0d |
-| Update circle.py | d8aede489106ca56f9cc3fa7bafd24d0b53b9e0d|
-| Update triangle.py | d8aede489106ca56f9cc3fa7bafd24d0b53b9e0d|
-| Update square.py | d8aede489106ca56f9cc3fa7bafd24d0b53b9e0d|
-| Updated README.md | d8aede489106ca56f9cc3fa7bafd24d0b53b9e0d |
+| Update rectangle.py | 3bfe425e2842d3e7c74905fe08b96af7168ae514 |
+| Update circle.py | ce4d9b8f29c3adf46ce82e05f4eaa3373cea79c2 |
+| Update triangle.py | 65aebb67bc390c40af30841345bac08aef81a9db |
+| Update square.py | 7e8c2cc7773026ced86d35d16ce6b08b738cce0b |
+| Updated README.md | lkerrt45rgbuiherg7vrbnyoqwpzjqujj5jge23g |

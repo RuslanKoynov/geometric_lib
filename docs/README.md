@@ -50,7 +50,7 @@
 
 ***Пример ввода/вывода: in 5;3;4 out 12***
 
-#Commits history
+# Commits history
 | Мessage | Hash |
 | ------- | -----|
 | Added rectangle.py | a196afd22b1b99afaa5bd1654cda093cc536d3a4 |

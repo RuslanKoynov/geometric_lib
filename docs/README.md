@@ -1,307 +1,259 @@
-- # [Общее описание решения](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#общее-описание-решения)
+# Общее описание решения
 
-  ## [Содержит функции площади и периметра для 4 фигур](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#содержит-функции-площади-и-периметра-для-4-фигур)
+## Содержит функции площади и периметра для 4 фигур
 
-  - Circle
-  - Rectangle
-  - Square
-  - Triangle
+- Circle
+- Rectangle
+- Square
+- Triangle
 
-  ### [Circle:](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#circle)
+### Circle
 
-  - `def area` Получает радиус круга и возвращает его площадь
-  - `def perimeter` Получает радиус круга и возвращает его периметр
+- `def area` Получает радиус круга и возвращает его площадь
+- `def perimeter` Получает радиус круга и возвращает его периметр
 
-  ### [Rectangle:](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#rectangle)
+### Rectangle
 
-  - `def area` Получает длину двух сторон и возвращает площадь прямоугольника
-  - `def perimeter` Получает длину двух сторон и возвращает периметр прямоугольника
+- `def area` Получает длину двух сторон и возвращает площадь прямоугольника
+- `def perimeter` Получает длину двух сторон и возвращает периметр прямоугольника
 
-  ### [Square:](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#square)
+### Square
 
-  - `def area` Получает длину стороны и возвращает площадь квадрата
-  - `def area` Получает длину стороны и возвращает периметр квадрата
+- `def area` Получает длину стороны и возвращает площадь квадрата
+- `def area` Получает длину стороны и возвращает периметр квадрата
 
-  ### [Triangle:](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#triangle)
+### Triangle
 
-  - `def area` Получает длину стороны и высоту треугольника и возвращает его площадь
-  - `def perimeter` Получает длину трех сторон треугольника и возвращает его периметр
+- `def area` Получает длину стороны и высоту треугольника и возвращает его площадь
+- `def perimeter` Получает длину трех сторон треугольника и возвращает его периметр
 
-  # [Описание каждой функции с примерами вызова](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#описание-каждой-функции-с-примерами-вызова)
+# Описание каждой функции с примерами вызова
 
-  ### [Функция площади круга](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#функция-площади-круга)
+### Функция площади круга
 
-  ```
-  def area(r):
-      return math.pi * r * r
-  ```
+```
+def area(r):
+    return math.pi * r * r
+```
 
-  
+##### Параметры
 
-  ##### [Параметры](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#параметры)
+r - аргумент функции, который представляет собой радиус круга
 
-  r - аргумент функции, который представляет собой радиус круга
+##### Возвращаемое значение
 
-  ##### [Возвращаемое значение](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#возвращаемое-значение)
+Функция возвращает площадь круга
 
-  Функция возвращает площадь круга
+##### Пример вызова функции
 
-  ##### [Пример вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#пример-вызова-функции)
+```
+10
+```
 
-  ```
-  10
-  ```
+##### Результат вызова функции
 
-  
+```
+314.1592
+```
 
-  ##### [Результат вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#результат-вызова-функции)
+### Функция периметра круга
 
-  ```
-  314.1592
-  ```
+```
+def perimeter(r):
+    return 2 * math.pi * r
+```
 
-  
+##### Параметры
 
-  ### [Функция периметра круга](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#функция-периметра-круга)
+r - аргумент функции, который представляет собой радиус круга
 
-  ```
-  def perimeter(r):
-      return 2 * math.pi * r
-  ```
+##### Возвращаемое значение
 
-  
+Функция возвращает периметр круга
 
-  ##### [Параметры](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#параметры-1)
+##### Пример вызова функции
 
-  r - аргумент функции, который представляет собой радиус круга
+```
+10
+```
 
-  ##### [Возвращаемое значение](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#возвращаемое-значение-1)
+##### Результат вызова функции
 
-  Функция возвращает периметр круга
+```
+62.8318
+```
 
-  ##### [Пример вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#пример-вызова-функции-1)
+### Функция площади прямоугольника
 
-  ```
-  10
-  ```
+```
+def area(a, b):
+    return a * b
+```
 
-  
+##### Параметры
 
-  ##### [Результат вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#результат-вызова-функции-1)
+a, b - аргументы функции, который представляет собой стороны прямоугольника
 
-  ```
-  62.8318
-  ```
+##### Возвращаемое значение
 
-  
+Функция возвращает площадь прямоугольника
 
-  ### [Функция площади прямоугольника](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#функция-площади-прямоугольника)
+##### Пример вызова функции
 
-  ```
-  def area(a, b):
-      return a * b
-  ```
+```
+10 20
+```
 
-  
+##### Результат вызова функции
 
-  ##### [Параметры](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#параметры-2)
+```
+200
+```
 
-  a, b - аргументы функции, который представляет собой стороны прямоугольника
+### Функция периметра прямоугольника
 
-  ##### [Возвращаемое значение](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#возвращаемое-значение-2)
+```
+def perimeter(a, b):
+    return 2*(a + b)
+```
 
-  Функция возвращает площадь прямоугольника
+##### Параметры
 
-  ##### [Пример вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#пример-вызова-функции-2)
+a, b - аргументы функции, который представляет собой стороны прямоугольника
 
-  ```
-  10 20
-  ```
+##### Возвращаемое значение
 
-  
+Функция возвращает периметр прямоугольника
 
-  ##### [Результат вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#результат-вызова-функции-2)
+##### Пример вызова функции
 
-  ```
-  200
-  ```
+```
+10 20
+```
 
-  
+##### Результат вызова функции
 
-  ### [Функция периметра прямоугольника](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#функция-периметра-прямоугольника)
+```
+60
+```
 
-  ```
-  def perimeter(a, b):
-      return 2*(a + b)
-  ```
+### Функция площади квадрата
 
-  
+```
+def area(a):
+    return a * a
+```
 
-  ##### [Параметры](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#параметры-3)
+##### Параметры
 
-  a, b - аргументы функции, который представляет собой стороны прямоугольника
+a - аргументы функции, который представляет собой сторону прямоугольника
 
-  ##### [Возвращаемое значение](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#возвращаемое-значение-3)
+##### Возвращаемое значение
 
-  Функция возвращает периметр прямоугольника
+Функция возвращает площадь квадрата
 
-  ##### [Пример вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#пример-вызова-функции-3)
+##### Пример вызова функции
 
-  ```
-  10 20
-  ```
+```
+10
+```
 
-  
+##### Результат вызова функции
 
-  ##### [Результат вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#результат-вызова-функции-3)
+```
+100
+```
 
-  ```
-  60
-  ```
+### Функция периметра квадрата
 
-  
+```
+def perimeter(a):
+    return 4 * a
+```
 
-  ### [Функция площади квадрата](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#функция-площади-квадрата)
+##### Параметры
 
-  ```
-  def area(a):
-      return a * a
-  ```
+a - аргументы функции, который представляет собой сторону квадрата
 
-  
+##### Возвращаемое значение
 
-  ##### [Параметры](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#параметры-4)
+Функция возвращает периметр квадрата
 
-  a - аргументы функции, который представляет собой сторону прямоугольника
+##### Пример вызова функции
 
-  ##### [Возвращаемое значение](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#возвращаемое-значение-4)
+```
+10
+```
 
-  Функция возвращает площадь квадрата
+##### Результат вызова функции
 
-  ##### [Пример вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#пример-вызова-функции-4)
+```
+40
+```
 
-  ```
-  10
-  ```
+### Функция площади треугольника
 
-  
+```
+def area(a, h):
+    return a * h / 2 
+```
 
-  ##### [Результат вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#результат-вызова-функции-4)
+##### Параметры
 
-  ```
-  100
-  ```
+- a - аргумент функции, который представляет собой сторону треугольника
+- h - аргумент функции, который представляет собой высоту, проведённую к стороне a
 
-  
+##### Возвращаемое значение
 
-  ### [Функция периметра квадрата](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#функция-периметра-квадрата)
+Функция возвращает площадь треугольника
 
-  ```
-  def perimeter(a):
-      return 4 * a
-  ```
+##### Пример вызова функции
 
-  
+```
+10 5
+```
 
-  ##### [Параметры](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#параметры-5)
+##### Результат вызова функции
 
-  a - аргументы функции, который представляет собой сторону квадрата
+```
+25
+```
 
-  ##### [Возвращаемое значение](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#возвращаемое-значение-5)
+### Функция периметра треугольника
 
-  Функция возвращает периметр квадрата
+```
+def perimeter(a, b, c):
+    return a + b + c
+```
 
-  ##### [Пример вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#пример-вызова-функции-5)
+##### Параметры
 
-  ```
-  10
-  ```
+a , b, c- аргументы функции, который представляющие собой стороны треугольника
 
-  
+##### Возвращаемое значение
 
-  ##### [Результат вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#результат-вызова-функции-5)
+Функция возвращает периметр треугольника
 
-  ```
-  40
-  ```
+##### Пример вызова функции
 
-  
+```
+10 15 20
+```
 
-  ### [Функция площади треугольника](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#функция-площади-треугольника)
+##### Результат вызова функции
 
-  ```
-  def area(a, h):
-      return a * h / 2 
-  ```
+```
+45
+```
 
-  
+## История изменения проекта с хешами коммитов
 
-  ##### [Параметры](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#параметры-6)
-
-  - a - аргумент функции, который представляет собой сторону треугольника
-  - h - аргумент функции, который представляет собой высоту, проведённую к стороне a
-
-  ##### [Возвращаемое значение](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#возвращаемое-значение-6)
-
-  Функция возвращает площадь треугольника
-
-  ##### [Пример вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#пример-вызова-функции-6)
-
-  ```
-  10 5
-  ```
-
-  
-
-  ##### [Результат вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#результат-вызова-функции-6)
-
-  ```
-  25
-  ```
-
-  
-
-  ### [Функция периметра треугольника](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#функция-периметра-треугольника)
-
-  ```
-  def perimeter(a, b, c):
-      return a + b + c
-  ```
-
-  
-
-  ##### [Параметры](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#параметры-7)
-
-  a , b, c- аргументы функции, который представляющие собой стороны треугольника
-
-  ##### [Возвращаемое значение](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#возвращаемое-значение-7)
-
-  Функция возвращает периметр треугольника
-
-  ##### [Пример вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#пример-вызова-функции-7)
-
-  ```
-  10 15 20
-  ```
-
-  
-
-  ##### [Результат вызова функции](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#результат-вызова-функции-7)
-
-  ```
-  45
-  ```
-
-  
-
-  # [История изменения проекта с хешами коммитов](https://github.com/juyex/geometric_lib/blob/documentation_368743/docs/documentation.md#история-изменения-проекта-с-хешами-коммитов)
-
-  - `5a733ff` fix: added documentation
-  - `daa6536` fix: added documentation
-  - `c25a232` fix: added documentation
-  - `f5f5a5e` fix: added documentation
-  - `695cba6` feat: add python file triangle fix: rectangle perimeter
-  - `2361cca` feat: add python file of rectangle
-  - `d078c8d` L-03: Docs added
-  - `8ba9aeb` L-03: Circle and square added
+- `5a733ff` fix: added documentation
+- `daa6536` fix: added documentation
+- `c25a232` fix: added documentation
+- `f5f5a5e` fix: added documentation
+- `695cba6` feat: add python file triangle fix: rectangle perimeter
+- `2361cca` feat: add python file of rectangle
+- `d078c8d` L-03: Docs added
+- `8ba9aeb` L-03: Circle and square added
 

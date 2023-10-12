@@ -3,11 +3,13 @@
 - Circle: S = πR²
 - Rectangle: S = ab
 - Square: S = a²
+- Triangle: S = a*h/2
 
 ## Perimeter
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
+- Triangle: P = a + b + c
 
 # Описание проекта
 Данный проект позволяет вычислять площади различных геометрических выпуклых фигур (круг, прямоугольник, квадрат и треугольник)
@@ -105,6 +107,13 @@ print(p)
 В данном случае будет выведено значение **6**
 
 # История изменения проекта
+* commit 16a5c69b50d6765d26320ecc5da57b15e36d4997 (HEAD -> main)
+  - Author: eklkeklk <komissarovaeleni@yandex.ru>
+  - Date: Thu Oct 12 09:38:22 2023 +0300  
+  
+    `Fixed documentary in circle.py, triangle.py, rectangle.py, square.py`
+
+
 * commit 2d7ae70af0135b9fbcc5775b8eefd05d59ec6cc3 (HEAD -> main, origin/main, origin/HEAD)
   - Author: eklkeklk <komissarovaeleni@yandex.ru>  
   - Date:   Wed Oct 11 22:28:49 2023 +0300  

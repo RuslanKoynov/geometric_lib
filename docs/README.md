@@ -1,3 +1,5 @@
+# General description
+- includes functions of area and perimeter of 4 shapes, using math formulas 
 # Math formulas
 ## Area
 - Circle: S = πR²

@@ -12,39 +12,49 @@ All calculations are made via these formulas:
 - Square: S = a²
 - Square: P = 4a
 
-## Functions
-### Circle
+# Functions
+## Circle
 
 ***file***  *geometric_lib.**circle.py***\
 \
 **area(r)**\
-calculate circle area
+Calculate circle area
 ```
 Parameters:
     r (int) - radius
 ```
 ```
 Returns:
-    area (int) - circle area
+    area (float) - circle area
+```
+Example:
+```
+area(3)
+>>> 28,26 
 ```
 \
 **perimeter(r)**\
-calculate circle perimeter
+Calculate circle perimeter
 ```
 Parameters: 
     r (int) - radius
 ```
 ```
 Returns: 
-    perimetr (int) - circle perimetr
+    perimetr (float~~~~) - circle perimetr
+```
+Example:
+```
+perimeter(3)
+>>> 18,84
 ```
 
-### Rectangle
+## Rectangle
 
 ***file***  *geometric_lib.**rectangle.py***\
 \
 **area(a, b)**\
-calculate rectangle area
+Calculate rectangle area
 ```
 Parameters:
     a (int) - rectangle side
@@ -54,9 +64,14 @@ Parameters:
 Returns: 
     area (int) - rectangle area
 ```
+Example:
+```
+area(2, 3)
+>>> 6 
+```
 \
 **perimeter(a, b)**\
-calculate rectangle perimeter
+Calculate rectangle perimeter
 ```
 Parameters: 
     a (int) - rectangle side
@@ -66,13 +81,18 @@ Parameters:
 Returns: 
     perimetr (int) - rectangle perimeter
 ```
+Example:
+```
+perimeter(2, 3)
+>>> 10
+```
 
 ## Square
 
 ***file***  *geometric_lib.**square.py***\
 \
 **area(a)**\
-calculate square area
+Calculate square area
 ```
 Parameters:
     a (int) - square side
@@ -81,9 +101,14 @@ Parameters:
 Returns: 
     area (int) - square area
 ```
+Example:
+```
+area(3)
+>>> 9 
+```
 \
-**perimeter(r)**\
-calculate square perimeter
+**perimeter(a)**\
+Calculate square perimeter
 ```
 Parameters: 
     a (int) - sqaure side
@@ -92,13 +117,18 @@ Parameters:
 Returns: 
     perimetr (int) - square perimeter
 ```
+Example:
+```
+perimeter(5)
+>>> 20 
+```
 
 ## Triangle
 
 ***file***  *geometric_lib.**triangle.py***\
 \
 **area(a, h)**\
-calculate triangle area
+Calculate triangle area
 ```
 Parameters:
     a (int) - triangle base side
@@ -108,9 +138,14 @@ Parameters:
 Returns: 
     area (int) - triangle area
 ```
+Example:
+```
+area(2, 3)
+>>> 3 
+```
 \
 **perimeter(a, b, c)**\
-calculate triangle perimeter
+Calculate triangle perimeter
 ```
 Parameters: 
     a (int) - triangle side
@@ -121,6 +156,12 @@ Parameters:
 Returns: 
     perimetr (int) - triangle perimeter
 ```
+Example:
+```
+perimeter(3, 4, 5)
+>>> 12 
+```
+
 
 ## Project commit history
 |  Commit | Type | Message                                                    |
@@ -136,3 +177,5 @@ Returns:
 | 9622c94 | docs | add functions declaration                                  |
 | 065024e | docs | delete old docs catalog                                    |
 | 3af71cb | docs | add docs catalog, add docs/README.md file, write README.md |
+| b40281a | docs | done README.md                                             |
+| 87a8628 | docs | fix function declaration                                   |

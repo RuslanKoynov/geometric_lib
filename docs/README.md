@@ -123,8 +123,16 @@ Returns:
 ```
 
 ## Project commit history
-|  Commit | Message   |
-|--------:|-----------|
-|       1 | Javascript |
-|       2 | Python    |
-|       3 | SQL       |
+|  Commit | Type | Message                                                    |
+|--------:|------|------------------------------------------------------------|
+| 8ba9aeb | L-03 | Circle and square added                                    |
+| d078c8d | L-03 | Docs added                                                 |
+| 7efe112 | feat | add rectangle.py                                           |
+| 73ff689 | fix  | correct perimeter calculation error                        |
+| c1e0b6a | docs | add functions declaration                                  |
+| 249df46 | docs | add functions declaration                                  |
+| c40a165 | docs | fix functions declaration text                             |
+| 79e0402 | docs | add functions declaration                                  |
+| 9622c94 | docs | add functions declaration                                  |
+| 065024e | docs | delete old docs catalog                                    |
+| 3af71cb | docs | add docs catalog, add docs/README.md file, write README.md |

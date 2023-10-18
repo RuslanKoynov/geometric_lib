@@ -1,5 +1,6 @@
-def area(a, b): 
-    return a * b 
-
-def perimeter(a, b): 
+''' Принимает числа a, b и возвращает площадь стороны a и b '''
+def area(a, b):
+    return a * b
+''' Принимает числа a, b и возвращает периметр стороны a и b '''
+def perimeter(a, b):
     return a*2 + b*2

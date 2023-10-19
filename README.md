@@ -23,7 +23,7 @@ def area(a):
 def perimeter(a):
     return 4 * a
 
-# Примеры вызовов функции square
+Примеры вызовов функции square
 result1 = area(5)
 result2 = perimeter(5)
 print(result1)  # Выведет 25

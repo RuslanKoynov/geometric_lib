@@ -8,7 +8,7 @@ def area(r):
     :type r: int or float
     :rtype: float
     :return: math.pi * r * r - area of a circle
-    :exampl: area(3) = 28.274333882308138
+    :example: area(3) = 28.274333882308138
     '''
     return math.pi * r * r
 

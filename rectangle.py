@@ -7,6 +7,7 @@ def area(a, b):
     :type b: int or float
     :rtype: int or float
     :return: a*b - area of the rectangle
+    :example: area(2, 4) = 8
     '''
     return a * b 
 
@@ -19,5 +20,6 @@ def perimeter(a, b):
     :type b: int or float
     :rtype: int or float
     :return: 2*(a+b) - perimeter of the rectangle
+    example: perimeter(2, 4) = 12
     '''
     return 2*(a + b) 

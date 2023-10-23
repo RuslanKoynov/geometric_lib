@@ -6,6 +6,7 @@ def area(a):
     :type a: int or float
     :rtype: int or float
     :return: a*a - area of the square
+    :example: area(4) = 16
     '''
     return a * a
 
@@ -17,5 +18,6 @@ def perimeter(a):
     :type a: int or float
     :rtype: int or float
     :return: 4*a - perimeter of the square
+    :example: perimeter(5) = 20
     '''
     return 4 * a

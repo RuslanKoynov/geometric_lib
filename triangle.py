@@ -7,6 +7,7 @@ def area(a, h):
     :type h: int or float
     :rtype: int or float
     :return: a * h / 2 - area of triangle
+    :example: area(2, 4) = 4
     '''
     return a * h / 2
 
@@ -21,5 +22,6 @@ def perimeter(a, b, c):
     :type c : int or float
     :rtype: int or float
     :return: a + b + c - perimeter of triangle
+    :example: perimete(1, 2, 3) = 6
     '''
     return a + b + c

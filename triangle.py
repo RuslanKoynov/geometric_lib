@@ -1,5 +1,6 @@
-def area(a, h): 
-    return a * h / 2 
-
+''' Принимает числа a, h и возвращает площадь треугольника '''
+def area(a, h):
+    return a * h / 2
+''' Принимает числа a, b, c и возвращает периметр треугольника '''
 def perimeter(a, b, c): 
     return a + b + c 

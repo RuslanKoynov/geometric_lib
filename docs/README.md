@@ -98,7 +98,7 @@ class RectangleTestCase (unittest.TestCase):
         res = perimeter(10, 10)
         self.assertEqual(res, 40)
 ```
-##Тесты для подсчёта площади и периметра треугольника
+## Тесты для подсчёта площади и периметра треугольника
 ```py
 class TriangleTestCase (unittest.TestCase):
     def test_zero_mul_area(self):
@@ -117,7 +117,7 @@ class TriangleTestCase (unittest.TestCase):
         res = perimeter(10, 10, 10)
         self.assertEqual(res, 30)
 ```
-##Тесты для подсчёта площади и периметра квадрата
+## Тесты для подсчёта площади и периметра квадрата
 ```py
 class SquareTestCase (unittest.TestCase):
     def test_zero_mul_area(self):
@@ -136,7 +136,7 @@ class SquareTestCase (unittest.TestCase):
         res = perimeter(10)
         self.assertEqual(res, 40)
 ```
-##Тесты для подсчёта площади и периметра круга
+## Тесты для подсчёта площади и периметра круга
 ```py
 class CircleTestCase (unittest.TestCase):
     def test_zero_mul_area(self):

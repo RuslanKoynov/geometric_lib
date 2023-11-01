@@ -79,7 +79,82 @@ circle_perimetr = 62,8
 | Периметр круга          | 0          | -          | -          | 0     |
 | Периметр круга          | 10         | -          | -          | 20 * π |
 
+## Тесты для подсчёта площади и периметра прямоугольника
+```py
+class RectangleTestCase (unittest.TestCase):
+    def test_zero_mul_area(self):
+        res = area (10, 0)
+        self.assertEqual(res, 0)
 
+    def test_square_mul_area(self):
+        res = area(10, 10)
+        self.assertEqual(res, 100)
+
+    def test_zero_mul_perimeter(self):
+        res = perimeter (0, 0)
+        self.assertEqual(res, 0)
+
+    def test_square_mul_perimeter(self):
+        res = perimeter(10, 10)
+        self.assertEqual(res, 40)
+```
+##Тесты для подсчёта площади и периметра треугольника
+```py
+class TriangleTestCase (unittest.TestCase):
+    def test_zero_mul_area(self):
+        res = area (10, 0)
+        self.assertEqual(res, 0)
+
+    def test_square_mul_area(self):
+        res = area(10, 10)
+        self.assertEqual(res, 50)
+
+    def test_zero_mul_perimeter(self):
+        res = perimeter (0, 0, 0)
+        self.assertEqual(res, 0)
+
+    def test_square_mul_perimeter(self):
+        res = perimeter(10, 10, 10)
+        self.assertEqual(res, 30)
+```
+##Тесты для подсчёта площади и периметра квадрата
+```py
+class SquareTestCase (unittest.TestCase):
+    def test_zero_mul_area(self):
+        res = area (0)
+        self.assertEqual(res, 0)
+
+    def test_square_mul_area(self):
+        res = area(10)
+        self.assertEqual(res, 100)
+
+    def test_zero_mul_perimeter(self):
+        res = perimeter (0)
+        self.assertEqual(res, 0)
+
+    def test_square_mul_perimeter(self):
+        res = perimeter(10)
+        self.assertEqual(res, 40)
+```
+##Тесты для подсчёта площади и периметра круга
+```py
+class CircleTestCase (unittest.TestCase):
+    def test_zero_mul_area(self):
+        res = area (0)
+        self.assertEqual(res, 0)
+
+    def test_square_mul_area(self):
+        res = area(10)
+        self.assertEqual(res, 100 * math.pi)
+
+    def test_zero_mul_perimeter(self):
+        res = perimeter (0)
+        self.assertEqual(res, 0)
+
+    def test_square_mul_perimeter(self):
+        res = perimeter(10)
+        self.assertEqual(res, 20 * math.pi)
+```
 # История изменения проекта с хэшами комитов
 - изменение от 10 сентября 2023 18:08 '''hash: 96352e5''' - добавлены формулы для прямоугольника
 - изменение от 10 сентября 2023 18:11 '''hash: f7a72ce''' - правка формул для прямоугольника

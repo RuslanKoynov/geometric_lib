@@ -12,6 +12,18 @@ def area(a, b):
                 area(3, 2) = 6
     '''
 
+    if type(a) == str or type(b) == str:
+        return "Error: Invalid Length"
+
+    if type(a) == float or type(b) == float:
+        return "Error: Not Integer Length"
+
+    if (a == 0) or (b == 0):
+        return "Error: Zero Length"
+
+    if (a < 0) or (b < 0):
+        return "Error: Negative Length"
+
     return a * b 
 
 
@@ -27,5 +39,17 @@ def perimeter(a, b):
             Пример вызова:
                 perimeter(3, 2) = 10
     '''
+
+    if type(a) == str or type(b) == str:
+        return "Error: Invalid Length"
+
+    if type(a) == float or type(b) == float:
+        return "Error: Not Integer Length"
+
+    if (a == 0) or (b == 0):
+        return "Error: Zero Length"
+
+    if (a < 0) or (b < 0):
+        return "Error: Negative Length"
 
     return 2 * (a + b)

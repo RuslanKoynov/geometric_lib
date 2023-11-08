@@ -1,4 +1,6 @@
-def area(a, b):
+def rect_area(a, b):
+    if a < 0 or b < 0:
+        return "Wrong input parameters"
     '''
     Принимает числа a и b, возвращает их произведение
 
@@ -16,7 +18,11 @@ def area(a, b):
     return a * b
 
 
-def perimeter(a, b):
+def rect_perimeter(a, b):
+    if a < 0 or b < 0:
+        return "Wrong input parameters"
+    if (a == 0 and b > 0) or (b == 0 and a > 0):
+        return "Wrong input parameters"
     '''
     Принимает числа a и b, возвращает их удвоенную сумму
 

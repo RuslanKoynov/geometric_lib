@@ -2,7 +2,9 @@ import math
 
 '''импортируем библиотеку math, для получения числа пи'''
 
-def area(r):
+def circ_area(r):
+    if r < 0:
+        return "Wrong input parameters"
     '''
         Принимает число r, возвращает его квадрат, умноженный на число пи
 
@@ -19,7 +21,10 @@ def area(r):
     return math.pi * r * r
 
 
-def perimeter(r):
+
+def circ_perimeter(r):
+    if r < 0:
+        return "Wrong input parameters"
     '''
         Принимает число r, возвращает его, умноженное на удвоенное число пи
 

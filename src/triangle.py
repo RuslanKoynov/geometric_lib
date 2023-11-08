@@ -1,4 +1,6 @@
-def area(a, h):
+def tri_area(a, h):
+    if a < 0 or h < 0:
+        return "Wrong input parameters"
     '''
     Принимает числа a и h, возвращает их полупроизведение
 
@@ -16,7 +18,12 @@ def area(a, h):
     return a * h / 2
 
 
-def perimeter(a, b, c):
+def tri_perimeter(a, b, c):
+    if a < 0 or b < 0 or c < 0:
+        return "Wrong input parameters"
+    if a + b <= c or a + c <= b or b + c <= a:
+        return "Wrong input parameters"
+
     '''
     Принимает числа a b и c, возвращает их сумму
 
@@ -28,7 +35,7 @@ def perimeter(a, b, c):
         Вовзращаемое значение:
             a_b_c_summ (int, float, etc...) сумма чисел а,b,c
 
-    Пример вызова функции:
+    Пример вызова функции:В
     input >> 3, 4, 5
     output << 12
     '''

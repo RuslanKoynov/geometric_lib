@@ -1,6 +1,4 @@
 def rect_area(a, b):
-    if a < 0 or b < 0:
-        return "Wrong input parameters"
     '''
     Принимает числа a и b, возвращает их произведение
 
@@ -15,14 +13,12 @@ def rect_area(a, b):
     input >> 2, 3
     output << 6
     '''
+    if a < 0 or b < 0:
+        return "Wrong input parameters"
     return a * b
 
 
 def rect_perimeter(a, b):
-    if a < 0 or b < 0:
-        return "Wrong input parameters"
-    if (a == 0 and b > 0) or (b == 0 and a > 0):
-        return "Wrong input parameters"
     '''
     Принимает числа a и b, возвращает их удвоенную сумму
 
@@ -37,4 +33,8 @@ def rect_perimeter(a, b):
     input >> 2, 3
     output << 10
     '''
+    if a < 0 or b < 0:
+        return "Wrong input parameters"
+    if (a == 0 and b > 0) or (b == 0 and a > 0):
+        return "Wrong input parameters"
     return (a + b) * 2

@@ -1,6 +1,4 @@
 def tri_area(a, h):
-    if a < 0 or h < 0:
-        return "Wrong input parameters"
     '''
     Принимает числа a и h, возвращает их полупроизведение
 
@@ -15,15 +13,12 @@ def tri_area(a, h):
     input >> 2, 3
     output << 3
     '''
+    if a < 0 or h < 0:
+        return "Wrong input parameters"
     return a * h / 2
 
 
 def tri_perimeter(a, b, c):
-    if a < 0 or b < 0 or c < 0:
-        return "Wrong input parameters"
-    if a + b <= c or a + c <= b or b + c <= a:
-        return "Wrong input parameters"
-
     '''
     Принимает числа a b и c, возвращает их сумму
 
@@ -39,4 +34,9 @@ def tri_perimeter(a, b, c):
     input >> 3, 4, 5
     output << 12
     '''
+    if a < 0 or b < 0 or c < 0:
+        return "Wrong input parameters"
+    if a + b <= c or a + c <= b or b + c <= a:
+        return "Wrong input parameters"
+
     return a + b + c

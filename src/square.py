@@ -1,6 +1,4 @@
 def sq_area(a):
-    if a < 0:
-        return "Wrong input parameters"
     '''
     Принимает число n, возвращает его квадрат
 
@@ -14,12 +12,12 @@ def sq_area(a):
     input >> 2
     output << 4
     '''
+    if a < 0:
+        return "Wrong input parameters"
     return a * a
 
 
 def sq_perimeter(a):
-    if a < 0:
-        return "Wrong input parameters"
     '''
     Принимает число n, возвращает его, умноженное на 4
 
@@ -33,5 +31,7 @@ def sq_perimeter(a):
     input >> 2
     output << 8
     '''
+    if a < 0:
+        return "Wrong input parameters"
     return 4 * a
 

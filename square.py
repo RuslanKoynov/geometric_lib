@@ -9,11 +9,7 @@ def area(a):
         Возвращаемое значение (int/float):
                 площадь квадрата по математической формуле
     '''
-
-    if isinstance(a, int | float) and a >= 0:
-        return a * a
-    
-    return ValueError
+    return a * a
 
 
 def perimeter(a):
@@ -26,8 +22,4 @@ def perimeter(a):
         Возвращаемое значение (int, float):
             периметр квадрата по математической формуле
     '''
-    
-    if isinstance(a, int | float) and a > 0:
-        return 4 * a
-
-    return ValueError
+    return 4 * a

@@ -9,11 +9,7 @@ def area(a, b):
         Возвращаемое значение (int/float):
             Площадь прямоугольника по математической формуле            
     '''
-
-    if all(isinstance(x, int | float) and x >= 0 for x in [a, b]):
-        return a * b 
-    
-    return ValueError
+    return a * b
 
 def perimeter(a, b): 
     '''
@@ -26,9 +22,7 @@ def perimeter(a, b):
         Возвращаемое значение (int/float):
             периметр прямоугольника по математической формуле
     '''
-
-    if all(isinstance(x, int | float) and x > 0 for x in [a, b]):
-        return 2 * (a + b)
+    return 2 * (a + b)
     
     return ValueError
 

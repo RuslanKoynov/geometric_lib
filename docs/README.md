@@ -104,5 +104,7 @@ Output: 75
    : 77f187db599d6d7a43cb83d9dbd3a0fa460c8fb5
 3. L-03: Docs added
    : d078c8d9ee6155f3cb0e577d28d337b791de28e2
+4. added unit tests
+   : 1432272ff389fc50e60db54f3c887fe9a05254d4
 
 [circle.py](https://github.com/Bernu-LI/geometric_lib/blob/main/circle.py)

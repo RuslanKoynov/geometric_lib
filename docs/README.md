@@ -75,13 +75,14 @@
     print(triangle.area(4, 4)) //будеь выведено 8
 Таблица с хешами:
 
-|                                                                                          Hash commit                                                                                           |                   Text Commit                   |
-|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------:|
-|                                             [fde323d](https://github.com/BakasaRus/geometric_lib/commit/fde323dc96a748c1a14955cdee1edc4df421a73e)                                              |              fix rectangle.py file              |
-|                                             [1a5aa5b](https://github.com/BakasaRus/geometric_lib/commit/1a5aa5b654594f0ffabe7898a43936b9168ff9e4)                                              |              add triangle.py file               |
-|                                             [85efe12](https://github.com/BakasaRus/geometric_lib/commit/fde323dc96a748c1a14955cdee1edc4df421a73e)                                              |              add rectangle.py file              |
-|                                             [20edb66](https://github.com/BakasaRus/geometric_lib/commit/20edb662cbe063f3bf41cf89e668f7a16a1a2367)                                              |         add documentation to libraries          |
-|                                             [a41a7b2](https://github.com/BakasaRus/geometric_lib/commit/a41a7b2af51e57fd8d276365cfb5f246f769ed12)                                              |               add hesh of commit                |
+|                                              Hash commit                                              |          Text Commit           |
+|:-----------------------------------------------------------------------------------------------------:|:------------------------------:|
+| [fde323d](https://github.com/BakasaRus/geometric_lib/commit/fde323dc96a748c1a14955cdee1edc4df421a73e) |     fix rectangle.py file      |
+| [1a5aa5b](https://github.com/BakasaRus/geometric_lib/commit/1a5aa5b654594f0ffabe7898a43936b9168ff9e4) |      add triangle.py file      |
+| [85efe12](https://github.com/BakasaRus/geometric_lib/commit/fde323dc96a748c1a14955cdee1edc4df421a73e) |     add rectangle.py file      |
+| [20edb66](https://github.com/BakasaRus/geometric_lib/commit/20edb662cbe063f3bf41cf89e668f7a16a1a2367) | add documentation to libraries |
+| [a41a7b2](https://github.com/BakasaRus/geometric_lib/commit/a41a7b2af51e57fd8d276365cfb5f246f769ed12) |       add hash of commit       |
+| [f08b9fe](https://github.com/BakasaRus/geometric_lib/commit/f08b9fef971dfc63ec696af12cf89c9bba1af541) |           add tests            |
 
 
 

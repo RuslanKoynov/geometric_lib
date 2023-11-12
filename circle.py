@@ -1,4 +1,4 @@
-import math
+import math, unittest
 
 def area(r):
     '''
@@ -25,3 +25,8 @@ def perimeter(r):
         perimeter(10) = 62.83185307179586
     '''
     return 2 * math.pi * r
+
+class CircleTestCase(unittest.TestCase):
+    def test_zero_area(self):
+        res = area(0)
+        self.assertEqual(res, 0)

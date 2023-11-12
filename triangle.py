@@ -58,3 +58,9 @@ class TriangleTestCase(unittest.TestCase):
         c = random.randint(1, 20)
         res = perimeter(a, b, c)
         self.assertEqual(res, a+b+c)
+    def test_big_random_number_perim(self):
+        a = random.randint(1000, 10000000)
+        b = random.randint(1000, 10000000)
+        c = random.randint(1000, 10000000)
+        res = perimeter(a, b, c)
+        self.assertEqual(res, a+b+c)

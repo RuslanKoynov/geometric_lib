@@ -30,7 +30,7 @@ class TriangleTestCase(unittest.TestCase):
     def test_small_numbers_area(self):
         res = area(15, 2)
         self.assertEqual(res, 15*2/2)
-    def test_small_numbers_area(self):
+    def test_big_numbers_area(self):
         res = area(6173391, 126381732)
         self.assertEqual(res, 6173391*126381732/2)
     def test_small_random_number_area(self):
@@ -41,7 +41,7 @@ class TriangleTestCase(unittest.TestCase):
     def test_big_random_number_area(self):
         a = random.randint(1000, 10000000)
         b = random.randint(1000, 10000000)
-        res = area(a)
+        res = area(a, b)
         self.assertEqual(res, a*b/2)   
     def test_zero_perim(self):
         res = perimeter(0, 0, 0)
@@ -49,7 +49,7 @@ class TriangleTestCase(unittest.TestCase):
     def test_small_numbers_perim(self):
         res = perimeter(15, 10, 5)
         self.assertEqual(res, 15+10+5)
-    def test_small_numbers_perim(self):
+    def test_big_numbers_perim(self):
         res = perimeter(6173391, 126371832, 981331)
         self.assertEqual(res, 6173391+126371832+981331)
     def test_small_random_number_perim(self):

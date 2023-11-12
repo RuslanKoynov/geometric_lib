@@ -33,9 +33,9 @@ class CircleTestCase(unittest.TestCase):
     def test_small_numbers_area(self):
         res = area(15)
         self.assertEqual(res, math.pi * 15**2)
-    def test_small_numbers_area(self):
-        res = area(6173391)
-        self.assertEqual(res, math.pi*6173391**2)
+    def test_big_numbers_area(self):
+        res = area(6173390)
+        self.assertEqual(res, math.pi*6173390**2)
     def test_small_random_number_area(self):
         a = random.randint(1, 20)
         res = area(a)
@@ -50,7 +50,7 @@ class CircleTestCase(unittest.TestCase):
     def test_small_numbers_perim(self):
         res = perimeter(15)
         self.assertEqual(res, 2*math.pi*15)
-    def test_small_numbers_perim(self):
+    def test_big_numbers_perim(self):
         res = perimeter(6173391)
         self.assertEqual(res, 2*math.pi*6173391)
     def test_small_random_number_perim(self):

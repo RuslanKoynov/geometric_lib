@@ -3,10 +3,10 @@ import math
 
 def area(r):
     '''Takes the value of radius r, returns the circle's area'''
-    return math.pi * r * r
+    return round(math.pi * r * r, 2)
 
 
 def perimeter(r):
     '''Takes the value of radius r, returns the circle's perimeter'''
-    return 2 * math.pi * r
+    return round(2 * math.pi * r, 2)
 

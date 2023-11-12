@@ -30,4 +30,6 @@ class RectangleTestCase(unittest.TestCase):
     def test_square_area(self):
         res = area(10, 10)
         self.assertEqual(res, 100)
-    
+    def test_small_numbers_area(self):
+        res = area(1, 15)
+        self.assertEqual(res, 15)

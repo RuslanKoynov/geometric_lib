@@ -50,3 +50,6 @@ class CircleTestCase(unittest.TestCase):
     def test_small_numbers_perim(self):
         res = perimeter(15)
         self.assertEqual(res, 2*math.pi*15)
+    def test_small_numbers_perim(self):
+        res = perimeter(6173391)
+        self.assertEqual(res, 2*math.pi*6173391)

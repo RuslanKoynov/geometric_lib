@@ -33,3 +33,6 @@ class RectangleTestCase(unittest.TestCase):
     def test_small_numbers_area(self):
         res = area(1, 15)
         self.assertEqual(res, 15)
+    def test_big_numbers_area(self):
+        res = area(6173391, 1572631732)
+        self.assertEqual(res, 6173391*1572631732)

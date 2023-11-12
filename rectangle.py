@@ -55,3 +55,6 @@ class RectangleTestCase(unittest.TestCase):
     def test_small_numbers_perim(self):
         res = perimeter(1, 15)
         self.assertEqual(res, 32)
+    def test_small_numbers_perim(self):
+        res = perimeter(6173391, 1572631732)
+        self.assertEqual(res, 2*(6173391+1572631732))

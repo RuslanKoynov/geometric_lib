@@ -1,4 +1,4 @@
-import math, unittest
+import math, unittest, random
 
 def area(r):
     '''
@@ -36,3 +36,7 @@ class CircleTestCase(unittest.TestCase):
     def test_small_numbers_area(self):
         res = area(6173391)
         self.assertEqual(res, math.pi*6173391**2)
+    def test_small_random_number_area(self):
+        a = random.randint(1, 20)
+        res = area(a)
+        self.assertEqual(res, math.pi*a**2)

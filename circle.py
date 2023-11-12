@@ -57,3 +57,7 @@ class CircleTestCase(unittest.TestCase):
         a = random.randint(1, 20)
         res = perimeter(a)
         self.assertEqual(res, 2*math.pi*a)
+    def test_big_random_number_perim(self):
+        a = random.randint(1000, 10000000)
+        res = perimeter(a)
+        self.assertEqual(res, 2*math.pi*a)

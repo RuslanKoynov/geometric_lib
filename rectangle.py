@@ -45,4 +45,8 @@ class RectangleTestCase(unittest.TestCase):
         a = random.randint(1000, 10000000)
         b = random.randint(1000, 10000000)
         res = area(a, b)
-        self.assertEqual(res, a*b)  
+        self.assertEqual(res, a*b)
+    def test_zero_perim(self):
+        res = perimeter(0, 0)
+        self.assertEqual(res, 0)
+    def test_same_numbers_perim(self):

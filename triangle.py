@@ -1,3 +1,4 @@
+import unittest, random
 def area(a, h):
     '''
     Вычисление площади треугольника
@@ -21,3 +22,8 @@ def perimeter(a, b, c):
         perimeter(3, 4, 5) = 12
     ''' 
     return a + b + c 
+
+class TriangleTestCase(unittest.TestCase):
+    def test_zero_area(self):
+        res = area(0, 0)
+        self.assertEqual(res, 0)

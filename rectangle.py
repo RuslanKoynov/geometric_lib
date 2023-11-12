@@ -50,3 +50,5 @@ class RectangleTestCase(unittest.TestCase):
         res = perimeter(0, 0)
         self.assertEqual(res, 0)
     def test_same_numbers_perim(self):
+        res = perimeter(10, 10)
+        self.assertEqual(res, 40)

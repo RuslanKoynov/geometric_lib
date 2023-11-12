@@ -52,3 +52,9 @@ class TriangleTestCase(unittest.TestCase):
     def test_small_numbers_perim(self):
         res = perimeter(6173391, 126371832, 981331)
         self.assertEqual(res, 6173391+126371832+981331)
+    def test_small_random_number_perim(self):
+        a = random.randint(1, 20)
+        b = random.randint(1, 20)
+        c = random.randint(1, 20)
+        res = perimeter(a, b, c)
+        self.assertEqual(res, a+b+c)

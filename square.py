@@ -38,3 +38,7 @@ class SquareTestCase(unittest.TestCase):
         a = random.randint(1, 20)
         res = area(a)
         self.assertEqual(res, a**2)
+    def test_big_random_number_area(self):
+        a = random.randint(1000, 10000000)
+        res = area(a)
+        self.assertEqual(res, a**2)

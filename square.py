@@ -48,3 +48,6 @@ class SquareTestCase(unittest.TestCase):
     def test_small_numbers_perim(self):
         res = perimeter(15)
         self.assertEqual(res, 4*15)
+    def test_big_numbers_perim(self):
+        res = perimeter(6173391)
+        self.assertEqual(res, 4*6173391)

@@ -51,3 +51,7 @@ class SquareTestCase(unittest.TestCase):
     def test_big_numbers_perim(self):
         res = perimeter(6173391)
         self.assertEqual(res, 4*6173391)
+    def test_small_random_number_perim(self):
+        a = random.randint(1, 20)
+        res = perimeter(a)
+        self.assertEqual(res, 4*a)

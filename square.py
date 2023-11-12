@@ -34,3 +34,7 @@ class SquareTestCase(unittest.TestCase):
     def test_small_numbers_area(self):
         res = area(6173391)
         self.assertEqual(res, 6173391**2)
+    def test_small_random_number_area(self):
+        a = random.randint(1, 20)
+        res = area(a)
+        self.assertEqual(res, a**2)

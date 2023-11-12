@@ -30,3 +30,6 @@ class TriangleTestCase(unittest.TestCase):
     def test_small_numbers_area(self):
         res = area(15, 2)
         self.assertEqual(res, 15*2/2)
+    def test_small_numbers_area(self):
+        res = area(6173391, 126381732)
+        self.assertEqual(res, 6173391*126381732/2)

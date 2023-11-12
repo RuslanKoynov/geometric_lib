@@ -43,3 +43,6 @@ class TriangleTestCase(unittest.TestCase):
         b = random.randint(1000, 10000000)
         res = area(a)
         self.assertEqual(res, a*b/2)   
+    def test_zero_perim(self):
+        res = perimeter(0, 0, 0)
+        self.assertEqual(res, 0)

@@ -30,3 +30,6 @@ class CircleTestCase(unittest.TestCase):
     def test_zero_area(self):
         res = area(0)
         self.assertEqual(res, 0)
+    def test_small_numbers_area(self):
+        res = area(15)
+        self.assertEqual(res, math.pi * 15**2)

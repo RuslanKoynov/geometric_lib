@@ -1,3 +1,4 @@
+import unittest, random
 def area(a):
     '''
     Вычисление площади квадрата
@@ -22,3 +23,8 @@ def perimeter(a):
         perimeter(10) = 40
     '''
     return 4 * a
+
+class SquareTestCase(unittest.TestCase):
+    def test_zero_area(self):
+        res = area(0)
+        self.assertEqual(res, 0)

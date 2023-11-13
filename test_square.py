@@ -18,15 +18,11 @@ class SquareTestCase(unittest.TestCase):
 
     # Проверка на корректность входных данных для площади
     def test_correct_mul_area(self):
-        res = area(-5)
-        expected_result = TypeError
-        self.assertEqual(res, expected_result)
+        self.assertRaises(TypeError, area, -5)
 
     # Проверка на корректность входных данных для периметра
     def test_correct_mul_perimetr(self):
-        res = perimeter(-5)
-        expected_result = TypeError
-        self.assertEqual(res, expected_result)
+        self.assertRaises(TypeError, perimeter, -5)
 
     # Рандомные числа для площади
     def test_random_area_1(self):

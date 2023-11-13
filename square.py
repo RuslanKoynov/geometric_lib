@@ -27,16 +27,13 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(res, 100)
 
     def test_area_str_arg(self):
-        res = area("10")
-        self.assertEqual(res, "Unsupportable type string. Use numeric values.")
+        self.assertRaises(area("10"), Exception)
 
     def test_area_arr_arg(self):
-        res = area([10])
-        self.assertEqual(res, "Unsupportable type array. Use numeric values.")
+        self.assertRaises(area([10]), Exception)
 
     def test_area_neg_arg(self):
-        res = area(-10)
-        self.assertEqual(res, "Incorrect value for rectangle side length. Use not negative numbers.")
+        self.assertRaises(area(-10), Exception)
 
     def test_area_big_num(self):
         res = area(2147483647)
@@ -63,16 +60,13 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(res, 40)
 
     def test_perimeter_str_arg(self):
-        res = perimeter("10")
-        self.assertEqual(res, "Unsupportable type string. Use numeric values.")
+        self.assertRaises(perimeter("10"), Exception)
 
     def test_perimeter_arr_arg(self):
-        res = perimeter([10])
-        self.assertEqual(res, "Unsupportable type array. Use numeric values.")
+        self.assertRaises(perimeter([10]), Exception)
 
     def test_perimeter_neg_arg(self):
-        res = perimeter(-10)
-        self.assertEqual(res, "Incorrect value for rectangle side length. Use not negative numbers.")
+        self.assertRaises(perimeter(-10), Exception)
 
     def test_perimeter_big_num(self):
         res = perimeter(2147483647)

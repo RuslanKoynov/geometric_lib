@@ -79,6 +79,7 @@ def perimeter(r):
 Тесты проверяют нулевые;маленькие;большие входные данные
 
 ## История изменений
+* **1c6c5d3** (HEAD -> lab-4) Add Tests
 * **37efa45** (HEAD -> lab-2) Added comments to files
 * **510c566** (origin/new_features_409846, new_features_409846, main) fixed mistake
 * **c9561f5** New file added

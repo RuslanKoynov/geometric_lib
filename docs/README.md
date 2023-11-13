@@ -87,10 +87,29 @@ print(perimeter(4, 4, 4))
 - Square: P = 4a<br>
 
 ## *История коммитов*
+```
+*   41c6703 (HEAD -> lab_4) Fix
+|\  
+| * 5945a9e (origin/lab_4) Update README.md
+| * d3a01ba Update README.md
+| * f0a52fb Update README.md
+| * 1a9ead8 Update README.md
+* | 14ecb3c README.md update
+* | 5ccd4aa add tests
+|/  
+* 4ee7643 add test report
 * c795e18 add tests and fix files
-* d987557 (origin/lab_2, lab_2) README.md updated
+* 51c0aec (origin/lab_2, lab_2) Update README.md
+* ec22165 Update README.md
+* 2a1b596 Update README.md
+* fa847be Update README.md
+* 6a8ecf5 Update README.md
+* 02058f8 Update README.md
+* ca59632 Update README.md
+* d987557 README.md updated
 * 3f7b892 Update python files function description, readme.md
 * b8f1c04 (origin/main, origin/HEAD, main) Edit file
 * b08a51b Add file
 * d078c8d L-03: Docs added
 * 8ba9aeb L-03: Circle and square added
+```

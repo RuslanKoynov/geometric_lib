@@ -47,7 +47,7 @@ print(perimeter(4, 3))
 - def area(a): принимает длину стороны квадрата и возвращает площадь квадрата<br>
 - def perimeter(a): принимает длину стороны квадрата и возвращает периметр квадрата
 
-### #*Примеры*
+### *Примеры*
 ```python
 print(area(7))
 ```
@@ -87,8 +87,6 @@ print(perimeter(4, 4, 4))
 - Square: P = 4a<br>
 
 ## *История коммитов*
-* 5ccd4aa (HEAD -> lab_4) add tests
-* 4ee7643 add test report
 * c795e18 add tests and fix files
 * d987557 (origin/lab_2, lab_2) README.md updated
 * 3f7b892 Update python files function description, readme.md

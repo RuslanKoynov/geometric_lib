@@ -1,7 +1,7 @@
-import triangle
+import rectangle
 a = 12
-b = 13.2
+b = 13
 c = 14.0
 h = 14.0
-print(triangle.area(a, h))
-print(triangle.perimeter(a, b, c))
+print(rectangle.area(a, b))
+print(rectangle.perimeter(a, b))

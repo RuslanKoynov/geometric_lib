@@ -88,7 +88,7 @@ print(perimeter(4, 4, 4))
 
 ## *История коммитов*
 * 4ee7643 (HEAD -> lab_4, origin/lab_4) add test report
-* c795e18 (HEAD) add tests and fix files
+* c795e18 add tests and fix files
 * d987557 (origin/lab_2, lab_2) README.md updated
 * 3f7b892 Update python files function description, readme.md
 * b8f1c04 (origin/main, origin/HEAD, main) Edit file

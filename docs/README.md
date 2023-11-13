@@ -79,6 +79,7 @@ def perimeter(r):
     Тесты проверяют входные данные на корректность, а так же на наличие ошибок
 
 ## История изменений
+* **14e32ac** (HEAD -> lab-4) Fixed tests
 * **61bb212** (HEAD -> lab-4) Fixed tests
 * **1c6c5d3** (HEAD -> lab-4) Add Tests
 * **37efa45** (HEAD -> lab-2) Added comments to files

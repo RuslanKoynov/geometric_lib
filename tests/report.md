@@ -45,10 +45,6 @@
    print(area(408750))
    ```
 - функция <b>perimeter</b>
-   ```python
-   perimeter(int/float) -> int/float
-   ```
-
     Параметр <b>r</b>  - радиус круга<br>
     Возвращает периметр круга (int/float)
 

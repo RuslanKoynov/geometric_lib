@@ -88,9 +88,10 @@ print(perimeter(4, 4, 4))
 
 ## *История коммитов*
 ```
-*   41c6703 (HEAD -> lab_4) Fix
+* a0e9808 (HEAD -> lab_4, origin/lab_4) Readme update
+*   41c6703 Fix
 |\  
-| * 5945a9e (origin/lab_4) Update README.md
+| * 5945a9e Update README.md
 | * d3a01ba Update README.md
 | * f0a52fb Update README.md
 | * 1a9ead8 Update README.md

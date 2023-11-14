@@ -14,12 +14,12 @@ class TestSquare(unittest.TestCase):
 
     def testArea3(self):
         res = area(534534)
-        self.assertEqual(res, 54353454)
+        self.assertEqual(res, 285726597156)
 
     def testPerimeter1(self):
         res = perimeter(10)
-        self.assertEqual(res, 70)
+        self.assertEqual(res, 40)
 
     def testPerimeter(self):
         res = perimeter(62423423)
-        self.assertEqual(res, 23523523)
+        self.assertEqual(res, 249693692)

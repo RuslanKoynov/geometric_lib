@@ -175,6 +175,7 @@ Tests for testing area and perimeter functions have appeared:
 2. test_rectangle.py - rectangle test suite
 3. test_square.py - square test suite
 4. test_triangle.py - triangle test suite
+
 Total tests - 49
 Correct tests - 38
 Incorrect tests - 11

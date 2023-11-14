@@ -1,6 +1,6 @@
 import math
-
-
+print('Введите радиус r: ')
+r=int(input())
 def area(r):
     return math.pi * r * r
 
@@ -8,4 +8,5 @@ def area(r):
 def perimeter(r):
     return 2 * math.pi * r
 
-print(perimeter(5))
+print('площадь равна', area(r))
+print('периметр равен ', perimeter(r))

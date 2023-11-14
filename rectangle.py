@@ -5,9 +5,10 @@ def area(a, b):
 
     return a * b 
     
-def perimeter(a, b): 
+def perimeter(a, b):
+
 
     '''Принимает числа a и b - стороны прямоугольника.
     Возращет удвоенную сумму a и b, т.е. пириметр прямоугльника.'''
     
-    return 2 * (a + b) 
+    return 2 * (a + b)

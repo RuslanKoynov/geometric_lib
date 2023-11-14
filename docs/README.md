@@ -168,7 +168,37 @@ Area = 6
 Perimeter = 12
 ```
 
+## Tests
+
+Tests for testing area and perimeter functions have appeared:
+1. test_circle.py - circle test suite
+2. test_rectangle.py
+3. test_square.py
+4. test_triangle.py
+Total tests - 49
+Correct tests - 38
+Incorrect tests - 11
+Percentage of correct tests - 77%
+
 ## Commit history
+
+commit 9cb3b42612c74299294dfc48972ed7374cfd2ba4 (HEAD -> tests_409950)
+Author: Yandolav <yandolav@mail.ru>
+Date:   Tue Nov 14 22:17:17 2023 +0300
+
+    test: added new tests for all functions
+
+commit fe1db763c3d0b09bf8adcb95e30c301a84150e9f
+Author: Yandolav <yandolav@mail.ru>
+Date:   Tue Nov 14 17:41:32 2023 +0300
+
+    test: Added tests for triangle, circle, square and rectangle
+
+commit e3c4ce1594b59f1771ef7963d677f64424f9f841 (documentation_409950)
+Author: Yandolav <yandolav@mail.ru>
+Date:   Tue Nov 14 16:51:14 2023 +0300
+
+    style: switched to pancharm and adjusted the functions
 
 commit 537eaaeef88c0cf240f0175d7c857924349acdca (HEAD -> documentation_409950)
 Author: Yandolav <yandolav@mail.ru>

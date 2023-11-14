@@ -1,7 +1,9 @@
-def area(a, b):
-    return a * b
+def area(a, h):
+    'Функция берет числа а и h, делит на 2 и перемножает друг с другом'
+    return a * h / 2
 
-def perimeter(a, b):
+def perimeter(a, b, c):
+    'Функция берет числа a, b, c и складывает между собой'
     return a + b + c
 
 

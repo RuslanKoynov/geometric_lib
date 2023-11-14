@@ -24,6 +24,18 @@ class TestRectangle(unittest.TestCase):
         res = area(1, 1)
         self.assertEqual(res, 1)
 
+    def test6_rectangle_area(self):
+        res = area(-10, 12)
+        self.assertEqual(res, False)
+
+    def test7_rectangle_area(self):
+        res = area(120, -3)
+        self.assertEqual(res, False)
+
+    def test8_rectangle_area(self):
+        res = area(120.1412424, 513.12314124)
+        self.assertEqual(res, 61647.25169276427)
+
     def test1_rectangle_perimetr(self):
         res = perimeter(12, 21)
         self.assertEqual(res, 66)
@@ -35,3 +47,20 @@ class TestRectangle(unittest.TestCase):
     def test3_rectangle_perimetr(self):
         res = perimeter(1, 1)
         self.assertEqual(res, 4)
+
+    def test4_rectangle_perimetr(self):
+        res = perimeter(-4, 1)
+        self.assertEqual(res, False)
+
+    def test5_rectangle_perimetr(self):
+        res = perimeter(-12, -10)
+        self.assertEqual(res, False)
+
+    def test6_rectangle_perimetr(self):
+        res = perimeter(0, 41)
+        self.assertEqual(res, 0)
+
+    def test7_rectangle_perimetr(self):
+        res = perimeter(12.1233, 17.3124)
+        self.assertEqual(res, 58.8714)
+

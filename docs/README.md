@@ -60,29 +60,173 @@
 ## Примеры использования функций
 ### Circle.py
 1. **Пример кода**
-     - ![logo](https://github.com/vikaleks/pic/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-10-04%20005857.png)
-3. **Вывод**
-     - ![logo](https://github.com/vikaleks/pic/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-10-04%20010101.png)
+```
+import math
+'''
+Модуль math предоставляет обширный фунционал для проведения
+вычислений с вещественными числами (числами с плавающей точкой)
+'''
 
+def area(r):
+    '''
+    Принимает число, которое является радиусом круга
+    Возвращает площадь круга, вычисляя ее по формуле: S=π *r^2
+    '''
+    return math.pi * r * r
+
+def perimeter(r):
+    '''
+    Принимает число, которое является радиусом круга
+    Возвращает площадь круга, вычисляя ее по формуле: P=2πr
+    '''
+    return 2 * math.pi * r
+```
+3. **Вывод**
+```
+r=10
+area = 314.1592653589793; perimeter = 62.83185307179586
+```
 ### Rectangle.py
 1. **Пример кода**
-     - ![logo](https://github.com/vikaleks/pic/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-10-04%20010439.png)
+```
+def area(a, b):
+    '''
+    Принимает числа, которые являются сторонами прямоугольника
+    Возвращает площадь прямоугольника, вычисляя ее по формуле: S=ab
+    '''
+    return a * b
+def perimeter(a, b):
+    '''
+    Принимает числа, которые являются сторонами прямоугольника
+    Возвращает периметр прямоугольника, вычисляя ее по формуле: P=2a+2b
+    '''
+    return 2*a + 2*b
+```
 3. **Вывод**
-     - ![logo](https://github.com/vikaleks/pic/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-10-04%20010451.png)
-
+```
+a=5
+b=7
+area = 35; perimeter = 24
+```
 ### Square.py
 1. **Пример кода**
-     - ![logo](https://github.com/vikaleks/pic/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-10-04%20010759.png)
-3. **Вывод**
-     - ![logo](https://github.com/vikaleks/pic/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-10-04%20010810.png)
+```
+def area(a):
+    '''
+    Принимает число, которое является стороной квадрата
+    Возвращает площадь квадрата, вычисляя ее по формуле: S=a*a
+    '''
+    return a * a
 
+def perimeter(a):
+    '''
+    Принимает число, которое является стороной квадрата
+    Возвращает периметр квадрата, вычисляя его по формуле: P=4*a
+    '''
+    return 4 * a
+```
+3. **Вывод**
+```
+a=5
+area = 25; perimeter = 20
+```
 ### Triangle.py
 1. **Пример кода**
-     - ![logo](https://github.com/vikaleks/pic/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-10-04%20011145.png)
+```
+def area(a, h):
+    '''
+    Принимает числа, которые являются стороной и высотой треугольника
+    Возвращает площадь треугольника, вычисляя ее по формуле: S=ah/2
+    '''
+    return a * h / 2
+def perimeter(a, b, c):
+    '''
+    Принимает числа, которые являются стороной и высотой треугольника
+    Возвращает периметр треугольника, вычисляя его по формуле: S=a+b+c
+    '''
+    return a + b + c
+```
 3. **Вывод**
-     - ![logo](https://github.com/vikaleks/pic/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-10-04%20011205.png)
+```
+a=2
+b=4
+c=5
+h=2
+area = 3; perimeter = 12
+```
+## Тестирование через unit test
+### Этот проект содержит модули тестирования через unit test для расчета площади и периметра круга, прямоугольника, квадрата и треугольника:
+  - Круг: circletest.py
+  - Прямоугольник: rectest.py
+  - Квадрат: squaretest.py
+  - Треугольник: triangletest.py
+### Пример кода проверки для circle.py:
+```
+import unittest
+from circle import area
+from circle import perimeter
 
+class CircleTestCase(unittest.TestCase):
+    def test_area_with_zero(self):
+        res = area(0)
+        self.assertEqual(res, 0)
+
+    def test_area_with_square(self):
+        res = area(10)
+        self.assertEqual(res, 314.1592653589793)
+
+    def test_area_with_random_number(self):
+        res=area(28)
+        self.assertEqual(res, 2463.0086404143976)
+
+    def test_perimeter_with_zero(self):
+        res = perimeter(0)
+        self.assertEqual(res, 0)
+
+    def test_perimeter_with_square(self):
+        res = perimeter(10)
+        self.assertEqual(res, 62.83185307179586)
+
+    def test_perimeter_with_random_number(self):
+        res=perimeter(31)
+        self.assertEqual(res,194.77874452256717)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+### Пример вывода через командную строку:
+```
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+```
 ## Commit history
+commit 245193d34fc43ba97c128fa91d42ebef32db6164
+Author: vikaaaleks <vikaaaleks@mail.ru>
+Date:   Tue Nov 14 21:58:47 2023 +0300
+
+    modified tests for circle,square and added tests for triangle
+
+commit e72601c0733618419c2c124f15d2617fca67a944
+Author: vikaaaleks <vikaaaleks@mail.ru>
+Date:   Tue Nov 14 21:53:12 2023 +0300
+
+    added tests for square
+
+commit a0ca828917873818057cc71fab988a7f68db02df
+Author: vikaaaleks <vikaaaleks@mail.ru>
+Date:   Tue Nov 14 21:50:21 2023 +0300
+
+    added test for circle
+
+commit 53ed38611dd8920f62a43a32618a26908fa23e04
+Author: vikaaaleks <vikaaaleks@mail.ru>
+Date:   Tue Nov 14 21:30:27 2023 +0300
+
+    added tests for rectangle.py
+
 commit 250e31befe11be6928a12d025dcba558c449c1b5 (HEAD -> main, origin/main, origin/HEAD)
 Author: vikaaaleks <vikaaaleks@mail.ru>
 Date:   Wed Oct 4 14:06:49 2023 +0300

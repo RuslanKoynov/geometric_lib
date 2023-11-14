@@ -172,9 +172,9 @@ Perimeter = 12
 
 Tests for testing area and perimeter functions have appeared:
 1. test_circle.py - circle test suite
-2. test_rectangle.py
-3. test_square.py
-4. test_triangle.py
+2. test_rectangle.py - rectangle test suite
+3. test_square.py - square test suite
+4. test_triangle.py - triangle test suite
 Total tests - 49
 Correct tests - 38
 Incorrect tests - 11

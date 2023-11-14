@@ -189,3 +189,10 @@ Hash: cff750c270a242f369d3a4bee44bd93378b89357
 #### Message:
 >  triangle.py fixed
 
+### 5. Commit
+
+Hash: 85ae3c0839fde455de8c3e844db86ed1f1fbddde
+
+#### Message
+>  unit tests added
+

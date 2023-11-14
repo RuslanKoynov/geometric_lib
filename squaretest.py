@@ -2,7 +2,7 @@ import unittest
 from square import area
 from square import perimeter
 
-class RectangleTestCase(unittest.TestCase):
+class SquareTestCase(unittest.TestCase):
     def test_area_with_zero(self):
         res = area(0)
         self.assertEqual(res, 0)

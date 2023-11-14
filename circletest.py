@@ -3,7 +3,7 @@ import unittest
 from circle import area
 from circle import perimeter
 
-class RectangleTestCase(unittest.TestCase):
+class CircleTestCase(unittest.TestCase):
     def test_area_with_zero(self):
         res = area(0)
         self.assertEqual(res, 0)

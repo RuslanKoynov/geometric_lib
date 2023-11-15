@@ -7,7 +7,7 @@ class TriangleTestCase(unittest.TestCase):
     def test_area(self):
         self.assertEqual(area(3, 5), 3*5/2)
         self.assertEqual(area(5, 3), 5*3/2)
-        self.assertEqual(area(2.3, 4.6), (2,3)*(4,6))
+        self.assertEqual(area(2.3, 4.6), (2.3)*(4.6))
         self.assertEqual(area(3, 1.5), 3*(1.5)/2)
     def test_values(self):
         self.assertRaises(ValueError, area, 1, 0)
@@ -20,8 +20,8 @@ class TriangleTestCase(unittest.TestCase):
         self.assertRaises(TypeError, area, {3,5}, {4,7})
 
     def test_perimeter(self):
-        self.assertEqual(area(2,3,4), 2+3+4)
-        self.assertEqual(area(2.6, 3.2, 8), 2.6 + 3.2 + 8)
+        self.assertEqual(perimeter(2,3,4), 2+3+4)
+        self.assertEqual(perimeter(2.6, 3.2, 8), 2.6 + 3.2 + 8)
     def test_values(self):
         self.assertRaises(ValueError, perimeter, -6, 3, 5)
         self.assertRaises(ValueError, perimeter, -2, -3, -6)

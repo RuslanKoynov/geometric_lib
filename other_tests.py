@@ -12,11 +12,11 @@ class TriangleTestCase(unittest.TestCase):
        self.assertEqual(res, 115)
 
 class CircleTestCase(unittest.TestCase):
-   def test_zero_mul(self):
+    def test_zero_mul(self):
        res = area(0)
        self.assertEqual(res, 0.0)
        
-   def test_area(self):
+    def test_area(self):
        res = area(10)
        self.assertEqual(res, 314.1592653589793)
 

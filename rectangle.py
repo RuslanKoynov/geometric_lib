@@ -19,15 +19,17 @@ def perimeter(a, b):
     Возвращает периметр прямоугольника
 
         Параметры:
-            a (int): сторона прямоугольика
+            a (int): сторона прямоугольника
             b (int): сторона прямоугольника
         Возвращаемое значение:
             удвоенная сумма a и b (периметр прямоугольника)
     
     '''
-     return (a + b)*2
+    return (a + b) * 2
+
 
 class RectangleTestCase(unittest.TestCase):
+     
      def test_area_positive_values(self):
           res = area(5,10)
           self.assertEqual(res,50)
@@ -38,6 +40,7 @@ class RectangleTestCase(unittest.TestCase):
 
      def test_perimeter_zero_values(self):
         res = perimeter(0, 0)
+
         self.assertEqual(res, 0)
         
      def test_perimeter_mixed_values(self):
@@ -53,9 +56,8 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 15)
 
 
-
-
-
+if __name__ == '__main__':
+    unittest.main()
 
 
 

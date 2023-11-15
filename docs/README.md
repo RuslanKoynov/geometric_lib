@@ -189,3 +189,266 @@ Author: smartiqa <info@smartiqa.ru>
 Date:   Thu Mar 4 14:54:08 2021 +0300
 
     L-03: Circle and square added
+
+commit 69ccc58361fae7cb09c36e6a1ebb4c1702ecce2f (HEAD -> tests_413823)
+Author: Adriana Khudoba <adriana0kot@gmail.com>
+Date:   Wed Nov 15 23:14:05 2023 +0300
+
+    test: added test for triangle
+
+commit b91745e528bdccfdadf0980f46d92a1218477942
+Author: Adriana Khudoba <adriana0kot@gmail.com>
+Date:   Wed Nov 15 23:12:02 2023 +0300
+
+    test: added test for square
+
+commit c5ef05db7e01944272b602d4527701706bb3a9cf
+Author: Adriana Khudoba <adriana0kot@gmail.com>
+Date:   Wed Nov 15 23:09:56 2023 +0300
+
+    test: added test for rectangle
+
+commit 145be1ebee7e87cd53cf3895b9905233060e02da
+Author: Adriana Khudoba <adriana0kot@gmail.com>
+Date:   Wed Nov 15 23:06:09 2023 +0300
+
+    test: added test for circle
+
+
+## UnitTest
+
+### Circle.py
+
+- area()
+
+#### Correct tests
+
+~~~
+input: 4
+output: 50.26548245743669
+~~~
+
+~~~
+input: 4.25
+output: 56.745017305465645
+~~~
+
+~~~
+input: 0
+output: 0
+~~~
+
+#### Incorrect tests
+
+~~~
+input: -4
+output: 50.26548245743669
+expected: Radius cannot be negative
+~~~
+
+- perimeter()
+
+#### Correct tests
+
+~~~
+input: 4
+output: 25.132741228718345
+~~~
+
+~~~
+input: 4.25
+output: 26.703537555513243
+~~~
+
+~~~
+input: 0
+output: 0
+~~~
+
+#### Incorrect tests
+
+~~~
+input: -4
+output: -25.132741228718345
+expected: Radius cannot be negative
+~~~
+
+### Rectangle.py
+
+- area()
+
+#### Correct tests
+
+~~~
+input: 4, 7
+output: 28
+~~~
+
+~~~
+input: 4.25, 7.36
+output: 31.28
+~~~
+
+~~~
+input: 4, 0
+output: 0
+~~~
+
+#### Incorrect tests
+
+~~~
+input: 4, -7
+output: -28
+expected: The sides of a rectangle cannot be negative
+~~~
+
+- perimeter()
+
+#### Correct tests
+
+~~~
+input: 4, 7
+output: 22
+~~~
+
+~~~
+input: 4.25, 7.36
+output: 23.22
+~~~
+
+~~~
+input: 4, 0
+output: 8
+~~~
+
+#### Incorrect tests
+
+~~~
+input: 4, -7
+output: -6
+expected: The sides of a rectangle cannot be negative
+~~~
+
+### Square.py
+
+- area()
+
+#### Correct tests
+
+~~~
+input: 3
+output: 9
+~~~
+
+~~~
+input: 3.45
+output: 11.902500000000002
+~~~
+
+~~~
+input: 0
+output: 0
+~~~
+
+#### Incorrect tests
+
+~~~
+input: -3
+output: 9
+expected: The side of a square cannot be negative
+~~~
+
+- perimeter()
+
+#### Correct tests
+
+~~~
+input: 3
+output: 12
+~~~
+
+~~~
+input: 3.45
+output: 13.8
+~~~
+
+~~~
+input: 0
+output: 0
+~~~
+
+#### Incorrect tests
+
+~~~
+input: -3
+output: -12
+expected: The side of a square cannot be negative
+~~~
+
+### Triangle.py
+
+- area()
+
+#### Correct tests
+
+~~~
+input: 2, 8
+output: 8
+~~~
+
+~~~
+input: 2.75, 8.6
+output: 11.825
+~~~
+
+~~~
+input: 2, 0
+output: 0
+~~~
+
+#### Incorrect tests
+
+~~~
+input: 2, -8
+output: -8
+expected: Base and height cannot be negative
+~~~
+
+- perimeter()
+
+#### Correct tests
+
+~~~
+input: 2, 8, 11
+output: 21
+~~~
+
+~~~
+input: 2.75, 8.6, 11
+output: 22.35
+~~~
+
+~~~
+input: 2, 0, 8.59
+output: 10.59
+~~~
+
+#### Incorrect tests
+
+~~~
+input: 2, -8, 11
+output: 5
+expected: Base and height cannot be negative
+~~~
+
+## Autotests succes:
+- 32 - all tests;
+-8 - tests with errors;
+- 24 - tests without errors;
+~~~
+- Tests with errors = 8/32 = 0,25
+- Tests without errors = 24/32 = 0,75
+~~~
+- Tests with errors = 25%
+- Tests without errors = 75%
+~~~

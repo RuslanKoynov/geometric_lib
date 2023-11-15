@@ -109,3 +109,28 @@ _output: 24_
 - fe2b3736a90cd0a0fbd7421dfd6e8fd0246fdcab Added new file
 - d078c8d9ee6155f3cb0e577d28d337b791de28e2 L-03: Docs added
 - 8ba9aeb3cea847b63a91ac378a2a6db758682460 L-03: Circle and square added
+- # Добавлены тесты для модулей
+- ## Test log
+- commit 35fad71bb7916c5f7bcd63368cb2b8d3c91fe6e3 (HEAD -> tests_409511, origin/tests_409511)
+- Author: Coubick <samandr0405@gmail.com>
+- Date:   Wed Nov 15 23:56:11 2023 +0300
+
+  ```test: Added test for Circle```
+
+- commit ca7cf912f757445a2f4f8c81b9488a598b55c2ea
+- Author: Coubick <samandr0405@gmail.com>
+- Date:   Wed Nov 15 23:54:00 2023 +0300
+
+  ```test: Added test for Triangle```
+
+- commit 977a54c8d29d0ca33914fc88b151526db54b93a3
+- Author: Coubick <samandr0405@gmail.com>
+- Date:   Wed Nov 15 23:49:27 2023 +0300
+
+  ```test: Added test for Square```
+
+- commit b6b9d41c5a19d63d8804397f9215569a0c4af5cd
+- Author: Coubick <samandr0405@gmail.com>
+- Date:   Wed Nov 15 23:12:31 2023 +0300
+
+  ```test: Added test for Rectangle```

@@ -147,5 +147,48 @@ Date:   Thu Sep 28 15:05:42 2023 +0300
 
 
 
+**commit** 2298fa31ee7695d946c9d487ca680eafbbe2fa63
+Author: Chernykh <chernykharseniy18@mail.ru>
+Date:   Wed Nov 15 16:00:02 2023 +0300
+
+    test: added test for rectangle
+
+**commit** 41276ec1178e5c704d1ef899ec4f936cf06a2c80
+Author: Chernykh <chernykharseniy18@mail.ru>
+Date:   Wed Nov 15 16:04:40 2023 +0300
+
+    test: added test for square
+
+**commit** 1a998c8826f55a7409e6b30c959b268576ac98d5
+Author: Chernykh <chernykharseniy18@mail.ru>
+Date:   Wed Nov 15 16:09:15 2023 +0300
+
+    test: added test for circle
+
+**commit** a387a29d100154124e8b1947c62b8a638e540f5d **(HEAD -> tests_409838)**
+Author: Chernykh <chernykharseniy18@mail.ru>
+Date:   Wed Nov 15 16:14:15 2023 +0300
+
+    test: added test for triangle
+
+'''
+
+## AUTOTESTS SUCCES: 
+N = 24 - all tests;
+X = 12 - tests with error;
+Y = 12 - tests without errors;
+P = Y/N = 12/24 = 50% tests;
+P = 50%;
+
+GIT LOG:
+1) test: added test for rectangle
+2) test: added test for square
+3) test: added test for circle
+4) test: added test for triangle
+
+
+
+
+
 
 

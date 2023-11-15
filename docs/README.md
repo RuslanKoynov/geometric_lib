@@ -158,6 +158,141 @@ print(area)
 **we get: (6+8+10) = 24**
 
 
+## Tests
+
+### Circle
+
+#### 1. test Area
+
+radius = 0 
+
+result: 0
+
+#### 2. test Area
+
+radius = 1
+
+result: 3.141592653589793
+
+#### 3. test Area
+
+radius = 3525
+
+result: 39036252.21626168
+
+#### 4. test Perimetr
+
+radius = 30
+
+result: 188.49555921538757
+
+#### 5. test Perimetr
+
+radius = 534255
+
+result: 3356823.16628723
+
+### Square
+
+#### 1. test Area
+
+res = 0
+
+result: 0
+
+#### 2. test Area
+
+res = 1
+
+result: 1
+
+#### 3. test Area
+
+res = 534534
+
+result: 285726597156
+
+#### 4. test Perimetr
+
+res = 10
+
+result: 40
+
+#### 5. test Perimetr
+
+res = 62423423
+
+result: 249693692
+
+### Rectangle
+
+#### 1. test Area
+
+a = 5, b = 5
+
+result: 25
+
+#### 2. test Area
+
+a = 11, b = 10
+
+result: 110
+
+#### 3. test Area
+
+a = 2, a = 2
+
+result: 4
+
+#### 4. test Area
+
+a = 5346, b = 5345
+
+result = 28574370
+
+#### 5. test Perimeter
+
+a = 20, b = 30
+
+result = 100
+
+#### 6. test Perimeter
+
+a = 5351, b = 534
+
+result: 11770
+
+### Triangle
+
+#### test Area
+
+a = 44234, b = 423555
+
+result: 9367765935.0
+
+#### test Area 
+
+a = 42344, b = 4234234234
+
+result: 89647207202248.0
+
+#### test Area
+
+a = 53453, b = 5235
+
+result: 139913227.5
+
+#### test Perimeter 
+
+a = 5453536363, b = 65464646, c = 53534543
+
+result: 5572535552
+
+#### test Perimeter
+
+a = 1, b = 0, c = 28
+
+result: 29
 
 ## Repositorys history
 

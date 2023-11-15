@@ -1,4 +1,4 @@
-
+import unittest
 def area(a):
     return a * a
     '''
@@ -11,7 +11,20 @@ def perimeter(a):
     Принимает число, которое является стороной квадрата
     Возвращает периметр квадрата, выячисляя его по формуле : P=4*a
     '''
+class SquareTestCase (unittest.TestCase):
+    def test_area_two(self):
+        res = area(2)
+        self.assertEqual(res, 4)
 
-# a=8
-# print(area(a))
-# print(perimeter(a))
+    def test_area_six(self):
+        res = area(6)
+        self.assertEqual(res,  36)
+    def test_perimetr_two(self):
+        res = perimeter (2)
+        self.assertEqual(res,  8)
+    def test_perimetr_fifteen (self):
+        res = perimeter (15)
+        self.assertEqual (res, 60)
+
+if __name__ == '__main__':
+    unittest.main()

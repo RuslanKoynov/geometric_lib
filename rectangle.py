@@ -4,4 +4,4 @@ def area(a, b):
 
 def perimeter(a, b):
     '''Принимает знаечния сторон a b, возвращает их произведение'''
-    return a * b 
+    return 2*a + 2*b

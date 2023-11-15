@@ -10,3 +10,6 @@ def perimeter(r):
     '''Принимает знаечние радиуса r, возвращает произведение числа r, числа pi и числа 2'''
     return 2 * math.pi * r
 
+radis = False
+circ_area = area(radis)
+print(circ_area)

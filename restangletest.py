@@ -20,3 +20,9 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(area(32.9,76),32.9*76)
         self.assertEqual(perimeter(5,98.5),2*(5+98.5))
         self.assertEqual(perimeter(81.5,369),2*(81.5+369))
+    
+    def test_anoter(self):
+        self.assertEqual(area(-12,-4),"Введенные данные не должны быть отрицательными")
+        self.assertEqual(area("&",","),"Введенные данные должены быть числами, а не символами")
+        self.assertEqual(perimeter(-89,-8),"Введенные данные не должны быть отрицательными")
+        self.assertEqual(perimeter(";","@"),"Введенные данные должены быть числами, а не символами")

@@ -15,3 +15,9 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(area(17.7),pi*17.7*17.7)
         self.assertEqual(perimeter(3.5),2*pi*3.5)
         self.assertEqual(perimeter(87.6),2*pi*87.6)
+    
+    def test_anoter(self):
+        self.assertEqual(area(-5),"Радиус не может быть отрицательным")
+        self.assertEqual(area("&"),"Радиус должен быть числом, а не символом")
+        self.assertEqual(perimeter(-89),"Радиус не может быть отрицательным")
+        self.assertEqual(perimeter(";"),"Радиус должен быть числом, а не символом")

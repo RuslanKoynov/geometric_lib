@@ -14,3 +14,9 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(area(6.7),6.7*6.7)
         self.assertEqual(perimeter(5.5),4*5.5)
         self.assertEqual(perimeter(43.34),4*43.34)
+    
+    def test_anoter(self):
+        self.assertEqual(area(-5),"Сторона не может быть отрицательной")
+        self.assertEqual(area("&"),"Сторона должена быть числом, а не символом")
+        self.assertEqual(perimeter(-89),"Сторона не может быть отрицательной")
+        self.assertEqual(perimeter(";"),"Сторона должена быть числом, а не символом")

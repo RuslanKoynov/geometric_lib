@@ -20,3 +20,9 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(area(23.7,8),23.7*8/2)
         self.assertEqual(perimeter(55,67,98.5),55+67+98.5)
         self.assertEqual(perimeter(53.89,54,1.2),53.89+54+1.2)
+    
+    def test_anoter(self):
+        self.assertEqual(area(-5,-7),"Введенные данные не должны быть отрицательными")
+        self.assertEqual(area("&","$"),"Введенные данные должены быть числами, а не символами")
+        self.assertEqual(perimeter(-89,-6),"Введенные данные не должны быть отрицательными")
+        self.assertEqual(perimeter(";","#"),"Введенные данные должены быть числами, а не символами")

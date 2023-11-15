@@ -1,3 +1,5 @@
+import unittest
+
 def area(a):
     '''
     Возвращает площадь квадрата
@@ -23,3 +25,38 @@ def perimeter(a):
     '''
     
      return 4 * a
+
+
+class SquareTestCase(unittest.TestCase):
+
+    def test_area_positive_side(self):
+        res = area(5)
+        self.assertEqual(res, 25)
+
+    def test_area_negative_side(self):
+        res = area(-3)
+        self.assertEqual(res, 0)
+
+    def test_perimeter_zero_side(self):
+        res = perimeter(0)
+        self.assertEqual(res, 0)
+
+    def test_perimeter_mixed_side(self):
+        res = perimeter(4)
+        self.assertEqual(res, 16)
+
+    def test_area_float_side(self):
+        res = area(2.5)
+        self.assertAlmostEqual(res, 6.25, places=2)
+        
+    def test_perimeter_float_side(self):
+        res = perimeter(3.5)
+        self.assertAlmostEqual(res, 14, places=2)
+
+
+
+
+
+
+
+        

@@ -113,5 +113,6 @@ def perimeter(a, b, c):
 | 8ba9aeb | L-03: Circle and square added     |  
 
 ---  
-                                                                             
-## Для файлов circle.py, rectangle.py, square.py, triangle.py были проведены ручные тесты и unittest. Отчет по их выполнению, находится в reporttest.md.
+### Unittest и ручные тесты
+                                                                            
+Для файлов circle.py, rectangle.py, square.py, triangle.py были проведены ручные тесты и unittest. Отчет по их выполнению, находится в reporttest.md.

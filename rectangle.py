@@ -1,3 +1,5 @@
+import unittest
+
 
 def area(a, b):
      '''
@@ -24,3 +26,39 @@ def perimeter(a, b):
     
     '''
      return (a + b)*2
+
+class RectangleTestCase(unittest.TestCase):
+     def test_area_positive_values(self):
+          res = area(5,10)
+          self.assertEqual(res,50)
+          
+     def test_area_negative_values(self):
+        res = area(-5, 10)
+        self.assertEqual(res, 0)
+
+     def test_perimeter_zero_values(self):
+        res = perimeter(0, 0)
+        self.assertEqual(res, 0)
+        
+     def test_perimeter_mixed_values(self):
+        res = perimeter(3, 7)
+        self.assertEqual(res, 20)
+
+     def test_area_float_values(self):
+        res = area(2.5, 4)
+        self.assertEqual(res, 10)
+
+     def test_perimeter_float_values(self):
+        res = perimeter(3, 4.5)
+        self.assertEqual(res, 15)
+
+
+
+
+
+
+
+
+
+
+        

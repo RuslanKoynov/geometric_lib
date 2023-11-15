@@ -1,3 +1,5 @@
+import unittest
+
 import math
 '''
 Модуль math предоствляет обширный функционал для проведения вычислений 
@@ -15,4 +17,22 @@ def perimeter(r):
     Возвращает периметр круга, вычисляя его по формуле: 2 * π * r
     '''
     return 2 * math.pi * r
+
+
+class CircleTestCase(unittest.TestCase):
+    def test_area_1(self):
+        res = area(1)
+        self.assertEqual(res, math.pi)
+
+    def test_area_0(self):
+        res = area(0)
+        self.assertEqual(res, 0)
+
+    def test_perimetr_1(self):
+        res = perimeter(1)
+        self.assertEqual(res, 2*math.pi)
+
+    def test_perimetr_0(self):
+        res = perimeter(0)
+        self.assertEqual(res, 0)
 

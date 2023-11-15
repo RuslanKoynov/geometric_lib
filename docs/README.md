@@ -114,4 +114,4 @@ def perimeter(a, b, c):
 
 ---  
                                                                              
-Для файлов circle.py, rectangle.py, square.py, triangle.py были проведены ручные тесты и unittest. Отсчет по их выполнению, находится в reporttest.md. Так же в папке test добавлены файлы, где проводилось unittest. 
+## Для файлов circle.py, rectangle.py, square.py, triangle.py были проведены ручные тесты и unittest. Отчет по их выполнению, находится в reporttest.md.

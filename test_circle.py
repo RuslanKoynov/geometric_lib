@@ -22,7 +22,7 @@ class TestCircle(unittest.TestCase):
 
     def test5_area_Circle(self):
         res = area(-1)
-        self.assertEqual(res, False)
+        self.assertRaises(res, Exception)
 
 
     def test6_area_Circle(self):
@@ -43,7 +43,7 @@ class TestCircle(unittest.TestCase):
 
     def test4_perimetr_Circle(self):
         res = perimeter(-123)
-        self.assertEqual(res, False)
+        self.assertRaises(res, Exception)
 
     def test5_perimetr_Circle(self):
         res = perimeter(1.123)

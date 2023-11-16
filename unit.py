@@ -2,7 +2,7 @@ import unittest
 import circle
 import rectangle
 import square
-import triangle%%
+import triangle
 
 class MyTestCase(unittest.TestCase):
 
@@ -88,3 +88,4 @@ class MyTestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

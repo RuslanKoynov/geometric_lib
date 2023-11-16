@@ -26,7 +26,7 @@ class TestSquare(unittest.TestCase):
 
     def test6_square_area(self):
         res = area(-12)
-        self.assertEqual(res, False)
+        self.assertRaises(res, Exception)
 
     def test7_square_area(self):
         res = area(7.124124)
@@ -52,7 +52,7 @@ class TestSquare(unittest.TestCase):
 
     def test5_square_perimetr(self):
         res = perimeter(-123)
-        self.assertEqual(res, False)
+        self.assertRaises(res, Exception)
 
     def test6_square_perimetr(self):
         res = perimeter(4.3245)

@@ -34,3 +34,19 @@ class Test(unittest.TestCase):
     def test_perimeter_4(self):
         res = perimeter(777, 64)
         self.assertEqual(res, 420.5)
+
+    def test_area_5(self):
+        res = area(-777, 64)
+        self.assertEqual(res, "Нельзя вводить отрицательные числа!")
+
+    def test_perimeter_5(self):
+        res = perimeter(-5, -2)
+        self.assertEqual(res, "Нельзя вводить отрицательные числа!")
+
+    def test_area_6(self):
+        res = area("&", 64)
+        self.assertEqual(res, "Нельзя вводить символы!")
+
+    def test_perimeter_6(self):
+        res = perimeter(5, "abc")
+        self.assertEqual(res, "Нельзя вводить строки!")

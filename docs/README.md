@@ -127,3 +127,4 @@ Calculates perimeter of the triangle with sides `a`, `b`, and `c`.
 |f47784c|docs: add rectangle.py docs|
 |d57a2b4|docs: add square.py docs|
 |152fc05|docs: add triangle.py docs|
+|f10a895|test: add tests for functions area and perimeter in rectangle.py, circle.py, square.py, triangle.py|

@@ -9,25 +9,25 @@
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
 
-Использование
+# Использование
 
 Для использования функций проекта, вы можете импортировать соответствующие модули и вызвать соответствующие функции.
 
 Пример использования:
 
-python
+# python
 
 from triangle import area, perimeter
 
 from rectangle import area as rectangle_area, perimeter as rectangle_perimeter
 
-Вычисление площади и периметра треугольника
+# Вычисление площади и периметра треугольника
 
 triangle_area = area(5, 8)
 
 triangle_perimeter = perimeter(3, 4, 5)
 
-Вычисление площади и периметра квадрата
+# Вычисление площади и периметра квадрата
 
 rectangle_side_A = 6
 
@@ -50,23 +50,37 @@ def perimeter(r):
 # Тест 1: Проверка площади и периметра круга с положительным радиусом
 r = 2
 expected_area = math.pi * r * r
+
 expected_perimeter = 2 * math.pi * r
+
 actual_area = area(r)
+
 actual_perimeter = perimeter(r)
+
 print(f"Тест 1: r = {r}")
+
 print(f"Ожидаемая площадь: {expected_area}, Фактическая площадь: {actual_area}")
+
 print(f"Ожидаемый периметр: {expected_perimeter}, Фактический периметр: {actual_perimeter}")
+
 print()
 
 # Тест 2: Проверка площади и периметра круга с отрицательным радиусом
 r = -3
 expected_area = math.pi * r * r
+
 expected_perimeter = 2 * math.pi * r
+
 actual_area = area(r)
+
 actual_perimeter = perimeter(r)
+
 print(f"Тест 2: r = {r}")
+
 print(f"Ожидаемая площадь: {expected_area}, Фактическая площадь: {actual_area}")
+
 print(f"Ожидаемый периметр: {expected_perimeter}, Фактический периметр: {actual_perimeter}")
+
 print()
 
 # Тест 3: Проверка площади и периметра круга с нулевым радиусом

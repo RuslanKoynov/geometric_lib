@@ -37,7 +37,7 @@ rectangle_area_result = rectangle_area(square_side_A, square_side_B)
 
 rectangle_perimeter_result = rectangle_perimeter(square_side)
 
-##CIRCLE
+# CIRCLE
 import unittest
 import math
 
@@ -105,7 +105,7 @@ if __name__ == '__main__':
     unittest.main()
 
 
-##TRIANGLE
+# TRIANGLE
 import unittest
 
 def area(a, h):
@@ -181,7 +181,7 @@ if __name__ == '__main__':
     unittest.main()
 
 
-##SQUARE
+# SQUARE
 import unittest
 
 def area(a):
@@ -249,7 +249,7 @@ if __name__ == '__main__':
 
 
 
-  ##RECTANGLE
+  # RECTANGLE
 import unittest
 
 def area(a, b):
@@ -318,4 +318,8 @@ class RectangleTests(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
-
+# AUTO-TESTS
+error - 2
+error - 2
+error - 2
+error - 2

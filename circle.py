@@ -18,7 +18,7 @@ actual_perimeter = perimeter(r)
 print(f"Тест 1: r = {r}")
 print(f"Ожидаемая площадь: {expected_area}, Фактическая площадь: {actual_area}")
 print(f"Ожидаемый периметр: {expected_perimeter}, Фактический периметр: {actual_perimeter}")
-print("error")
+print()
 
 # Тест 2: Проверка площади и периметра круга с отрицательным радиусом
 r = -3

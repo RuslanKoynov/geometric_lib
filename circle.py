@@ -16,7 +16,7 @@ class CircleTestCase(unittest.TestCase):
         Тестирование функции area на получение в виде аргумента числа 0
         """
         res = area(0)
-        self.assertEqual(res, 0)
+        self.assertEqual(int(res), 0)
 
     def test_area_multiple(self):
         """
@@ -36,7 +36,7 @@ class CircleTestCase(unittest.TestCase):
         Тестирование функции perimetr на получение в виде аргумента числа 0
         """
         res = perimeter(0)
-        self.assertEqual(res, 0)
+        self.assertEqual(int(res), 0)
     
     def test_perimetr_multiple(self):
         """

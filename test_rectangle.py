@@ -63,4 +63,3 @@ class TestRectangle(unittest.TestCase):
     def test7_rectangle_perimetr(self):
         res = perimeter(12.1233, 17.3124)
         self.assertEqual(res, 58.8714)
-

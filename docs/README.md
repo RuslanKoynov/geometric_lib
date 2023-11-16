@@ -69,8 +69,4 @@ print(perimeter(2, 4, 6))
 | bd54344024 | Wed Oct 4 12:22:12 2023 | Nick Durbin <nickdurbin2004@gmail.com> | docs: Added comments under every function |
 | 2890456262 | Wed Oct 4 15:41:45 2023 | Nick Durbin <nickdurbin2004@gmail.com> | docs: Added descriptions of whole project|
 
-### Tests Success Rate
-*Circle: 100%*
-*Rectangle: 100%*
-*Square: 100%*
-*Triangle: 100%*
+*Tests Success Rate: 66%*

@@ -10,3 +10,7 @@ class TestCircle(unittest.TestCase):
     def test_perimeter(self):
         result = round(circle.perimeter(9), 2)
         self.assertEqual(result, 56.55)
+        
+    def test_perimeter(self):
+        result = round(circle.perimeter('a'), 2)
+        self.assertEqual(result, 56.55)

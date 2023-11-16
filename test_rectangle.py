@@ -10,3 +10,7 @@ class TestRectangle(unittest.TestCase):
     def test_perimeter(self):
         result = rectangle.perimeter(4, 5)
         self.assertEqual(result, 18)
+        
+    def test_perimeter(self):
+        result = rectangle.perimeter('a', 'b')
+        self.assertEqual(result, 18)

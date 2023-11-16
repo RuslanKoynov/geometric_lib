@@ -11,7 +11,7 @@ def area(a, h):
           area(6, 4)         = 12
           area(8, 5)         = 20
     '''
-return a * h / 2
+    return a * h / 2
 
 def perimeter(a, b, c):
     '''

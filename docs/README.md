@@ -99,9 +99,12 @@ d = perimeter(a, b, c)
 print(d) # 7
 ```
 
-# Commits
-- 8dd15df5c12325b9a5d860d223b268220ac8d149 (HEAD -> main, origin/main, origin/HEAD) tringle added and rectangle fixed
-- 411aefeb21ed72c4e393f4f32ea1c56ba8a179b6 rectangle added
-- d078c8d9ee6155f3cb0e577d28d337b791de28e2 L-03: Docs added
-- 8ba9aeb3cea847b63a91ac378a2a6db758682460 L-03: Circle and square added
+# Tests
+- In the repository were added tests for all our geometric shapes. They marks in repo as "shape"\_tests. We are planning to add som new features cause the results. Stay tuned!
 
+# Important commits
+- d125c41eea9e8c058f07f4cbbf282cd58afb5d22 tests added
+- 8dd15df5c12325b9a5d860d223b268220ac8d149 tringle added and rectangle fixed
+- 411aefeb21ed72c4e393f4f32ea1c56ba8a179b6 rectangle added
+- d078c8d9ee6155f3cb0e577d28d337b791de28e2 Docs added
+- 8ba9aeb3cea847b63a91ac378a2a6db758682460 Circle and square added

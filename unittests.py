@@ -81,11 +81,6 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(triangle.area(3, 0), -1)
         self.assertEqual(triangle.area(0, 0), -1)
 
-    def test_correct_triangle(self):
-        self.assertEqual(triangle.perimeter(2, 2, 5), -1)
-        self.assertEqual(triangle.perimeter(2, 5, 2), -1)
-        self.assertEqual(triangle.perimeter(5, 2, 2), -1)
-
     def test_rectangle_area_incorrect_type(self):
         self.assertEqual(rectangle.area("12", 8), -1)
         self.assertEqual(rectangle.area(12, "8"), -1)

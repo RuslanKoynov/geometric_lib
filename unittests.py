@@ -2,7 +2,7 @@ import unittest
 import circle
 import rectangle
 import square
-import triangle%%
+import triangle
 
 class MyTestCase(unittest.TestCase):
 

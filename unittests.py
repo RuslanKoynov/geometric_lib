@@ -86,5 +86,39 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(triangle.perimeter(2, 5, 2), -1)
         self.assertEqual(triangle.perimeter(5, 2, 2), -1)
 
+    def test_rectangle_area_incorrect_type(self):
+        self.assertEqual(rectangle.area("12", 8), -1)
+        self.assertEqual(rectangle.area(12, "8"), -1)
+
+    def test_rectangle_perimeter_incorrect_type(self):
+        self.assertEqual(rectangle.perimeter("6", 4), -1)
+        self.assertEqual(rectangle.perimeter(6, "4"), -1)
+
+    def test_circle_area_incorrect_type(self):
+        self.assertEqual(circle.area("2"), -1)
+
+    def test_circle_perimeter_incorrect_type(self):
+        self.assertEqual(circle.perimeter("2"), -1)
+
+    def test_square_area_incorrect_type(self):
+        self.assertEqual(square.area("6"), -1)
+
+    def test_square_perimeter_incorrect_type(self):
+        self.assertEqual(square.perimeter("8"), -1)
+
+    def test_triangle_area_incorrect_type(self):
+        self.assertEqual(triangle.area("4", 3), -1)
+        self.assertEqual(triangle.area(4, "3"), -1)
+
+    def test_triangle_perimeter_incorrect_type(self):
+        self.assertEqual(triangle.perimeter("5", 5, 5), -1)
+        self.assertEqual(triangle.perimeter(5, "5", 5), -1)
+        self.assertEqual(triangle.perimeter(5, 5, "5"), -1)
+
+    def test_correct_triangle_incorrect_type(self):
+        self.assertEqual(triangle.perimeter("2", 2, 5), -1)
+        self.assertEqual(triangle.perimeter(2, "5", 2), -1)
+        self.assertEqual(triangle.perimeter(5, 2, "2"), -1)
+
 if __name__ == '__main__':
     unittest.main()

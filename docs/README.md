@@ -83,3 +83,20 @@
 | test_float_perimeter    | perimeter( 2.5 ,  3)   | 11.0            | True         | -                                      |
 | test_negative_perimeter | perimeter(- 5 ,  2)    | 6               | False        | side can't be negative                 |
 | test_string_perimeter   | perimeter( "123" ,  2) | 250             | False        | can't work with string                 |
+
+
+
+## squareTests.py (для square.py)
+
+| Test name               | Input             | Expected output | True / False | Description             |
+|-------------------------|-------------------|-----------------|--------------|-------------------------|
+| test_zero_area          | area( 0)          | 0               | True         | -                       |
+| test_one_area           | area( 1)          | 1               | True         | -                       |
+| test_float_area         | area( 2.5)        | 6.25            | True         | -                       |
+| test_negative_area      | area(- 5)         | 25              | False        | side can't be negative  |
+| test_string_area        | area( "123")      | 15129           | False        | can't work with strings |
+| test_zero_perimeter     | perimeter( 0)     | 0               | True         | -                       |
+| test_one_perimeter      | perimeter( 1)     | 4               | True         | -                       |
+| test_float_perimeter    | perimeter( 2.5)   | 10              | True         | -                       |
+| test_negative_perimeter | perimeter(- 5)    | 20              | False        | side can't be negative  |
+| test_string_perimeter   | perimeter( "123") | 492             | False        | can't work with strings |

@@ -47,3 +47,22 @@
 - commit 66a87e0d2744b4008f51fa5f30a8bcf435bc57df documentation
 - commit 9c8192bae3dda90eeacb7485a9e586310c2d350f documentation
 - commit 9c8192bae3dda90eeacb7485a9e586310c2d350f documentation
+
+
+
+# Unit тесты
+
+## circleTests.py (для circle.py)
+
+| Test name               | Input             | Expected output    | True / False | Description                 |
+|-------------------------|-------------------|--------------------|--------------|-----------------------------|
+| test_zero_area          | area( 0)          | 0                  | True         | -                           |
+| test_one_area           | area( 1)          | 3.141592653589793  | True         | -                           |
+| test_float_area         | area( 2.5)        | 19.634954084936208 | True         | -                           |
+| test_negative_area      | area(- 5)         | 78.53981633974483  | True         | radius can't be negative    |
+| test_string_area        | area( "123")      | 47529.15525615998  | False        | can't work with strings     |
+| test_zero_perimeter     | perimeter( 0)     | 0                  | True         | -                           |
+| test_one_perimeter      | perimeter( 1)     | 6.283185307179586  | True         | -                           |
+| test_float_perimeter    | perimeter( 2.5)   | 15.707963267948966 | True         | -                           |
+| test_negative_perimeter | perimeter(- 5)    | 31.41592653589793  | False        | perimeter can't be negative |
+| test_string_perimeter   | perimeter( "123") | 772.8317927830891  | False        | can't work with strings     |

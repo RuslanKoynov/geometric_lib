@@ -100,3 +100,25 @@
 | test_float_perimeter    | perimeter( 2.5)   | 10              | True         | -                       |
 | test_negative_perimeter | perimeter(- 5)    | 20              | False        | side can't be negative  |
 | test_string_perimeter   | perimeter( "123") | 492             | False        | can't work with strings |
+
+
+
+## triangleTests.py (для triangle.py)
+
+| Test name               | Input                           | Expected output | True / False | Description             |
+|-------------------------|---------------------------------|-----------------|--------------|-------------------------|
+| test_zero_area          | area( 0 ,  2)                   | 0               | True         | -                       |
+| test_one_area           | area( 1 ,  2)                   | 1               | True         | -                       |
+| test_float_area         | area( 2.5 ,  2)                 | 2.5             | True         | -                       |
+| test_negative_area      | area(- 5 ,  10)                 | 25              | False        | side can't be negative  |
+| test_string_area        | area( "123" ,  2)               | 123             | False        | cant't work with string |
+| test_zero_perimeter     | perimeter( 0 ,  1 ,  2)         | 0               | True         | -                       |
+| test_one_perimeter      | perimeter( 1 ,  2 ,  3)         | 6               | True         | -                       |
+| test_float_perimeter    | perimeter( 2.5 ,  2.5 ,  2.5)   | 7.5             | True         | -                       |
+| test_negative_perimeter | perimeter(- 5 ,  - 1 ,  - 4)    | 10              | False        | sides can't be negative |
+| test_string_perimeter   | perimeter( "123" ,  "1" ,  "2") | 126             | False        | can't work with strings |
+
+
+
+
+- Тесты не охватывают всех возможных значений, которые могут принимать функции. В таблицах к каждому файлу представлена информация о тестах, верном или неверном их прохождении, при надобности написано описание тесту (как правило там находится предположение, почему возникла ошибка).

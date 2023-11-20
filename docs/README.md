@@ -69,8 +69,6 @@
 
 
 
-# Unit тесты
-
 ## rectangleTests.py (для rectangle.py)
 
 | Test name               | Input                  | Expected output | True / False | Description                            |

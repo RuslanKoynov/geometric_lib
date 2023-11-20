@@ -66,3 +66,22 @@
 | test_float_perimeter    | perimeter( 2.5)   | 15.707963267948966 | True         | -                           |
 | test_negative_perimeter | perimeter(- 5)    | 31.41592653589793  | False        | perimeter can't be negative |
 | test_string_perimeter   | perimeter( "123") | 772.8317927830891  | False        | can't work with strings     |
+
+
+
+# Unit тесты
+
+## rectangleTests.py (для rectangle.py)
+
+| Test name               | Input                  | Expected output | True / False | Description                            |
+|-------------------------|------------------------|-----------------|--------------|----------------------------------------|
+| test_zero_area          | area( 0 ,  123)        | 0               | True         | -                                      |
+| test_one_area           | area( 1 ,  123)        | 123             | True         | -                                      |
+| test_float_area         | area( 2.5 ,  3)        | 7.5             | True         | -                                      |
+| test_negative_area      | area(- 5 ,  2)         | 10              | False        | side can't be negative                 |
+| test_string_area        | area( "123" ,  2)      | 246             | False        | can't work with string                 |
+| test_zero_perimeter     | perimeter( 0 ,  123)   | 0               | False        | if side is 0 the perimeter should be 0 |
+| test_one_perimeter      | perimeter( 1 ,  123)   | 248             | True         | -                                      |
+| test_float_perimeter    | perimeter( 2.5 ,  3)   | 11.0            | True         | -                                      |
+| test_negative_perimeter | perimeter(- 5 ,  2)    | 6               | False        | side can't be negative                 |
+| test_string_perimeter   | perimeter( "123" ,  2) | 250             | False        | can't work with string                 |

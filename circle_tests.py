@@ -19,7 +19,7 @@ class CircleTestCase(unittest.TestCase):
 
     def test_area_zero(self):
         res = area(0)
-        self.assertEqual(res, "Error")
+        self.assertEqual(res, 0)
 
     def test_perimeter_positive(self):
         res = perimeter(6)
@@ -35,7 +35,7 @@ class CircleTestCase(unittest.TestCase):
 
     def test_perimeter_zero(self):
         res = perimeter(0)
-        self.assertEqual(res, "Error")
+        self.assertEqual(res, 0)
 
 
 if __name__ == '__main__':

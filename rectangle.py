@@ -1,28 +1,42 @@
+import math
+import unittest
 
 def area(a, b):
-    '''
-  Определяем функцию с названием area, которая принимает 2 числа, a - длина прямоугольника ,b - ширина прямоугольника
-
-        Параметры:
-           a(int) - целочисленное  значение
-           b(int) - целочисленное  значение
-        
-        Возвращаемое значение:
-           Площадь прямоугольника со значением (int) 
-
-  '''
+  
     return a * b 
 
 def perimeter(a, b):
-    '''
-   Определяем функцию с названием perimeter, которая принимает 2 числа, a - длина прямоугольника ,b - ширина прямоугольника
+  
+    return (a + b)*2
 
-         Параметры:
-           a(int) - целочисленное  значение
-           b(int) - целочисленное  значение
-         
-         Возвращаемое значение:
-           Периметр прямоугольника за значением int 
+class TestRectangleMethods(unittest.TestCase):
+    
+    def test_area_int(self):
+        result = area(5,6)
+        self.assertEqual(result,30)
 
-   '''
-    return (a + b)*2 
+    def test_area_real(self):
+        result = area(3.5,5.5)
+        self.assertEqual(result,19.25)
+
+    def test_area_zero(self):
+        result = area(0,0)
+        self.assertEqual(result,0)
+
+    def test_perimeter_zero(self):
+        result = perimeter(0,0)
+        self.assertEqual(result,0)
+
+    def test_perimeter_int(self):
+        result = perimeter(5,2)
+        self.assertEqual(result,14)
+
+    def test_perimeter_real(self):
+        result = perimeter(3.5,2.5)
+        self.assertEqual(result,12.0)
+        
+        
+if __name__ == '__main__':
+    unittest.main()
+
+

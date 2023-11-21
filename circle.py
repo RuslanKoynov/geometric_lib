@@ -12,4 +12,4 @@ def perimeter(r):
     return 2 * math.pi * r
 
 
-
+print(perimeter(6))

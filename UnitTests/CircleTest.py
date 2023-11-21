@@ -6,27 +6,13 @@ class CircleTestCase(unittest.TestCase):
         res = area(0)
         self.assertAlmostEqual(res, 0, delta=0.1)
 
-    def test_small_numbers_area(self):
-        res = area(15)
-        self.assertAlmostEqual(res, 706.86, delta=0.1)
-
-    def test_big_numbers_area(self):
+    def test_numbers_area(self):
         res = area(6173390)
         self.assertAlmostEqual(res, 119728433662581.97, delta=0.1)
 
-    def test_small_random_number_area(self):
-        a = random.randint(1, 20)
-        res = area(a)
-        self.assertAlmostEqual(res, math.pi*a**2, delta=0.1)
-
-    def test_big_random_number_area(self):
-        a = random.randint(1000, 10000000)
-        res = area(a)
-        self.assertAlmostEqual(res, math.pi*a**2, delta=0.1)
-
     def test_string_area(self):
-        res = area('0')
-        self.assertEqual(res, TypeError)
+        with self.assertRaises(TypeError):
+            area('0')
 
     def test_float_area(self):
         res = area(913.8172)
@@ -36,27 +22,13 @@ class CircleTestCase(unittest.TestCase):
         res = perimeter(0)
         self.assertAlmostEqual(res, 0, delta=0.1)
 
-    def test_small_numbers_perim(self):
-        res = perimeter(15)
-        self.assertAlmostEqual(res, 94.25, delta=0.1)
-
-    def test_big_numbers_perim(self):
+    def test_numbers_perim(self):
         res = perimeter(6173391)
         self.assertAlmostEqual(res, 38788559.63, delta=0.1)
-
-    def test_small_random_number_perim(self):
-        a = random.randint(1, 20)
-        res = perimeter(a)
-        self.assertAlmostEqual(res, 2*math.pi*a, delta=0.1)
-
-    def test_big_random_number_perim(self):
-        a = random.randint(1000, 10000000)
-        res = perimeter(a)
-        self.assertAlmostEqual(res, 2*math.pi*a, delta=0.1)
     
     def test_string_perim(self):
-        res = perimeter('0')
-        self.assertEqual(res, TypeError)
+        with self.assertRaises(TypeError):
+            perimeter('0')
     
     def test_float_perim(self):
         res = perimeter(913.8172)

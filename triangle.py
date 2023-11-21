@@ -5,3 +5,5 @@ def area(a, h):
 def perimeter(a, b, c):
     '''Принимает десятичные числа a, b и с, возвращает их произведение, делённое на 2'''
     return a + b + c
+
+print(perimeter(10.1,1.10, 9.9))

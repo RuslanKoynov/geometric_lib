@@ -2,7 +2,7 @@ import unittest
 import square
 
 
-class SquareTest(unittest.TestCase):
+class SquareTestCase(unittest.TestCase):
     def tests(self):
         self.assertTrue(square.area(0) == 0)
         self.assertEqual(square.area(0), 0)

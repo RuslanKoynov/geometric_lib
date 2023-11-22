@@ -16,13 +16,13 @@ class SquareTest(unittest.TestCase):
         self.assertEqual(res, 81)
 
     def test_perimeter_Square_Two(self):
-        res = area(2)
+        res = perimetr(2)
         self.assertEqual(res, 8)
 
     def test_perimeter_Square_MinusSeven(self):
-        res = area(-7)
+        res = perimetr(-7)
         self.assertEqual(res, "ERROR")
 
     def test_perimeter_Square_Sixth(self):
-        res = area(6)
+        res = perimetr(6)
         self.assertEqual(res, 24)

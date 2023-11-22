@@ -16,13 +16,13 @@ class CircleTest(unittest.TestCase):
         self.assertEqual(res, 254.46900494077323)
 
     def test_perimeter_Circle_Five(self):
-        res = area(5)
+        res = perimeter(5)
         self.assertEqual(res, 31.41592653589793)
 
     def test_perimeter_Circle_MinusSeven(self):
-        res = area(-7)
+        res = perimeter(-7)
         self.assertEqual(res, "ERROR")
 
     def test_perimeter_Circle_Nine(self):
-        res = area(9)
+        res = perimeter(9)
         self.assertEqual(res, 56.548667764616276)

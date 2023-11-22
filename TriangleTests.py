@@ -2,7 +2,7 @@ import unittest
 import triangle
 
 
-class TriangleTest(unittest.TestCase):
+class TriangleTestCase(unittest.TestCase):
     def tests(self):
         self.assertFalse(triangle.area(0, 2) == 5)
         self.assertFalse(triangle.area(4, 0), 34)

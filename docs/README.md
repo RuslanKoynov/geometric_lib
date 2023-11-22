@@ -67,6 +67,12 @@
 
   '''
 ## Commit History
+commit 9b262602b3a628493b93fef60d202f49071b7da4 (HEAD -> main)
+Author: sigris1 <rine02@mail.ru>
+Date:   Wed Nov 22 14:53:01 2023 +0300
+
+    Добавили тесты для функций
+
 - commit 11321d4fec35366330cf0f625dda0882f6061799 (HEAD -> main)
   Author: sigris1 <rine02@mail.ru>
   Date:   Thu Sep 14 19:21:26 2023 +0300

@@ -11,7 +11,7 @@ class SquareTestCase(unittest.TestCase):
     def test_3_area(self):
         result = area(72)
         self.assertEqual(result, 5184)
-    def test_1_perimeter(self):
+    def test_1_perimeter32332(self):
         result = perimeter(8)
         self.assertEqual(result, 32)
     def test_2_perimeter(self):

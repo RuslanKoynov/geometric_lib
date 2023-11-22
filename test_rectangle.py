@@ -11,7 +11,7 @@ class RectangleTestCase(unittest.TestCase):
     def test_3_area(self):
         result = area(23, 0)
         self.assertEqual(result, 0)
-    def test_1_perimeter(self):
+    def 28(self):
         result = perimeter(5, 6)
         self.assertEqual(result, 22)
     def test_2_perimeter(self):

@@ -1,3 +1,4 @@
+import unittest
 
 def area(a):
     '''
@@ -23,3 +24,29 @@ def perimeter(a):
             4 * a (int): периметр квадрата 
     '''
     return 4 * a
+
+
+class SquareTestCase(unittest.TestCase):
+    def test_area_1(self):
+        res = area(7)
+        self.assertEqual(res, 49)
+       
+    def test_area_2(self):
+        res = area(18.2)
+        self.assertAlmostEqual(res, 331.24)
+
+    def test_area_3(self):
+        res = area(5789325)
+        self.assertEqual(res, 33516283955625)
+
+    def test_perimeter_1(self):
+        res = perimeter(7)
+        self.assertEqual(res, 28)
+    
+    def test_perimeter_2(self):
+        res = perimeter(18.2)
+        self.assertAlmostEqual(res, 72.8)
+    
+    def test_perimeter_3(self):
+        res = perimeter(5789325)
+        self.assertEqual(res, 23157300)

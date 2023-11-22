@@ -13,48 +13,59 @@
 - Square: P = 4a
 - Triangle: P = a+b+c
 
-#Documentation
-###Функции, вычисляющие площадь и периметр различных геометрических фигур.
+## Documentation
+###Functions that calculate the area and perimeter of various geometric shapes.
 
-##circle.py
+##vcircle.py
 
-###Функция area принимает число r и возвращает число r умноженное на r и умноженное на число Пи.
+###The area function takes a number r and returns r times r times pi.
 
-***Пример: in 3; out 28.274333882308138.***
+***Example: in 3; out 28.274333882308138.***
 
-###Функция perimeter принимает число r и возвращает число r, умноженное на 2 и на число Пи.
+###The perimeter function takes the number r and returns the number r multiplied by 2 times pi.
 
-***Пример: in 3; out 18.84955592153876.***
+***Example: in 3; out 18.84955592153876.***
 
 
 ##rectangle.py
 
-###Функция area принимает числа a и b, возвращает произведение чисел a и b.
+###The area function takes numbers a and b, returns the product of numbers a and b.
 
-***Пример: in 3,4; out 12.***
+***Example: in 3,4; out 12.***
 
-###Функция perimeter принимает числа a и b, возвращает сумму чисел a и b, умноженную на 2.
+###The perimeter function takes numbers a and b, returns the sum of numbers a and b multiplied by 2.
 
-***Пример: in 3,4; out 14.***
+***Example: in 3,4; out 14.***
 
 
 ##square.py
 
-###Функция area принимает число a, возвращает число a умноженное на a.
+###The area function takes a number a, returns the number a multiplied by a.
 
-***Пример: in 3; out 9.***
+***Example: in 3; out 9.***
 
-###Функция perimeter принимает число a, возвращает число a, умноженное на 4.
+###The perimeter function takes a number a, returns the number a multiplied by 4.
 
-***Пример: in 3; out 12.***
+***Example: in 3; out 12.***
 
 
 ##triangle.py
 
-###Функция area принимает  числa a и h, возвращает произведение чисел a и h, делённое на 2.
+###The area function takes the numbers a and h and returns the product of the numbers a and h divided by 2.
 
-***Пример: in 3,4; out 6.***
+***Example: in 3,4; out 6.***
 
-###Функция perimeter принимает числа a, b и с, возвращает произведение чисел a, b и с, делённое на 2.
+###The perimeter function accepts the numbers a, b and c, and returns the product of the numbers a, b and c divided by 2.
 
-***Пример: in 3,4,5; out 12.***
+***Example: in 3,4,5; out 12.***
+
+#Project change history:
+|Hases      |Commits                                  |
+|<050b6fbe5f1981df5fcaed83e81e8b33b13c18d6>|Added documentation describing the work|
+|<3a9de8519f0c9f898b4a015189c17111d4a7efbd>|Added description to file circle.py|
+|<8df143c8d13b00e2aa18bb18a6b0105fa0072d2d>|Added description to file square.py|
+|<36cc3555b1d82f0bc1f31039ba5d0fdff67e2f1c>|Added description to file rectangle.py|
+|<8c63162a0d38762e265ac81708035f81300a2b64>|Added description to file triangle.py|
+
+## Tests
+Autotests passed: 16/24 (67%)

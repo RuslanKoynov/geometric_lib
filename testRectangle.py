@@ -15,13 +15,13 @@ class RectangleTest(unittest.TestCase):
         self.assertEqual(res, 18)
 
     def test_perimeter_Rectangle_Five_Two(self):
-        res = area(5,2)
+        res = perimeter(5,2)
         self.assertEqual(res, 14)
 
     def test_perimeter_Rectangle_MinusSeven_Five(self):
-        res = area(-7,5)
+        res = perimeter(-7,5)
         self.assertEqual(res, "ERROR")
 
     def test_perimeter_Rectangle_Nine_Three(self):
-        res = area(9,3)
+        res = perimeter(9,3)
         self.assertEqual(res, 24)

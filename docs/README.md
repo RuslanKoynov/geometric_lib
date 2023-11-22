@@ -63,6 +63,24 @@
 > 18
 
 # Project history 
+- commit 180a64f960ad97289ba3a835821c9f142be47023 (HEAD -> tests_408483)
+Author: Vsovolod Grachev <vsevolod1607@bk.ru>
+Date:   Wed Nov 22 20:07:52 2023 +0300
+
+    test: added tests for rectangle, circle, square, triangle
+
+- commit 9c6344ae1785897f0222612ab53e8b36acebf986 (documentation_408483)
+Author: Vsovolod Grachev <vsevolod1607@bk.ru>
+Date:   Thu Oct 12 10:16:39 2023 +0300
+
+    docs: added general description
+
+- commit a6a650afb8caa75d465ba1a51a6473b19a947fd6
+Author: Vsovolod Grachev <vsevolod1607@bk.ru>
+Date:   Sun Oct 8 16:35:11 2023 +0300
+
+    docs: documentation added to README.md
+
 - commit 5d15427935ba1117d9fdab3a4331c85ad80b2284 (HEAD -> documentation_408483)
 > Author: Vsovolod Grachev <vsevolod1607@bk.ru>
 > Date: Sun Oct 8 15:36:29 2023 +0300

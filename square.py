@@ -1,3 +1,4 @@
+import unittest
 
 def area(a):
     '''
@@ -28,3 +29,18 @@ def perimeter(a):
         perimeter(2.8) ==> 11.2
     '''
     return 4 * a
+
+class TestStringMethods(unittest.TestCase):
+
+    def test_area(self):
+        self.assertEqual(area(12), 144)
+        self.assertEqual(area(2.5), 6.25)
+        self.assertNotEqual(area(9.0), 81.1)
+
+    def test_perimeter(self):
+        self.assertEqual(perimeter(110), 440)
+        self.assertEqual(perimeter(0), 0)
+        self.assertNotEqual(perimeter(5.7), 21.1)
+
+if __name__ == '__main__':
+    unittest.main()

@@ -13,7 +13,7 @@ class SquareTestCase(unittest.TestCase):
 
     def test_area_real(self):
         res = area(3.3)
-        self.assertEqual(res, 10.889999999999999)
+        self.assertEqual(res, 10.89)
 
     def test_area_zero(self):
         res = area(0)

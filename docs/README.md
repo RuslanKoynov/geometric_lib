@@ -117,7 +117,7 @@ Calculates perimeter of the triangle with sides `a`, `b`, and `c`.
 ```
 
 # Tests
-Autotests success: 13/23 (56.5%)
+Autotests success: 14/24 (58.3%)
 
 # Commit history
 |Commit|Message|
@@ -134,3 +134,5 @@ Autotests success: 13/23 (56.5%)
 |bc2b44d|docs: add new commit in README.md's commit table|
 |238f18b|test: add tests for incorrect (negative) input values in all modules|
 |3e14352|docs: update commit table with latest commits|
+|5c1781c|docs: add autotests success value; update commit table|
+|12d676b|test: fix copy-pasted method name|

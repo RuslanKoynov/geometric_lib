@@ -18,6 +18,10 @@ class SquareTestCase(unittest.TestCase):
         result = area(7);
         self.assertEqual(result, 49);
 
+    def test_area_negative_value(self):
+        with self.assertRaises(ValueError):
+            result = area(-6);
+
     def test_perimeter_zero(self):
         result = perimeter(0);
         self.assertEqual(result, 0);
@@ -25,3 +29,7 @@ class SquareTestCase(unittest.TestCase):
     def test_perimeter_1(self):
         result = perimeter(1);
         self.assertEqual(result, 4);
+
+    def test_perimeter_negative_value(self):
+        with self.assertRaises(ValueError):
+            result = perimeter(-6);

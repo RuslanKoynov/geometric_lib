@@ -48,5 +48,5 @@ class SquareTestCase(unittest.TestCase):
         self.assertAlmostEqual(res, 72.8)
     
     def test_perimeter_3(self):
-        rwith self.assertRaises(Exception):
+        with self.assertRaises(Exception):
             perimeter(-5789325)

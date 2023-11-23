@@ -16,9 +16,9 @@ class TriangleTest(unittest.TestCase):
         result = area(0, 9)
         self.assertEqual(result, 0)
 
-    def test_string_area(self):
-        with self.assertRaises(TypeError):
-            area('0', '91')
+    def test_minus_area(self):
+        with self.assertRaises(ValueError):
+            area(-3, 91)
 
     #test for perimeter
     def test_for_perimeter_first_integer(self):
@@ -33,6 +33,6 @@ class TriangleTest(unittest.TestCase):
         result = perimeter(0, 0, 0)
         self.assertEqual(result, 0)
 
-    def test_string_perim(self):
-        with self.assertRaises(TypeError):
-            perimeter('0', '10', '15')
+    def test_minus_perim(self):
+        with self.assertRaises(ValueError):
+            perimeter(-3, 10, 15)

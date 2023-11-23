@@ -17,8 +17,8 @@ class CircleTest(unittest.TestCase):
         self.assertEqual(result, 0)
 
     def test_string_area(self):
-        with self.assertRaises(TypeError):
-            area('0')
+        with self.assertRaises(ValueError):
+            area(-3)
 
     #test for perimeter
     def test_for_perimeter_first_integer(self):
@@ -35,5 +35,5 @@ class CircleTest(unittest.TestCase):
         self.assertEqual(result, 0)
 
     def test_string_perim(self):
-        with self.assertRaises(TypeError):
-            perimeter('0')
+        with self.assertRaises(ValueError):
+            perimeter(-3)

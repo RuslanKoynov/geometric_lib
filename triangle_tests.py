@@ -7,7 +7,7 @@ class TriangleTestCase(unittest.TestCase):
         res = area(6, 3)
         self.assertEqual(res, 9.0)
 
-    def test_perimeter_negative(self):
+    def test_area_negative(self):
         with self.assertRaises(ValueError):
             res = area(10, -8)
 

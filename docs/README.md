@@ -116,6 +116,9 @@ Calculates perimeter of the triangle with sides `a`, `b`, and `c`.
 12
 ```
 
+# Tests
+Autotests success: 13/23 (56.5%)
+
 # Commit history
 |Commit|Message|
 |------|-------|
@@ -130,3 +133,4 @@ Calculates perimeter of the triangle with sides `a`, `b`, and `c`.
 |f10a895|test: add tests for functions area and perimeter in rectangle.py, circle.py, square.py, triangle.py|
 |bc2b44d|docs: add new commit in README.md's commit table|
 |238f18b|test: add tests for incorrect (negative) input values in all modules|
+|3e14352|docs: update commit table with latest commits|

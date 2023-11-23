@@ -63,9 +63,9 @@
 | tests        |  x  |
 | :----------- | :-: |
 | total tests  | 24  |
-| errors       | 12  |
-| success      | 12  |
-| success in % | 50% |
+| errors       | 0  |
+| success      | 24  |
+| success in % | 100% |
 
 # Commits history
 | Мessage | Hash |

@@ -16,6 +16,10 @@ class TriangleTest(unittest.TestCase):
         result = area(0, 9)
         self.assertEqual(result, 0)
 
+    def test_for_area_zero(self):
+        result = area(-3, 9)
+        self.assertEqual(result, "Error")
+
     #test for perimeter
     def test_for_perimeter_first_integer(self):
         result = perimeter(3, 9, 5)
@@ -28,3 +32,7 @@ class TriangleTest(unittest.TestCase):
     def test_for_perimeter_zero(self):
         result = perimeter(0, 0, 0)
         self.assertEqual(result, 0)
+
+    def test_for_perimeter_zero(self):
+        result = perimeter(0, -3, 0)
+        self.assertEqual(result, "Error")

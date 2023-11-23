@@ -17,8 +17,8 @@ class RectangleTest(unittest.TestCase):
         self.assertEqual(result, 0)
 
     def test_string_area(self):
-        with self.assertRaises(TypeError):
-            area('0', '10')
+        with self.assertRaises(ValueError):
+            area(-3, 10)
 
     #test for perimeter
     def test_for_perimeter_first_integer(self):
@@ -35,6 +35,6 @@ class RectangleTest(unittest.TestCase):
         self.assertEqual(result, 0)
 
     def test_string_perim(self):
-        with self.assertRaises(TypeError):
-            area('0', '10')
+        with self.assertRaises(ValueError):
+            area(-3, 10)
 

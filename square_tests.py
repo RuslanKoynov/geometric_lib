@@ -7,7 +7,7 @@ class SquareTestCase(unittest.TestCase):
         res = area(3)
         self.assertEqual(res, 9)
 
-    def test_perimeter_negative(self):
+    def test_area_negative(self):
         with self.assertRaises(ValueError):
             res = area(-3)
 

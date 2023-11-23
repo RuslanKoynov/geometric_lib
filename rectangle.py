@@ -23,6 +23,10 @@ class TestRectangleMethods(unittest.TestCase):
         result = area(0,0)
         self.assertEqual(result,0)
 
+    def test_area_negative(self):
+        result = area(2,-2)
+        self.assertEqual(result, "Error")
+
     def test_perimeter_zero(self):
         result = perimeter(0,0)
         self.assertEqual(result,0)

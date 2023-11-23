@@ -23,6 +23,10 @@ class TestCircleMethods(unittest.TestCase):
         result = area(0)
         self.assertEqual(result,0)
 
+    def test_area_negative(self):
+        result = area(-2)
+        self.assertEqual(result, "Error")
+
     def test_perimeter_zero(self):
         result = perimeter(0)
         self.assertEqual(result,0)
@@ -34,6 +38,10 @@ class TestCircleMethods(unittest.TestCase):
     def test_perimeter_real(self):
         result = perimeter(3.5)
         self.assertEqual(result,21.991148575128552)
+
+    def test_perimeter_negative(self):
+        result = perimeter(-2)
+        self.assertEqual(result, "Error")
         
         
 if __name__ == '__main__':

@@ -23,6 +23,10 @@ class TestTriangleMethods(unittest.TestCase):
         result = area(0,5)
         self.assertEqual(result,0)
 
+    def test_area_negative(self):
+        result = area(3,-5)
+        self.assertEqual(result,"Error")
+
     def test_perimeter_zero(self):
         result = perimeter(0,0,0)
         self.assertEqual(result,0)
@@ -34,7 +38,10 @@ class TestTriangleMethods(unittest.TestCase):
     def test_perimeter_real(self):
         result = perimeter(2.5,3.5,5.5)
         self.assertEqual(result,11.5)
-        
+
+    def test_perimeter_negative(self):
+        result = perimeter( -5, -2 ,1 )
+        self.assertEqual(result,"Error")
         
 if __name__ == '__main__':
     unittest.main()

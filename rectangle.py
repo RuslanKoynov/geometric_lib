@@ -37,8 +37,8 @@ class RectangleTestCase(unittest.TestCase):
         self.assertAlmostEqual(res, 964.32)
 
     def test_area_3(self):
-        res = area(987325, -123589)
-        self.assertEqual(res, 122022509425)
+        with self.assertRaises(Exception):
+            area(987325, -123589)
 
     def test_perimeter_1(self):
         res = perimeter(5, 10)
@@ -49,5 +49,5 @@ class RectangleTestCase(unittest.TestCase):
         self.assertAlmostEqual(res, 181.4)
     
     def test_perimeter_3(self):
-        res = perimeter(987325, -123589)
-        self.assertEqual(res, 2221828)
+        with self.assertRaises(Exception):
+            perimeter(987325, -123589)

@@ -13,7 +13,7 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_area_real(self):
         res = area(10.1, 1.10)
-        self.assertEqual(res, 5.555000000000001)
+        self.assertEqual(res, 5.555)
 
     def test_area_zero(self):
         res = area(8, 0)

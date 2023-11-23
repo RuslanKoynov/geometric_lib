@@ -38,7 +38,7 @@ class SquareTestCase(unittest.TestCase):
         self.assertAlmostEqual(res, 420.625)
 
     def test_area_3(self):
-        res = area(327565, 87742)
+        res = area(327565, -87742)
         self.assertEqual(res, 14370604115.0)
 
     def test_perimeter_1(self):
@@ -49,6 +49,6 @@ class SquareTestCase(unittest.TestCase):
         res = perimeter(8, 76.3, 12.96)
         self.assertAlmostEqual(res, 97.26)
     
-    def test_perimeter_3(self):
-        res = perimeter(245656, 8769583, 13)
-        self.assertEqual(res, 9015252)
+    '''def test_perimeter_3(self):
+        res = perimeter(245656, 8769583, -13)
+        self.assertEqual(res, 9015252)'''

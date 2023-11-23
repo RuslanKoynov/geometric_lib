@@ -69,7 +69,7 @@ Date:   Wed Nov 22 20:07:52 2023 +0300
 
     test: added tests for rectangle, circle, square, triangle
     
-- 24 tests run correctly in 0.001
+- 20/24 tests run correctly in 0.001
 
 - commit 9c6344ae1785897f0222612ab53e8b36acebf986 (documentation_408483)
 Author: Vsovolod Grachev <vsevolod1607@bk.ru>

@@ -1,0 +1,27 @@
+name: Run tests on any Push event
+
+on: [push]
+
+jobs:
+  test-on-ubuntu:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Git clone our repo
+        uses: actions/checkout@v4
+      - name: Check out unit tests
+        run: |
+          python ./test/testCircle.py
+          python ./test/testRectangle.py
+          python ./test/testSquare.py
+          python ./test/testTriangle.py
+  test-on-windows:
+    runs-on: windows-latest
+    steps: 
+      - name: Git clone our repo
+        uses: actions/checkout@v4
+      - name: Check out unit tests
+        run: |
+          python .\test\testCircle.py
+          python .\test\testRectangle.py
+          python .\test\testSquare.py
+          python .\test\testTriangle.py

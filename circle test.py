@@ -25,5 +25,3 @@ class TestCircle(unittest.TestCase):
     def testperimetr2(self):
         res = perimeter(534255)
         self.assertEqual(res, 3356823.16628723)
-if __name__ == '__main__':
-    unittest.main()

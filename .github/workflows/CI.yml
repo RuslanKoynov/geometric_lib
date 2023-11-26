@@ -2,10 +2,10 @@ name: CI/CD
 on:
   push:
     branches:
-      - tests_409096
+      - cicd_409096
   pull_request:
     branches:
-      - tests_409096
+      - cicd_409096
 permissions:
   contents: read
 jobs:

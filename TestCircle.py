@@ -1,7 +1,7 @@
 import unittest
 import math
 from circle import area
-from circle import perimetr
+from circle import perimeter
 class CircleTestCase(unittest.TestCase):
     def test_zero_mul(self):
        res = area(0)

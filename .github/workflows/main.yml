@@ -24,5 +24,22 @@ jobs:
        - name: Run test square.py
          run: python3 -m unittest square.py
 
+  test2:
+     runs-on: windows-latest
+     steps:
+       - name: Checkout code
+         uses: actions/checkout@v3
+       - name: setup Python
+         uses: actions/setup-python@v4
+         with:
+           python-version: "3.10"
+       - name: Run test rectangle.py
+         run: python3 -m unittest rectangle.py
+       - name: Run test triangle.py
+         run: python3 -m unittest triangle.py
+       - name: Run test circle.py
+         run: python3 -m unittest circle.py
+       - name: Run test square.py
+         run: python3 -m unittest square.py
 
 

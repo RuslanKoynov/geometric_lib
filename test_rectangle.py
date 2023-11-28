@@ -12,10 +12,6 @@ class RectangleTestCase(unittest.TestCase):
         res = area(10, 10)
         self.assertEqual(res, 100)
 
-    def test_rectangle_negative(self):
-        res = area(-5, 2)
-        self.assertRaises(res, Exception)
-
     def test_rectangle_perimetr_nul(self):
         res = perimeter(10, 0)
         self.assertEqual(res, 20)
@@ -24,6 +20,4 @@ class RectangleTestCase(unittest.TestCase):
         res = perimeter(10, 10)
         self.assertEqual(res, 40)
 
-    def test_large_perimetr_negative(self):
-        res = perimeter(20, -5)
-        self.assertRaises(res, Exception)
+

@@ -125,6 +125,25 @@ Output:
 ```
 # История изменения проекта с хэшами 
 
+commit b8960cb31d12c2bf259be07df9d92fb3328782ca (HEAD -> tests_409512)
+Author: Ruslan Sanigullin <409512@niuitmo.ru>
+Date:   Wed Nov 29 17:11:58 2023 +0300
+
+    test: unittests added
+
+ .DS_Store                                      | Bin 10244 -> 10244 bytes
+ .idea/.gitignore                               |   3 ++
+ .idea/geometric_lib.iml                        |   8 ++++++
+ .idea/inspectionProfiles/profiles_settings.xml |   6 ++++
+ .idea/misc.xml                                 |   7 +++++
+ .idea/modules.xml                              |   8 ++++++
+ .idea/vcs.xml                                  |   6 ++++
+ circle.py                                      |  37 ++++++++++++++++++++++++-
+ rectangle.py                                   |  35 +++++++++++++++++++++++
+ square.py                                      |  31 +++++++++++++++++++++
+ triangle.py                                    |  35 +++++++++++++++++++++++
+ 11 files changed, 175 insertions(+), 1 deletion(-)
+
 Author: Ruslan Sanigullin <409512@niuitmo.ru>
 
 Date:   Thu Nov 2 00:56:21 2023 +0300
@@ -193,3 +212,177 @@ Author: smartiqa <info@smartiqa.ru>
 Date:   Thu Mar 4 14:54:08 2021 +0300
 
     L-03: Circle and square added
+
+
+
+## UnitTest
+#### Всего сделано 30 теста: 22 успешных, 8 неуспешных
+
+### Circle.py
+###### correct tests
+- area()
+~~~
+input: 0
+output: 0
+~~~
+~~~
+input: 5
+output: 78.5398163397448
+3
+~~~
+- perimeter()
+~~~
+input: 0
+output: 0
+~~~
+~~~
+input: 5
+output: 31.41592653589793
+~~~
+###### uncorrect tests
+- area()
+~~~
+input: -5
+output: 78.53981633974483
+expected: the radius cannot be negative
+~~~
+- perimeter()
+~~~
+input: -5
+output: -31.41592653589793
+expected: the radius cannot be negative
+~~~
+
+### Reactangle.py
+###### correct tests
+- area()
+~~~
+input: 2, 3
+output: 6
+~~~
+~~~
+input: 0, 3
+output: 0
+~~~
+~~~
+input: 5.5, 2
+output: 11
+~~~
+- perimeter()
+~~~
+input: 2, 3
+output: 10
+~~~
+~~~
+input: 0, 3
+output: 6
+~~~
+~~~
+input: 5.5, 2
+output: 15
+~~~
+###### uncorrect tests
+- area()
+~~~
+input: 5, -4
+output: -20
+expected: error: a or b can not be negative
+~~~
+- perimeter()
+~~~
+input: 5, -4
+output: 2
+expected: error: a or b can not be negative
+~~~
+
+### Square.py
+###### correct tests
+- area()
+~~~
+input: 4
+output: 16
+~~~
+~~~
+input: 0
+output: 0
+~~~
+~~~
+input: 4.5
+output: 20.25
+~~~
+- perimeter()
+~~~
+input: 4
+output: 16
+~~~
+~~~
+input: 4.5
+output: 18.0
+~~~
+~~~
+input: 0
+output: 0
+~~~
+###### uncorrect tests
+- area()
+~~~
+input: -4
+output: 16
+expected: a can not be negative
+~~~
+- perimeter()
+~~~
+input: -4
+output: -16
+expected: a can not be negative
+~~~
+
+##### Triangle.py
+###### correct tests
+- area()
+~~~
+in: 4, 5
+out: 10.0
+~~~
+~~~
+in: 4, 0
+out: 0
+~~~
+~~~
+in: 4, 5.5
+out: 0
+~~~
+- perimeter()
+~~~
+in: 4, 5, 6
+out: 15
+~~~
+~~~
+in: 4, 5, 0
+out: 9
+~~~
+~~~
+in: 4, 5,5, 6
+out: 15.5
+~~~
+###### uncorrect tests
+- area()
+~~~
+in: 4, -5
+out: -10.0
+expected: a or b can not be negative
+~~~
+- perimeter()
+~~~
+in: 4, 5, -6
+out: 3
+expected: a or b can not be negative
+~~~
+## autotests success:
+- all tests: 30
+- tests with errors: 8
+- tests without errors: 22
+~~~
+tests with errors - 8/30 = 26.6667%
+tests without errors - 22/30 = 73.3333%
+~~~

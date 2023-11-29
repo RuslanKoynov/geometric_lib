@@ -197,6 +197,6 @@ print(perimeter(5,6,7))
 | fe0e53a86 |  Mon Sep 18 17:23:17 2023 | Джабаров Саид <dsaidik123@gmail.com> | new file added |
 | 16b4f40f7 |  Mon Sep 18 17:30:07 2023 | Джабаров Саид <dsaidik123@gmail.com> | bug fix |
 | 59945b139 |  Wed Oct 4 22:15:05 2023 | Джабаров Саид <dsaidik123@gmail.com> | docs: aded comments to all functions|
-| 0340c042e96d2e583fcd5c8349f4ab6e93bc9d6a | Thu Nov 16 02:55:01 2023 | Джабаров Саид dsaidik123@gmail.com |  added unittests |
-| 250be8f77a67ce2e78b2b64a5918f08387f64b54 | Thu Nov 16 02:04:33 2023 | Джабаров Саид <dsaidik123@gmail.com> |  test: unittests |
+| 16fff1273eca400e7f76f3a52a23f8f07d06b331 |  Thu Nov 30 01:23:22 2023 | Джабаров Саид dsaidik123@gmail.com |  test: add Unittests |
+| de609b423b6ac65317179db898d154c8f6fca651 | Thu Nov 30 01:26:29 2023 | Джабаров Саид <dsaidik123@gmail.com> | docs: update README |
 

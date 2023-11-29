@@ -134,3 +134,4 @@ _Вывод:_
 | fa0d43aaeb3c348505c586a2605f99cbd6f59b2f    | Levalnik <levkuimov34@gmail.com>   | Added new file   |
 | 2b8665be539574295a48cf7a9c1042f8bc4ed005    |  Levalnik <levkuimov34@gmail.com>   |  Fixed the mistake   |
 | 33ffd40a2a3b5ad22ff3717dba825aac5c74bc0d         |  Levalnik <levkuimov34@gmail.com>          | Added comments to functions  |
+| 45216748df3f48f8df07cc925335d4f61372e0e3         |  Levman228 <levkuimov34@gmail.com>          | Added tests  |

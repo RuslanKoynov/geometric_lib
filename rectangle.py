@@ -51,7 +51,7 @@ class RectangleTestCase(unittest.TestCase):
 
     def test_rectangle_area_no(self):
         res = area(4, -7)
-        self.assertEqual(res, 'The sides of a rectangle cannot be negative')
+        self.assertRaises(ExpectedException, aufuction, arg1, arg2)
 
     def test_rectangle_area_real_numbers(self):
         res = area(4.25, 7.36)

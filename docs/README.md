@@ -333,7 +333,7 @@ if __name__ == '__main__':
     unittest.main()
 
 # AUTO-TESTS
-error - 2
-error - 2
-error - 2
-error - 2
+error - 2;
+error - 2;
+error - 2;
+error - 2.

@@ -26,7 +26,7 @@ actual_perimeter = perimeter(a)
 print(f"Тест 2: a = {a}")
 print(f"Ожидаемая площадь: {expected_area}, Фактическая площадь: {actual_area}")
 print(f"Ожидаемый периметр: {expected_perimeter}, Фактический периметр: {actual_perimeter}")
-print("error")
+print()
 
 # Тест 3: Проверка площади и периметра квадрата с нулевой стороной
 a = 0
@@ -39,26 +39,41 @@ print(f"Ожидаемая площадь: {expected_area}, Фактическа
 print(f"Ожидаемый периметр: {expected_perimeter}, Фактический периметр: {actual_perimeter}")
 print()
 
-class SquareTests(unittest.TestCase):
-    def test_area(self):
-        # Проверяем правильность вычисления площади квадрата
-        self.assertEqual(area(2), 4)  # Входные данные: a = 2; Ожидаемый результат: 4; Фактический результат: 4
-        self.assertEqual(area(4), 16)  # Входные данные: a = 4; Ожидаемый результат: 16; Фактический результат: 16
-        self.assertEqual(area(0), 0)  # Входные данные: a = 0; Ожидаемый результат: 0; Фактический результат: 0
 
-    def test_perimeter(self):
-        # Проверяем правильность вычисления периметра квадрата
-        self.assertEqual(perimeter(2), 8)  # Входные данные: a = 2; Ожидаемый результат: 8; Фактический результат: 8
-        self.assertEqual(perimeter(4), 16)  # Входные данные: a = 4; Ожидаемый результат: 16; Фактический результат: 16
-        self.assertEqual(perimeter(0), 0)  # Входные данные: a = 0; Ожидаемый результат: 0; Фактический результат: 0
+from square import area, perimeter
 
-    def test_area_with_large_number(self):
-        # Проверяем правильность вычисления площади квадрата с очень большим числом
-        self.assertEqual(area(1000000), 1000000000000)  # Входные данные: a = 1000000; Ожидаемый результат: 1000000000000; Фактический результат: 1000000000000
+class SquareTestCase(unittest.TestCase):
+    def test_square_area_yes(self):
+        res = area(3)
+        self.assertEqual(res, 9)
 
-    def test_perimeter_with_large_number(self):
-        # Проверяем правильность вычисления периметра квадрата с очень большим числом
-        self.assertEqual(perimeter(1000000), 4000000)  # Входные данные: a = 1000000; Ожидаемый результат: 4000000; Фактический результат: 4000000
+    def test_square_area_no(self):
+        res = area(-3)
+        self.assertEqual(res, 'The side of a square cannot be negative')
+
+    def test_square_area_real_numbers(self):
+        res = area(3.45)
+        self.assertEqual(res, 11.902500000000002)
+
+    def test_square_area_zero(self):
+        res = area(0)
+        self.assertEqual(res, 0)
+
+    def test_square_perimeter_yes(self):
+        res = perimeter(3)
+        self.assertEqual(res, 12)
+
+    def test_square_perimeter_no(self):
+        res = perimeter(-3)
+        self.assertEqual(res,'The side of a square cannot be negative')
+
+    def test_square_perimeter_real_numbers(self):
+        res = perimeter(3.45)
+        self.assertEqual(res, 13.8)
+
+    def test_square_perimeter_zero(self):
+        res = perimeter(0)
+        self.assertEqual(res, 0)
 
 if __name__ == '__main__':
     unittest.main()

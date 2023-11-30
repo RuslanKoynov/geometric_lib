@@ -12,6 +12,9 @@ def area(a, h):
             сторона, умноженная на высоту и все это деленное на 2
     
     '''
+    if a <= 0 or h <= 0:
+        raise ValueError("Non-positive values are not allowed")
+    
     return a * h / 2 
 
 def perimeter(a, b, c):
@@ -27,6 +30,8 @@ def perimeter(a, b, c):
             периметр треугольника (сумма длин всех его сторон)
     
     '''
+     if a <= 0 or b <= 0 or c <= 0:
+        raise ValueError("Non-positive values are not allowed")
     
      return a + b + c 
 
@@ -37,12 +42,12 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 25)
 
     def test_area_negative_values(self):
-        res = area(-3, 8)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            area(-3, 8)
 
     def test_perimeter_zero_values(self):
-        res = perimeter(0, 0, 0)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            perimeter(0, 0, 0)
 
     def test_perimeter_mixed_values(self):
         res = perimeter(3, 4, 5)
@@ -56,20 +61,5 @@ class TriangleTestCase(unittest.TestCase):
         res = perimeter(3.5, 6, 8)
         self.assertAlmostEqual(res, 17.5, places=2) 
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    
+if __name__ == '__main__':
+    unittest.main()

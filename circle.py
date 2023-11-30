@@ -11,7 +11,10 @@ def area(r):
             радиус в квадрате, умноженный на число pi
     
     '''
-    return math.pi * r * r
+    if (r < 0):
+        raise ValueError("Negative number")
+    else:
+        return math.pi * r * r
 
 
 def perimeter(r):
@@ -32,8 +35,8 @@ class CircleTestCase(unittest.TestCase):
         self.assertAlmostEqual(res, 78.54, places=2)
 
     def test_area_negative_radius(self):
-        res = area(-3)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            area(-3)
 
     def test_perimeter_zero_radius(self):
         res = perimeter(0)
@@ -50,9 +53,3 @@ class CircleTestCase(unittest.TestCase):
     def test_perimeter_float_radius(self):
         res = perimeter(3.5)
         self.assertAlmostEqual(res, 21.99, places=2)
-
-
-
-
-
-        

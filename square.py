@@ -10,11 +10,13 @@ def area(a):
             сторона в квадрате
     
     '''
+    if a < 0:
+        raise ValueError("Negative number")
+    
     return a * a
 
-
 def perimeter(a):
-     '''
+    '''
     Возвращает периметр квадрата
 
         Параметры:
@@ -23,9 +25,7 @@ def perimeter(a):
             сторона, умноженная на 4
     
     '''
-    
-     return 4 * a
-
+    return 4 * a
 
 class SquareTestCase(unittest.TestCase):
 
@@ -34,8 +34,8 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(res, 25)
 
     def test_area_negative_side(self):
-        res = area(-3)
-        self.assertEqual(res, 0)
+        with self.assertRaises(ValueError):
+            area(-3)
 
     def test_perimeter_zero_side(self):
         res = perimeter(0)
@@ -53,10 +53,5 @@ class SquareTestCase(unittest.TestCase):
         res = perimeter(3.5)
         self.assertAlmostEqual(res, 14, places=2)
 
-
-
-
-
-
-
-        
+if __name__ == '__main__':
+    unittest.main()

@@ -10,10 +10,7 @@ def area(a):
             сторона в квадрате
     
     '''
-    if a < 0:
-        raise ValueError("Negative number")
-    
-    return a * a
+    i    return a * a
 
 def perimeter(a):
     '''

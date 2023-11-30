@@ -10,8 +10,7 @@ def area(a, b):
         Возвращаемое значение:
             a * b (площадь прямоугольника)
     '''
-    if a < 0 or b < 0:
-        raise ValueError("Negative number")
+    
 
     return a * b
 

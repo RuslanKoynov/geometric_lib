@@ -12,8 +12,7 @@ def area(a, h):
             сторона, умноженная на высоту и все это деленное на 2
     
     '''
-    if a <= 0 or h <= 0:
-        raise ValueError("Non-positive values are not allowed")
+    
     
     return a * h / 2 
 

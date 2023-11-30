@@ -2,8 +2,6 @@ def is_triangle(a, b, c):
     """
     Проверяет возможность существования треугольника с соответственными сторонами
     """
-    if (not(isinstance(a, int)) or not(isinstance(b, int)) or not(isinstance(c, int))):
-        raise TypeError("Invalid data type")
     return a + b > c and a + c > b and b + c > a
 
 def area(a, h): 

@@ -52,7 +52,7 @@ class CircleTestCase(unittest.TestCase):
 
     def test_circle_area_no(self):
         res = area(-4)
-        self.assertEqual(res, 'Radius cannot be negative')
+        self.assertRaises(ExpectedException, aufuction, arg1, arg2)
 
     def test_circle_area_real_numbers(self):
         res = area(4.25)

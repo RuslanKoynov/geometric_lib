@@ -30,8 +30,7 @@ def perimeter(a, b, c):
             периметр треугольника (сумма длин всех его сторон)
     
     '''
-     if a <= 0 or b <= 0 or c <= 0:
-        raise ValueError("Non-positive values are not allowed")
+     
     
      return a + b + c 
 

@@ -135,3 +135,4 @@ _Вывод:_
 | 2b8665be539574295a48cf7a9c1042f8bc4ed005    |  Levalnik <levkuimov34@gmail.com>   |  Fixed the mistake   |
 | 33ffd40a2a3b5ad22ff3717dba825aac5c74bc0d         |  Levalnik <levkuimov34@gmail.com>          | Added comments to functions  |
 | 45216748df3f48f8df07cc925335d4f61372e0e3         |  Levman228 <levkuimov34@gmail.com>          | Added tests  |
+| 4160002def6b058f77d05f482576a520decf8cb7         |  Levman228 <levkuimov34@gmail.com>          | Added fixed tests  |

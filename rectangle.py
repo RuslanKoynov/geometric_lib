@@ -67,7 +67,7 @@ class RectangleTestCase(unittest.TestCase):
 
     def test_rectangle_perimeter_no(self):
         res = perimeter(4, -7)
-        self.assertEqual(res, 'The sides of a rectangle cannot be negative')
+        self.assertRaises(ExpectedException, aufuction, arg1, arg2)
 
     def test_rectangle_perimeter_real_numbers(self):
         res = perimeter(4.25, 7.36)

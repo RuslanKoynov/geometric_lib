@@ -68,7 +68,7 @@ class CircleTestCase(unittest.TestCase):
 
     def test_circle_perimeter_no(self):
         res = perimeter(-4)
-        self.assertEqual(res, 'Radius cannot be negative')
+        self.assertRaises(ExpectedException, aufuction, arg1, arg2)
 
     def test_circle_perimeter_real_numbers(self):
         res = perimeter(4.25)

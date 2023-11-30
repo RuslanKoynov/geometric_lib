@@ -1,0 +1,30 @@
+name: CI Unit Tests
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  Unit Tests:
+  
+    runs-on: [ubuntu-latest, windows-latest]
+    
+      steps:
+       - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+
+      - name: Run Unit Tests for circle
+        run: python test_circle.py
+        
+      - name: Run Unit Tests for rectangle
+        run: python test_rectangle.py
+        
+      - name: Run Unit Tests for square
+        run: python test_square.py
+        
+      - name: Run Unit Tests for triangle
+        run: python test_triangle.py

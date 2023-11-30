@@ -28,30 +28,32 @@ def perimeter(a):
     return 4 * a
 
 class SquareTestCase(unittest.TestCase):
+    def test_zero_area(self):
+        res = area(0)
+        self.assertEqual(res, 0)
 
-    def test_area_positive_side(self):
+    def test_positive_area(self):
         res = area(5)
         self.assertEqual(res, 25)
 
-    def test_area_negative_side(self):
-        with self.assertRaises(ValueError):
-            area(-3)
+    def test_float_area(self):
+        res = area(2.5)
+        self.assertEqual(res, 6.25)
 
-    def test_perimeter_zero_side(self):
+    def test_negative_area(self):
+        self.assertRaises(ValueError, area, -5)
+
+    def test_zero_perimeter(self):
         res = perimeter(0)
         self.assertEqual(res, 0)
 
-    def test_perimeter_mixed_side(self):
-        res = perimeter(4)
-        self.assertEqual(res, 16)
+    def test_positive_perimeter(self):
+        res = perimeter(5)
+        self.assertEqual(res, 20)
 
-    def test_area_float_side(self):
-        res = area(2.5)
-        self.assertAlmostEqual(res, 6.25, places=2)
-        
-    def test_perimeter_float_side(self):
-        res = perimeter(3.5)
-        self.assertAlmostEqual(res, 14, places=2)
+    def test_float_perimeter(self):
+        res = perimeter(2.5)
+        self.assertEqual(res, 10)
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_negative_perimeter(self):
+        self.assertRaises(ValueError, perimeter, -5)

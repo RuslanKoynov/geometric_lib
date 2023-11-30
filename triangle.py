@@ -36,30 +36,32 @@ def perimeter(a, b, c):
      return a + b + c 
 
 class TriangleTestCase(unittest.TestCase):
+    def test_zero_area(self):
+        res = area(0, 5)
+        self.assertEqual(res, 0)
 
-    def test_area_positive_values(self):
-        res = area(5, 10)
+    def test_positive_area(self):
+        res = area(10, 5)
         self.assertEqual(res, 25)
 
-    def test_area_negative_values(self):
-        with self.assertRaises(ValueError):
-            area(-3, 8)
+    def test_float_area(self):
+        res = area(7.5, 3)
+        self.assertEqual(res, 11.25)
 
-    def test_perimeter_zero_values(self):
-        with self.assertRaises(ValueError):
-            perimeter(0, 0, 0)
+    def test_negative_area(self):
+        self.assertRaises(ValueError, area, -10, 5)
 
-    def test_perimeter_mixed_values(self):
+    def test_zero_perimeter(self):
+        res = perimeter(0, 5, 7)
+        self.assertEqual(res, 12)
+
+    def test_positive_perimeter(self):
         res = perimeter(3, 4, 5)
         self.assertEqual(res, 12)
 
-    def test_area_float_values(self):
-        res = area(2.5, 4)
-        self.assertAlmostEqual(res, 5, places=2)
-
-    def test_perimeter_float_values(self):
+    def test_float_perimeter(self):
         res = perimeter(3.5, 6, 8)
-        self.assertAlmostEqual(res, 17.5, places=2) 
+        self.assertEqual(res, 17.5)
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_negative_perimeter(self):
+        self.assertRaises(ValueError, perimeter, -10, 5, 7)

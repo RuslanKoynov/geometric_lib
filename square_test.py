@@ -26,4 +26,4 @@ class MyTestCase(unittest.TestCase):
 
     def test_perimeter_big_input(self):
         res = perimeter(19123872193782)
-        self.assertEqual(res, 19123872193782 * 19123872193782)
+        self.assertEqual(res, 19123872193782 * 4)

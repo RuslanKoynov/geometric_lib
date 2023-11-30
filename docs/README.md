@@ -142,23 +142,12 @@ _- Calculates the perimeter of a triangle from given sides a, b and c._
 ```
  
 ---
- # Unit tests report
- 
-| Product      | Objectives and Goals of Testing                                                    | Description of the Product                                                                                               | Scope of Testing                                                                                  | Testing Strategy                                                                                                                                             | Acceptance Criteria                                                                                                                                               | Expected Results                                        |
-|:--------------:|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------:|
-| circle.py    | verification of the function for calculating the perimeter and area of a circle    | testing the function with zero, large and small values, as well as checking for incorrect data types and negative values | testing will be perfomed using the formula for the area(πR²) and Perimeter(2πR) of a circle       | based on the provided formula in the function, functional testing will be conducted with various types of input values to verify the function's correctness. | for successful completion of the testing, tasks must be perfomed with large, small, and zero values, as well as with negative input data and incorrect data types | 9 Completed Tests (6 Successful, 3 with Caught Errors)  |
-| square.py    | verification of the function for calculating the perimeter and area of a square    | testing the function with zero, large and small values, as well as checking for incorrect data types and negative values | testing will be perfomed using the formula for the area(a²) and Perimeter(4a) of a square         | based on the provided formula in the function, functional testing will be conducted with various types of input values to verify the function's correctness. | for successful completion of the testing, tasks must be perfomed with large, small, and zero values, as well as with negative input data and incorrect data types | 11 Completed Tests (8 Successful, 3 with Caught Errors) |
-| triangle.py  | verification of the function for calculating the perimeter and area of a triangle  | testing the function with zero, large and small values, as well as checking for incorrect data types and negative values | testing will be perfomed using the formula for the area(πR²) and Perimeter(2πR) of a triangle     | based on the provided formula in the function, functional testing will be conducted with various types of input values to verify the function's correctness. | for successful completion of the testing, tasks must be perfomed with large, small, and zero values, as well as with negative input data and incorrect data types | 9 Completed Tests (6 Successful, 3 with Caught Errors)  |
-| rectangle.py | verification of the function for calculating the perimeter and area of a rectangle | testing the function with zero, large and small values, as well as checking for incorrect data types and negative values | testing will be perfomed using the formula for the area(ab) and Perimeter(2a + 2b) of a rectangle | based on the provided formula in the function, functional testing will be conducted with various types of input values to verify the function's correctness. | for successful completion of the testing, tasks must be perfomed with large, small, and zero values, as well as with negative input data and incorrect data types | 10 Completed Tests (6 Successful, 4 with Caught Errors) |
-
 
 ## Autotests succes:
 ~~~
 - 39 - all tests;
-- 11 - tests with errors;
-- 28 - correct tests;
-- P with errors = 11/39 = 28%
-- P correct = 28/39 = 72%
+- 0 - tests with errors;
+- 39 - correct tests(100%);
 ~~~
 
 ---
@@ -173,7 +162,8 @@ _- Calculates the perimeter of a triangle from given sides a, b and c._
 | 0772a7cefea25ffc72ac4460463430c13a630b14 | FFloym7 <floym7@mail.ru>  | the   error   has   been   fixed                               |
 | 6f71a6d31af3a5bf77f90db3852fc2536cc24085 | Floym7 <floym7@mail.ru>  | docs :  added   comments   for   each   of   the   functions   |
 | aa37ad0fd8a3872a71117a81df34337760fbbece | Floym7 <floym7@mail.ru>  | refactor: calculation logic with integrated exception handling |
-| ce43951ca672907816a1857c4f8b16d6090fe86a | Floym7 <floym7@mail.ru>  | test: added unit tests                                         |
+| ce43951ca672907816a1857c4f8b16d6090fe86a | Floym7 <floym7@mail.ru>  | test: added unit tests        
+| 421878709135e1d0cf4a9df3cdd1e07e7df772cc | Floym7 <floym7@mail.ru>  | triangle: improved exception handling  |
 
 - ___Created by Shumeiko Aleksandr___
  

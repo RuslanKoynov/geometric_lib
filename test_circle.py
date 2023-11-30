@@ -38,17 +38,13 @@ class Test(unittest.TestCase):
         self.assertEqual(res, 6.283185307179586)
 
     def test_area_5(self):
-        res = area(-7)
-        self.assertEqual(res, "Нельзя вводить отрицательные числа!")
+        self.assertRaises(TypeError, area, -7)
 
     def test_perimeter_5(self):
-        res = perimeter(-5)
-        self.assertEqual(res, "Нельзя вводить отрицательные числа!")
+        self.assertEqual(TypeError, perimeter, -5)
 
     def test_area_6(self):
-        res = area("^")
-        self.assertEqual(res, "Нельзя вводить символы!")
+        self.assertEqual(TypeError, area, "^")
 
     def test_perimeter_6(self):
-        res = perimeter("abc")
-        self.assertEqual(res, "Нельзя вводить строки!")
+        self.assertEqual(TypeError, perimeter, 5, "abc")

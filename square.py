@@ -9,4 +9,3 @@ def perimeter(a):
     :param число а
     :return произведение числа 4 на число a'''
     return 4 * a
-print(perimeter(99))

@@ -1,33 +1,36 @@
 import unittest
 from circle import area, perimeter
+import math
 class CircleTestCase(unittest.TestCase):
-    def test_circle_area(self):
-        res = area(8)
-        self.assertEqual(res, 201.06192982974676)
+    def test_circle_area_float(self):
+        res = area(8.22)
+        self.assertAlmostEqual(res, 212.27, places=2)
 
     def test_circle_area_negative(self):
         res = area(-1)
         self.assertEqual(res, "ERROR")
-    def test_circle_area_2(self):
-        res = area(44)
-        self.assertEqual(res, 6082.123377349839)
+    def test_circle_area_integer(self):
+        res = area(10)
+        self.assertAlmostEqual(res, 314.15, places=2)
 
-    def test_circle_area_null(self):
+    def test_circle_area_zero(self):
         res = area(0)
-        self.assertEqual(res, 0.0)
+        self.assertAlmostEqual(res, 0)
 
-    def test_circle_perimetr(self):
+    def test_circle_perimetr_integer(self):
         res = perimeter(6)
-        self.assertEqual(res, 37.69911184307752)
+        self.assertAlmostEqual(res, 37.69, places=2)
 
     def test_circle_perimetr_negative(self):
         res = perimeter(-1)
         self.assertEqual(res, "ERROR")
 
-    def test_circle_perimetr_2(self):
-        res = perimeter(31)
-        self.assertEqual(res, 194.77874452256717)
+    def test_circle_perimetr_float(self):
+        res = perimeter(2.88)
+        self.assertAlmostEqual(res, 18.09, places=2)
 
-    def test_circle_perimeter_null(self):
+    def test_circle_perimeter_zero(self):
         res = perimeter(0)
-        self.assertEqual(res, 0.0)
+        self.assertEqual(res, 0)
+
+

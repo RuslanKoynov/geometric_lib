@@ -9,8 +9,9 @@ class CircleTestCase(unittest.TestCase):
         result = area(21)
         self.assertEqual(result, 1385.44236)
     def test_3_area(self):
-        result = area(9)
-        self.assertEqual(result, 254.469)
+        with self.assertRaises(ValueError) as context:
+            result = area(-9)
+        self.assertRaises(TypeError, result)
     def test_1_perimeter(self):
         result = perimeter(3)
         self.assertEqual(result, 18.84956)

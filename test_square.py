@@ -3,17 +3,20 @@ from square import area
 from square import perimeter
 class SquareTestCase(unittest.TestCase):
     def test_1_area(self):
-        result = area(7)
-        self.assertEqual(result, 49)
+        with self.assertRaises(ValueError) as context:
+            result = area(-7)
+        self.assertRaises(TypeError, result)
     def test_2_area(self):
-        result = area(0)
-        self.assertEqual(result, 0)
+        with self.assertRaises(ValueError) as context:
+            result = area(0)
+        self.assertRaises(TypeError, result)
     def test_3_area(self):
         result = area(72)
         self.assertEqual(result, 5184)
-    def test_1_perimeter32332(self):
-        result = perimeter(8)
-        self.assertEqual(result, 32)
+    def test_1_perimeter(self):
+        with self.assertRaises(ValueError) as context:
+            result = perimeter(-8)
+        self.assertRaises(TypeError, result)
     def test_2_perimeter(self):
         result = perimeter(23)
         self.assertEqual(result, 92)

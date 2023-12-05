@@ -9,14 +9,16 @@ class RectangleTestCase(unittest.TestCase):
         result = area(3, 10)
         self.assertEqual(result, 30)
     def test_3_area(self):
-        result = area(23, 0)
-        self.assertEqual(result, 0)
-    def 28(self):
+        with self.assertRaises(ValueError) as context:
+            result = area(23, 0)
+        self.assertRaises(TypeError, result)
+    def test_1_perimeter(self):
         result = perimeter(5, 6)
         self.assertEqual(result, 22)
     def test_2_perimeter(self):
-        result = perimeter(45, 7)
-        self.assertEqual(result, 104)
+        with self.assertRaises(ValueError) as context:
+            result = perimeter(45, -7)
+        self.assertRaises(TypeError, result)
     def test_3_perimeter(self):
         result = perimeter(2, 1)
         self.assertEqual(result, 6)

@@ -8,4 +8,4 @@ def perimeter(a, b, c):
     return a + b + c
     #Функция возвращает периметр треугольника.
 
-print(perimeter(2,3,4))
+print(area(1.3,2))

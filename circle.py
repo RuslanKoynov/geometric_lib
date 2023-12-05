@@ -10,4 +10,4 @@ def perimeter(r):
     return 2 * math.pi * r
     #Функция возвращает периметр окружности
 
-print(perimeter(-7))
+print(area(1.3))

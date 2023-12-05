@@ -8,4 +8,3 @@ def perimeter(a, b):
     return 2*(a + b)
     #функция возвращает периметр прямоугольника.
 
-print(perimeter(9,3))

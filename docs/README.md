@@ -131,4 +131,7 @@ out: 20
 | 502bb2d | vya4eslavv <slavinidzecinema@yandex.ru> | Add new triangle.py                                                      |
 | 301aee0 | vya4eslavv <slavinidzecinema@yandex.ru> | fix rectangle.py                                                         |
 | 90d7034 | vya4eslavv <slavinidzecinema@yandex.ru> | documentation added for: circle.py, rectangle.py, square.py, triangle.py |
+| c38a92a | vya4eslavv <slavinidzecinema@yandex.ru> | Was modifed final unittests for modules |
 
+
+После проведения тестирования было выявлено, что 85% тестов - верны.

@@ -7,7 +7,7 @@ on:
     branches: ["cicd_368743"]
 
 jobs:
-  test on ubuntu-latest:
+  test-on-ubuntu-latest:
      runs-on: ubuntu-latest
      steps:
        - name: Checkout code
@@ -19,7 +19,7 @@ jobs:
        - name: Run tests
          run: python3 -m unittest discover -s tests -p 'test_*.py'
 
-  test on windows-latest:
+  test-on-windows-latest:
      runs-on: windows-latest
      steps:
        - name: Checkout code

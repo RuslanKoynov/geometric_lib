@@ -1,0 +1,32 @@
+name: "Test CI"
+
+on:
+  push:
+    branches: ["cicd_368743"]
+  pull_request:
+    branches: ["cicd_368743"]
+
+jobs:
+  test-on-ubuntu-latest:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Checkout code
+         uses: actions/checkout@v3
+       - name: setup Python
+         uses: actions/setup-python@v4
+         with:
+           python-version: "3.10"
+       - name: Run tests
+         run: python3 -m unittest discover -s tests -p 'test_*.py'
+
+  test-on-windows-latest:
+     runs-on: windows-latest
+     steps:
+       - name: Checkout code
+         uses: actions/checkout@v3
+       - name: setup Python
+         uses: actions/setup-python@v4
+         with:
+           python-version: "3.10"
+       - name: Run tests
+         run: python3 -m unittest discover -s tests -p 'test_*.py'

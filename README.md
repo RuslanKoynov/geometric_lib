@@ -41,3 +41,6 @@
 - b651675 add tests for functions
 - cb5b5b3 add tests for functions
 - f376e6b add tests for functions
+
+## Тесты
+- Успешно: 8 / 24 (33%)

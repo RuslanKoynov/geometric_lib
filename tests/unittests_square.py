@@ -1,7 +1,7 @@
 import unittest
 
-from ISRPO.src.square import area
-from ISRPO.src.square import perimeter
+from src.square import area
+from src.square import perimeter
 
 class SquareTestCase(unittest.TestCase):
     def test_sq_area_zero(self):

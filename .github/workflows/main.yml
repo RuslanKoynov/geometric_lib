@@ -14,10 +14,10 @@ jobs:
 
       - name: Run unittests
         run: |
-          python -m unittest tests/circle_tests.py        
-          python -m unittest tests/rectangle_tests.py        
-          python -m unittest tests/square_tests.py
-          python -m unittest tests/triangle_tests.py
+          python -m unittest tests/unittests_circle.py        
+          python -m unittest tests/unittests_rectangle.py        
+          python -m unittest tests/unittests_square.py
+          python -m unittest tests/unittests_triangle.py
 
   build-windows:
     runs-on: windows-latest
@@ -27,10 +27,10 @@ jobs:
 
       - name: Run unittests
         run: |
-          python -m unittest tests/circle_tests.py        
-          python -m unittest tests/rectangle_tests.py        
-          python -m unittest tests/square_tests.py
-          python -m unittest tests/triangle_tests.py
+          python -m unittest tests/unittests_circle.py        
+          python -m unittest tests/unittests_rectangle.py        
+          python -m unittest tests/unittests_square.py
+          python -m unittest tests/unittests_triangle.py
         
         
       

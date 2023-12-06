@@ -16,7 +16,7 @@ class CircleTestCase(unittest.TestCase):
         Тестирование функции area на получение в виде аргумента числа 0
         """
         res = area(0)
-        self.assertEqual(int(res), 0)
+        self.assertEqual(res, 0)
 
     def test_area_multiple(self):
         """
@@ -25,10 +25,13 @@ class CircleTestCase(unittest.TestCase):
         """
         res1 = area(10)
         res2 = area(12)
-        res3 = area(4)
-        self.assertEqual(int(res1), 314)
-        self.assertEqual(int(res2), 452)
-        self.assertEqual(int(res3), 50)
+        res3 = area(4.12)
+        res4 = area(-10)
+        self.assertIsNone(res4)
+        self.assertAlmostEqual(res1, 314.16, places=2)
+        self.assertAlmostEqual(res2, 452.39, places=2)
+        self.assertAlmostEqual(res3, 53.33, places=2)
+
 
 
     def test_perimetr_zero(self):
@@ -36,7 +39,7 @@ class CircleTestCase(unittest.TestCase):
         Тестирование функции perimetr на получение в виде аргумента числа 0
         """
         res = perimeter(0)
-        self.assertEqual(int(res), 0)
+        self.assertEqual(res, 0)
     
     def test_perimetr_multiple(self):
         """
@@ -45,7 +48,9 @@ class CircleTestCase(unittest.TestCase):
         """
         res1 = perimeter(10)
         res2 = perimeter(12)
-        res3 = perimeter(4)
-        self.assertEqual(int(res1), 62)
-        self.assertEqual(int(res2), 75)
-        self.assertEqual(int(res3), 25)
+        res3 = perimeter(4.20)
+        res4 = perimeter(-10)
+        self.assertIsNone(res4)
+        self.assertAlmostEqual(res1, 62.83, places=2)
+        self.assertAlmostEqual(res2, 75.4, places=1)
+        self.assertAlmostEqual(res3, 26.39, places=2)

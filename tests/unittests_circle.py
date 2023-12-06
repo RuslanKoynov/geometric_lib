@@ -1,7 +1,7 @@
 import unittest
 
-from ISRPO.src.circle import area
-from ISRPO.src.circle import perimeter
+from src.circle import area
+from src.circle import perimeter
 
 class CircleTestCase(unittest.TestCase):
     def test_circle_area(self):

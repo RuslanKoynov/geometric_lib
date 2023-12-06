@@ -64,7 +64,7 @@
 
 # Project tests
 
-![Build Status](https://github.com/capitlgdtt/geometric_lib/actions/workflows/main.yml/badge.svg?branch=cicd_408483)
+[![Build Status](https://github.com/capitlgdtt/geometric_lib/actions/workflows/main.yml/badge.svg?branch=cicd_408483)](https://github.com/capitlgdtt/geometric_lib/actions/workflows/main.yml)
 
 # Project history 
 - commit 180a64f960ad97289ba3a835821c9f142be47023 (HEAD -> tests_408483)

@@ -62,6 +62,10 @@
 - Example: **perimeter(_5, 6, 7_)**
 > 18
 
+# Project tests
+
+![Build Status](https://github.com/capitlgdtt/geometric_lib/actions/workflows/main.yml/badge.svg?branch=cicd_408483)
+
 # Project history 
 - commit 180a64f960ad97289ba3a835821c9f142be47023 (HEAD -> tests_408483)
 Author: Vsovolod Grachev <vsevolod1607@bk.ru>

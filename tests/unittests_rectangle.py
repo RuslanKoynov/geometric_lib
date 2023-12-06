@@ -1,7 +1,7 @@
 import unittest
 
-from ISRPO.src.rectangle import area
-from ISRPO.src.rectangle import perimeter
+from src.rectangle import area
+from src.rectangle import perimeter
 
 class RectangleTestCase(unittest.TestCase):
     def test_rect_area_zero_both(self):

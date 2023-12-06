@@ -8,3 +8,4 @@ def perimeter(a, b, c):
     :param числа a,b,c
     :return сумма чисел a,b и c'''
     return a + b + c
+print(area(-9, 5))

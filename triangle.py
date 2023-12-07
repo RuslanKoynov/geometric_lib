@@ -27,16 +27,16 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res,12)
 
     def test_perimeter_test_number2(self):
-        res = perimeter(2,2,6)
-        self.assertEqual(res,"ERROR")
+        with self.assertRaises(Exception):
+            perimeter(2,2,6)
 
     def test_area_test_negative_number(self):
-        res = area(-1,2)
-        self.assertEqual(res, "ERROR")
+        with self.assertRaises(Exception):
+            area(-1,2)
 
     def test_perimeter_test_negative_number(self):
-        res = perimeter(-1,1,1)
-        self.assertEqual(res, "ERROR")
+        with self.assertRaises(Exception):
+            perimeter(-1,1,1)
 
 
 

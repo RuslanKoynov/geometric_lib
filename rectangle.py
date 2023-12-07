@@ -26,12 +26,12 @@ class RectangleTestCase(unittest.TestCase):
         self.assertAlmostEqual(res,33.78)
 
     def test_area_test_negative_number(self):
-        res = area(-3,2)
-        self.assertEqual(res, "ERROR")
+        with self.assertRaises(Exception):
+            area(-3,2)
 
     def test_perimeter_test_negative_number(self):
-        res = perimeter(-1,2)
-        self.assertEqual(res, "ERROR")
+        with self.assertRaises(Exception):
+            perimeter(-1,2)
 
 
 def area(a,b):

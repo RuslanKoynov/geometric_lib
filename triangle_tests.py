@@ -15,16 +15,17 @@ class TriangleTestCase(unittest.TestCase):
         self.assertAlmostEqual(res, 11.99)
 
     def test_triangle_area_negative(self):
-        res = area(-9, 5)
-        self.assertEqual(res, "ERROR")
+        with self.assertRaises(Exception):
+            area(-9, 5)
+
 
     def test_triangle_perimetr_zero(self):
         res = perimeter(0, 2, 1)
         self.assertAlmostEqual(res, 3)
 
     def test_triangle_perimeter_false(self):
-        res = perimeter(10, 4,5)
-        self.assertEqual(res, "ERROR")
+        with self.assertRaises(Exception):
+            perimeter(10, 4, 5)
 
     def test_triangle_perimeter_integer(self):
         res = perimeter(2, 4,3)
@@ -35,6 +36,6 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 11.6)
 
     def test_triangle_perimeter_negative(self):
-        res = perimeter(1, 1, -1)
-        self.assertEqual(res, "ERROR")
+        with self.assertRaises(Exception):
+            perimeter(1, 1, -1)
 

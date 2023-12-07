@@ -2,8 +2,6 @@ import math
 
 
 def area(r):
-    if r < 0:
-        return "Incorrect input"
     '''
     Возвращает площадь круга радиуса r
 	Параметры:
@@ -18,8 +16,6 @@ def area(r):
 
 
 def perimeter(r):
-    if r < 0:
-        return "Incorrect input"
     '''
     Возвращает периметр круга радиуса r
 	Параметры:

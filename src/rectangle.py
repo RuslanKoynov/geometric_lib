@@ -1,6 +1,4 @@
 def area(a, b):
-    if a < 0 or b < 0:
-        return "Incorrect input"
     '''
     Возвращает площадь прямоугольника со сторонами a и b
 	Параметры:
@@ -15,8 +13,6 @@ def area(a, b):
     return a * b
 
 def perimeter(a, b):
-    if a < 0 or b < 0:
-        return "Incorrect input"
     '''
     Возвращает периметр прямоугольника со сторонами a и b
 	Параметры:

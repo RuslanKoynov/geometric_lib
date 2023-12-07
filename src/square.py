@@ -1,6 +1,4 @@
 def area(a):
-    if a < 0:
-        return "Incorrect input"
     '''
     Возвращает площадь квадрата со стороной а
 	Параметры:
@@ -15,8 +13,6 @@ def area(a):
 
 
 def perimeter(a):
-    if a < 0:
-        return "Incorrect input"
     '''
     Возвращает периметр квадрата со стороной а
 	Параметры:

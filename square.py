@@ -36,11 +36,13 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(area(12), 144)
         self.assertEqual(area(2.5), 6.25)
         self.assertNotEqual(area(9.0), 81.1)
+        self.assertRaises(TypeError, area, 'ten', '9')
 
     def test_perimeter(self):
         self.assertEqual(perimeter(110), 440)
         self.assertEqual(perimeter(0), 0)
         self.assertNotEqual(perimeter(5.7), 21.1)
+        self.assertRaises(TypeError, perimeter, 'nine', '10')
 
 if __name__ == '__main__':
     unittest.main()

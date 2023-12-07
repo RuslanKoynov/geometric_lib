@@ -20,8 +20,8 @@ class TriangleTest(unittest.TestCase):
         self.assertEqual(res, 9)
 
     def test_perimeter_Triangle_MinusSeven_One_Sixth(self):
-        res = perimeter(-7,1,6)
-        self.assertEqual(res, "ERROR")
+        with self.assertRaises(Exception):
+            perimeter(-7,1,6)
 
     def test_perimeter_Triangle_Sixth_One_Seven(self):
         res = perimeter (6,1,7)

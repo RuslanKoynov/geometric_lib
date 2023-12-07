@@ -20,8 +20,8 @@ class RectangleTest(unittest.TestCase):
         self.assertEqual(res, 14)
 
     def test_perimeter_Rectangle_MinusSeven_Five(self):
-        res = perimeter(-7,5)
-        self.assertEqual(res, "ERROR")
+        with self.assertRaises(Exception):
+            perimeter(-7,5)
 
     def test_perimeter_Rectangle_Nine_Three(self):
         res = perimeter(9,3)

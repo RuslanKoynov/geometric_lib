@@ -20,8 +20,8 @@ class CircleTest(unittest.TestCase):
         self.assertAlmostEqual(res, 31.42, places=2)
 
     def test_perimeter_Circle_MinusSeven(self, places=2):
-        res = perimeter(-7)
-        self.assertEqual(res, "ERROR")
+        with self.assertRaises(Exception):
+            perimeter(-7)
 
     def test_perimeter_Circle_Nine(self):
         res = perimeter(9)

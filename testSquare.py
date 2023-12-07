@@ -20,8 +20,8 @@ class SquareTest(unittest.TestCase):
         self.assertEqual(res, 8)
 
     def test_perimeter_Square_MinusSeven(self):
-        res = perimeter(-7)
-        self.assertEqual(res, "ERROR")
+        with self.assertRaises(Exception):
+            perimeter(-10)
 
     def test_perimeter_Square_Sixth(self):
         res = perimeter(6)

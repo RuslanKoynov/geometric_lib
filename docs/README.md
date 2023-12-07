@@ -1,36 +1,14 @@
-## Results
+## Unittest results
+
+Amount tests: 24
 
 Passed tests: 10
 
-| Unittest          | №                | Expected results | Test results       | Verdict                                                         |
-|-------------------|------------------|------------------|--------------------|-----------------------------------------------------------------|
-| test_triangle.py  | test_1_area      | 13.5             | 13.5               | Результаты совпали                                              |
-|                   | test_2_area      | Invalid value    | -51                | Результаты не совпали                                           |
-|                   | test_3_area      | Invalid value    | 0                  | Результаты не совпали                                           |
-|                   | test_1_perimeter | 21               | 21                 | Результаты совпали                                              |
-|                   | test_2_perimeter | Invalid value    | 4                  | Результаты не совпали                                           |
-|                   | test_3_perimeter | 43               | 43                 | Результаты совпали                                              |
-| test_square.py    | test_1_area      | Invalid value    | 49                 | Результаты не совпали                                           |
-|                   | test_2_area      | Invalid value    | 0                  | Результаты не совпали                                           |
-|                   | test_3_area      | 5184             | 5184               | Результаты совпали                                              |
-|                   | test_1_perimeter | Invalid value    | -32                | Результаты не совпали                                           |
-|                   | test_2_perimeter | 92               | 92                 | Результаты совпали                                              |
-|                   | test_3_perimeter | 196              | 196                | Результаты совпали                                              |
-| test_circle.py    | test_1_area      | 50.26548         | 50.26548245743669  | Результаты не совпали на некую дельта, которой можно пренебречь |
-|                   | test_2_area      | 1385.44236       | 1385.442360233099  | Результаты не совпали на некую дельта, которой можно пренебречь |
-|                   | test_3_area      | Invalid value    | 254.46900494077323 | Результаты не совпали                                           |
-|                   | test_1_perimeter | 18.84956         | 18.84955592153876  | Результаты не совпали на некую дельта, которой можно пренебречь |
-|                   | test_2_perimeter | 69.11504         | 69.11503837897544  | Результаты не совпали на некую дельта, которой можно пренебречь |
-|                   | test_3_perimeter | 31.41593         | 31.41592653589793  | Результаты не совпали на некую дельта, которой можно пренебречь |
-| test_rectangle.py | test_1_area      | 28               | 28                 | Результаты совпали                                              |
-|                   | test_2_area      | 30               | 30                 | Результаты совпали                                              |
-|                   | test_3_area      | Invalid value    | 0                  | Результаты не совпали                                           |
-|                   | test_1_perimeter | 22               | 22                 | Результаты совпали                                              |
-|                   | test_2_perimeter | Invalid value    | 76                 | Результаты не совпали                                           |
-|                   | test_3_perimeter | 6                | 6                  | Результаты совпали                                              |
+Autotests success: 58%
 
 ## History of tests
 
-| Date                    | Branch       | Hash                                     | Author                                          | Comments                                                |
-|-------------------------|--------------|------------------------------------------|-------------------------------------------------|---------------------------------------------------------| 
-| Wed Dec 6 02:45:46 2023 | tests_409440 | 86474fb1eea6c4d41494ce70d40f9ccf0baa9aa9 | Alina Ramazanova <alinaramazanova610@gmail.com> | Added unittests for geometric functions                 |
+| Date                    | Branch       | Hash                                     | Author                                          | Comments                                |
+|-------------------------|--------------|------------------------------------------|-------------------------------------------------|-----------------------------------------| 
+| Wed Dec 6 02:45:46 2023 | tests_409440 | 86474fb1eea6c4d41494ce70d40f9ccf0baa9aa9 | Alina Ramazanova <alinaramazanova610@gmail.com> | Added unittests for geometric functions |
+| Thu Dec 7 13:36:22 2023 | tests_409440 | 3b9c187fb675f9bca5ee2656f3a0cc64d924fc82 | Alina Ramazanova <alinaramazanova610@gmail.com> | Added modified unittests                |

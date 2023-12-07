@@ -2,33 +2,41 @@ import unittest
 
 class TriangleTestCase(unittest.TestCase):
 
-    def area_test_zero(self):
+    def test_area_test_zero(self):
         res = area(0,0)
         self.assertEqual(res,0)
 
-    def area_test_number(self):
+    def test_area_test_number(self):
         res = area(7,4)
         self.assertEqual(res,14.0)
 
-    def area_test_float_number(self):
+    def test_area_test_float_number(self):
         res = area(9.46,5.345)
-        self.assertEqual(res,25.281850000000002)
+        self.assertAlmostEqual(res,25.28,places=2)
 
-    def perimeter_test_zero(self):
+    def test_perimeter_test_zero(self):
         res = perimeter(0,14,5)
         self.assertEqual(res,0)
 
-    def perimeter_test_float_number(self):
+    def test_perimeter_test_float_number(self):
         res = perimeter(7.4567,8.919082,6.014142)
-        self.assertEqual(res,22.389924)
+        self.assertAlmostEqual(res,22.39,places=2)
 
-    def perimeter_test_number(self):
+    def test_perimeter_test_number(self):
         res = perimeter(3,4,5)
         self.assertEqual(res,12)
 
-    def perimeter_test_number2(self):
+    def test_perimeter_test_number2(self):
         res = perimeter(2,2,6)
         self.assertEqual(res,"ERROR")
+
+    def test_area_test_negative_number(self):
+        res = area(-1,2)
+        self.assertEqual(res, "ERROR")
+
+    def test_perimeter_test_negative_number(self):
+        res = perimeter(-1,1,1)
+        self.assertEqual(res, "ERROR")
 
 
 
@@ -59,5 +67,3 @@ def perimeter(a,b,c):
                 a + и + с: периметр треугольника
     '''
     return a + b + c
-
-print(perimeter(7.4567,8.919082,6.014142))

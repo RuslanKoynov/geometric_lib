@@ -133,5 +133,6 @@ out: 20
 | 90d7034 | vya4eslavv <slavinidzecinema@yandex.ru> | documentation added for: circle.py, rectangle.py, square.py, triangle.py |
 | c38a92a | vya4eslavv <slavinidzecinema@yandex.ru> | Was modifided final unittests for modules |
 
-
-После проведения тестирования было выявлено, что 85% тестов - верны.
+Количество тестов - 24
+Пройденных тестов - 20
+После проведения тестирования было выявлено, что 83% тестов - прошли.

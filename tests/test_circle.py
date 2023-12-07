@@ -16,8 +16,8 @@ class CircleTestCase(unittest.TestCase):
         self.assertAlmostEqual(res, 39.81528865453561)
 
     def test_area_4(self):
-        res = area(-100)
-        self.assertEqual(res, 0)
+        with self.assertRaises(Exception):
+            area(-100)
 
     def test_perimeter_1(self):
         res = perimeter(56)
@@ -32,5 +32,5 @@ class CircleTestCase(unittest.TestCase):
         self.assertAlmostEqual(res, 35.18583772020568)
 
     def test_perimeter_4(self):
-        res = perimeter(-13)
-        self.assertEqual(res, 0)
+        with self.assertRaises(Exception):
+            perimeter(-13)

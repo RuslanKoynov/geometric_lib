@@ -1,0 +1,26 @@
+# This is a basic workflow to help you get started with Actions
+
+name: do_unitests
+on: push
+jobs:
+  test_ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+      - name: install Python
+        uses: actions/setup-python@v4
+      - name: runTest
+        run: python -m unitest
+  test_windows:
+    needs: [test_ubuntu]
+    runs-on: windows-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+      - name: install Python
+        uses: actions/setup-python@v4
+      - name: runTest
+        run: python -m unitest
+    
+        

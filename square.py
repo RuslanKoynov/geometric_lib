@@ -26,8 +26,8 @@ class TestSquareMethods(unittest.TestCase):
         self.assertEqual(result,0)
 
     def test_area_negative(self):
-        result = area(-5)
-        self.assertEqual(result,"Error")
+        with self.assertRaises(Exception):
+            area(-5)
 
     def test_perimeter_zero(self):
         result = perimeter(0)
@@ -42,8 +42,8 @@ class TestSquareMethods(unittest.TestCase):
         self.assertEqual(result,10)
 
     def test_perimeter_negative(self):
-        result = perimeter(-5)
-        self.assertEqual(result,"Error")
+        with self.assertRaises(Exception):
+            perimeter(-2)
         
         
 if __name__ == '__main__':

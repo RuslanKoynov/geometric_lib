@@ -31,7 +31,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run tests
         run: |
-          python -m unittest circle.py,
-          python -m unittest rectangle.py,
-          python -m unittest square.py,
-          python -m unittest triangle.py,
+          python -m unittest circle.py
+          python -m unittest rectangle.py
+          python -m unittest square.py
+          python -m unittest triangle.py

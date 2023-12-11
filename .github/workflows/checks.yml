@@ -1,4 +1,4 @@
-name: "CI"
+name: CI
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v2
+      - uses: actions/checkout@v2
       - name: Install python
         uses: actions/setup-python@v2
         with:
@@ -25,9 +25,10 @@ jobs:
       - name: Run mypy
         run: mypy .
 
+  build_windows:
     runs-on: windows-latest
     steps:
-      - uses: action/checkout@v2
+      - uses: actions/checkout@v2
       - name: Install python
         uses: actions/setup-python@v2
         with:
@@ -37,10 +38,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run test square
-        run: square.py .
+        run: python square.py
       - name: Run test circle
-        run: circle.py .
+        run: python circle.py
       - name: Run test rectangle
-        run: rectangle.py .
+        run: python rectangle.py
       - name: Run test triangle
-        run: triangle.py .
+        run: python triangle.py

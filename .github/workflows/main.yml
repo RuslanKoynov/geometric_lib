@@ -1,9 +1,9 @@
 name: "testing modules"
 on:
   push:
-    branches: [ " cicd_368153" ]
+    branches: [ "cicd_368153" ]
   pull_request:
-    branches: [ " cicd_368153 " ]
+    branches: [ "cicd_368153" ]
 
 jobs:
   ubuntu_latest_testing:

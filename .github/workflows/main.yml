@@ -16,11 +16,11 @@ jobs:
         with:
           python-version: 3.9
       - name: run_unittests
-        run:
-          python -m unittest testCircle.py
-          python -m unittest testSquare.py
-          python -m unittest testRectangle.py
-          python -m unittest testTriangle.py
+        run: |
+          python -m unittest "testCircle.py"
+          python -m unittest "testSquare.py"
+          python -m unittest "testRectangle.py"
+          python -m unittest "testTriangle.py"
   windows_latest_testing:
     runs-on: windows-latest
     steps:
@@ -31,8 +31,8 @@ jobs:
         with:
           python-version: 3.9
       - name: run_unittests
-        run:
-          python -m unittest testCircle.py
-          python -m unittest testSquare.py
-          python -m unittest testRectangle.py
-          python -m unittest testTriangle.py
+        run: |
+          python -m unittest "testCircle.py"
+          python -m unittest "testSquare.py"
+          python -m unittest "testRectangle.py"
+          python -m unittest "testTriangle.py"

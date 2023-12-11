@@ -1,0 +1,38 @@
+name: "testing modules"
+on:
+  push:
+    branches: [ " cicd_368153" ]
+  pull_request:
+    branches: [ " cicd_368153 " ]
+
+jobs:
+  ubuntu_latest_testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: python_install
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
+      - name: run_unittests
+        run:
+          python -m unittest testCircle.py
+          python -m unittest testSquare.py
+          python -m unittest testRectangle.py
+          python -m unittest testTriangle.py
+  windows_latest_testing:
+    runs-on: windows-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: python_install
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
+      - name: run_unittests
+        run:
+          python -m unittest testCircle.py
+          python -m unittest testSquare.py
+          python -m unittest testRectangle.py
+          python -m unittest testTriangle.py

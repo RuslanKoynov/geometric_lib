@@ -1,0 +1,44 @@
+name: test functions
+
+on:
+  push:
+    branches: [ "main" ] 
+
+jobs:
+  ubuntu_test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: ubuntu check
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Run python unit tests
+        run: |
+          python3 -m unittest circletest
+          python3 -m unittest rectest
+          python3 -m unittest squaretest
+          python3 -m unittest triangletest
+          
+  windows_test:
+    runs-on: windows-latest
+    
+    steps:
+      - name: windows check
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Run python unit tests
+        run: |
+          python3 -m unittest circletest
+          python3 -m unittest rectest
+          python3 -m unittest squaretest
+          python3 -m unittest triangletest

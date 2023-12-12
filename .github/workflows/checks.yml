@@ -14,11 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: run_test
+      - name: Instal python
         uses: actions/setup-python@v3
         with:
           python-version: 3.11
-      - name: Install deps
+      - name: run_tests
         run: |
           python -m unittest "сircle.py"
           python -m unittest "rectangle.py"
@@ -29,11 +29,11 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
-      - name: run_test
+      - name: Instal python
         uses: actions/setup-python@v3
         with:
           python-version: 3.11
-      - name: Install deps
+      - name: run_tests
         run: |
           python -m unittest "сircle.py"
           python -m unittest "rectangle.py"

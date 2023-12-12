@@ -2,10 +2,10 @@ name: "CI"
 
 on:
   push:
-    branches: [ "main","ci/cd409221" ]
+    branches: [ "ci/cd409221" ]
 
   pull_request:
-    branches: [ "main","ci/cd409221" ]
+    branches: [ "ci/cd409221" ]
 
 jobs:
   build_linux:

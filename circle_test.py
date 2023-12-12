@@ -1,23 +1,26 @@
-from circle import area, perimeter
-
 import unittest
 
-class CircleTestCase(unittest.TestCase):
-    def test_circle_area(self):
-        res = area(10)
-        self.assertEqual(res, 314.1592653589793)
+from circle import area
+from circle import perimeter
+from math import pi
 
-    def test_circle_area_zero(self):
-        res = area(0)
-        self.assertEqual(res, 0)
 
-    def test_circle_perimeter(self):
-        res = perimeter(10)
-        self.assertEqual(res, 62.83185307179586)
+class MyTestCase(unittest.TestCase):
 
-    def test_circle_perimeter_zero(self):
-        res = perimeter(0)
-        self.assertEqual(res, 0)
+    def test_area(self):
+        self.assertEqual(area(4), pi * 4 ** 2)
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_area_errorValue(self):
+        self.assertRaises(ValueError, area, -12345)
+
+    def test_area_errorType(self):
+        self.assertRaises(TypeError, area, "abcd")
+
+    def test_perimetr(self):
+        self.assertEqual(perimeter(4), pi * 4 * 2)
+
+    def test_perimetr_errorValue(self):
+        self.assertRaises(ValueError, perimeter, -12345)
+
+    def test_perimetr_errorType(self):
+        self.assertRaises(TypeError, perimeter, "abcd")

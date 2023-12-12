@@ -2,10 +2,12 @@ name: "CI"
 
 on:
   push:
-    branches: [ "ci/cd409221" ]
+    branches:  
+      - "ci/cd409221" 
 
   pull_request:
-    branches: [ "ci/cd409221" ]
+    branches: 
+      - "ci/cd409221" 
 
 jobs:
   build_linux:
@@ -15,7 +17,7 @@ jobs:
       - name: Install python
         uses: actions/setup-python@v3
         with:
-          python-version: 3.9
+          python-version: 3.11
       - name: Install deps
         run: |
           python -m unittest "сircle.py"
@@ -30,7 +32,7 @@ jobs:
       - name: Install python
         uses: actions/setup-python@v3
         with:
-          python-version: 3.9
+          python-version: 3.11
       - name: Install deps
         run: |
           python -m unittest "сircle.py"

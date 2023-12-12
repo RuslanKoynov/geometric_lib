@@ -126,6 +126,18 @@ _Вывод:_
 9  
 ```
 ---
+# Успешность автотестов
+
+ Количество автотестов (24)
+
+ Количество успешных автотестов (15)
+
+ Процент успешных автотестов (62%)
+
+
+ ---
+
+---
 # История изменение проекта
 | **Hash** | **Author** | **Comments** |
 |----------|----------|----------|
@@ -134,3 +146,4 @@ _Вывод:_
 | fa0d43aaeb3c348505c586a2605f99cbd6f59b2f    | Levalnik <levkuimov34@gmail.com>   | Added new file   |
 | 2b8665be539574295a48cf7a9c1042f8bc4ed005    |  Levalnik <levkuimov34@gmail.com>   |  Fixed the mistake   |
 | 33ffd40a2a3b5ad22ff3717dba825aac5c74bc0d         |  Levalnik <levkuimov34@gmail.com>          | Added comments to functions  |
+| a6d5289eb43474d84ff71b4f4daafd5a2529bb3f         |  Levman228 <levkuimov34@gmail.com>          | Added unittests  |

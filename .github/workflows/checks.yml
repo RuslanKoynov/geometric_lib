@@ -17,7 +17,8 @@ jobs:
       - name: Install python
         uses: actions/setup-python@v3
         with:
-          python-version: 3.12
+          python-version: "3.12"
+          architecture: x64
       - name: CICD tests
         run: |
           python -m unittest "circle.py"
@@ -33,6 +34,7 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: 3.12
+          architecture: x64
       - name: CICD tests
         run: |
           python -m unittest "circle.py"

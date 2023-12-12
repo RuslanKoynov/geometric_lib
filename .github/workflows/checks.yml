@@ -13,7 +13,7 @@ jobs:
   build_linux:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v3
+      - uses: actions/checkout@v3
       - name: Install python
         uses: actions/setup-python@v3
         with:
@@ -28,7 +28,7 @@ jobs:
   build_windows:
     runs-on: windows-latest
     steps:
-      - uses: action/checkout@v3
+      - uses: actions/checkout@v3
       - name: Install python
         uses: actions/setup-python@v3
         with:

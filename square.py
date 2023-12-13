@@ -1,9 +1,7 @@
 import unittest
-from triangle import maxChislo
-
 from triangle import primlenakr
-
 from triangle import sortirovka
+from triangle import maxChislo
 
 class Test(unittest.TestCase):
     def test_obchisla(self):

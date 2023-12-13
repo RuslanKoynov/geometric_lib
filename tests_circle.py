@@ -8,8 +8,8 @@ from triangle import area as triangle_area, perimeter as triangle_perimeter
 
 class TestCircle(unittest.TestCase):
     def test_zero_area(self):
-        res1 = circle_area(3.5)
-        self.assertEqual(res1, 38.48451000647496)
+        res1 = circle_area(4.6)
+        self.assertEqual(res1, 66.47610054996001)
     def test_negative(self):
        with self.assertRaises(TypeError):
             circle_area(-5)

@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - documentation_408143
+      - cicd_408143
+      - test_408143
+  pull_request:
+    branches:
+      - main
+      - documentation_408143
+      - cicd_408143
+      - test_408143
+
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout rep
+        uses: actions/checkout@v3
+      - name: Inst
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Run tests
+        run: python3 -m unittest
+  job2:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout rep
+        uses: actions/checkout@v3
+      - name: Inst
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Run tests
+        run: python3 -m unittest

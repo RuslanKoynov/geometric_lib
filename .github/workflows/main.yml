@@ -1,0 +1,41 @@
+name: Tests by Maria Nikitina
+
+on:
+  push:
+    branches:
+      - cicd_360869
+  pull_request:
+    branches:
+      - cicd_360868
+
+jobs:
+  tests-for-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: repository copy
+        uses: actions/checkout@v2
+      - name: Install python for check
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11
+      - name: Run tests for module
+        run: |
+          python -m unittest "test_circle.py"
+          python -m unittest "test_rectangle.py"
+          python -m unittest "test_square.py"
+          python -m unittest "test_triangle.py"
+  tests-for-windows:
+    runs-on: windows-latest
+    steps:
+      - name: repository copy
+        uses: actions/checkout@v2
+      - name: Install python for check
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11
+      - name: Run tests for module
+        run: |
+          python -m unittest "test_circle.py"
+          python -m unittest "test_rectangle.py"
+          python -m unittest "test_square.py"
+          python -m unittest "test_triangle.py"

@@ -12,5 +12,5 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(result, 18)
         
     def test_perimeter(self):
-        result = rectangle.perimeter('a', 'b')
-        self.assertEqual(result, 18)
+        result = rectangle.perimeter(-4, -5)
+        self.assertEqual(result, "Error")

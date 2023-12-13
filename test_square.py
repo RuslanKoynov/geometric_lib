@@ -12,5 +12,5 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(result, 8)
         
     def test_perimeter(self):
-        result = square.perimeter('a')
-        self.assertEqual(result, 8)
+        result = square.perimeter(-2)
+        self.assertEqual(result, 'Error')

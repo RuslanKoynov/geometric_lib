@@ -24,4 +24,3 @@ def perimeter(a, b):
     """
     return 2 * (a + b)
 
-print("Площадь =",area(2,5)," , ", "Периметр=", perimeter(2,5))

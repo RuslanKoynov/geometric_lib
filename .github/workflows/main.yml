@@ -22,4 +22,4 @@ jobs:
         python-version: "3.9"
 
     - name: Run Unit-Tests
-      run: Unit-Tests/Tests-Activate.py
+      run: C:\Users\timsl\PycharmProjects\geometric_lib\Unit-Tests\Tests-Activate.py

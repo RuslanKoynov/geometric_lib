@@ -1,24 +1,45 @@
 name: ci/cd unit test start
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  test:
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]
-
-    runs-on: ${{ matrix.os }}
+  test_linux:
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python
-      uses: actions/setup-python@v3
-      with:
-        python-version: '3.11'
-    - name: Run tests
-      run: |
-          python -m unittest "circle_test.py"
-          python -m unittest "square_test.py"
-          python -m unittest "triangle_test.py"
-          python -m unittest "rectangle_test.py"
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11
+
+      - name: Start Unittest
+        run: |
+          python3 -m unittest circle_test.py
+          python3 -m unittest rectangle_test.py
+          python3 -m unittest square_test.py
+          python3 -m unittest triangle_test.py
+          
+  test_windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11
+
+      - name: Start Unittest
+        run: |
+          python3 -m unittest circle_test.py
+          python3 -m unittest rectangle_test.py
+          python3 -m unittest square_test.py
+          python3 -m unittest triangle_test.py

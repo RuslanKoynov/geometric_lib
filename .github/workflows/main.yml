@@ -1,4 +1,4 @@
-name: Test-Activate
+name: Tests-Activate
 
 on:
   push:

@@ -25,4 +25,3 @@ def perimeter(a, b, c):
     """
     return a + b + c
 
-print("Площадь =",area(5,3)," , ", "Периметр=", perimeter(1,2,3))

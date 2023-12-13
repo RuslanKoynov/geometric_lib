@@ -1,0 +1,24 @@
+name: ci/cd unit test start
+
+on: [push]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.11'
+    - name: Run tests
+      run: |
+          python -m unittest "circle_test.py"
+          python -m unittest "square_test.py"
+          python -m unittest "triangle_test.py"
+          python -m unittest "rectangle_test.py"

@@ -22,4 +22,4 @@ jobs:
         python-version: "3.10"
 
     - name: Run Unit-Tests
-      run: python Tests-Activate.py
+      run: python Unit-Tests/Tests-Activate.py

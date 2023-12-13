@@ -1,0 +1,41 @@
+name: Tests by Alina Shvedova
+
+on:
+  push:
+    branches:
+      - cicd_409884
+  pull_request:
+    branches:
+      - cicd_409884
+
+jobs:
+  tests-for-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copy repository after checkout
+        uses: actions/checkout@v2
+      - name: Install python for check
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11
+      - name: Run tests for module
+        run: |
+          python -m unittest "circle.py"
+          python -m unittest "rectangle.py"
+          python -m unittest "square.py"
+          python -m unittest "triangle.py"
+  tests-for-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Copy repository after checkout
+        uses: actions/checkout@v2
+      - name: Install python for check
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11
+      - name: Run tests for module
+        run: |
+          python -m unittest "circle.py"
+          python -m unittest "rectangle.py"
+          python -m unittest "square.py"
+          python -m unittest "triangle.py"

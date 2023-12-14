@@ -11,7 +11,7 @@ class TestTriangleArea(unittest.TestCase):
     def test_area(self):
         self.assertAlmostEqual(area(3,4), 6)
     def test_area(self):
-        self.assertAlmostEqual(area(35616533,83274987), 35616533*83274987/2)
+        self.assertAlmostEqual(area(35616533,83274987), 1482983161280035.5)
 
 class TestTrianglePerimeter(unittest.TestCase):
     def test_perimeter(self):
@@ -21,5 +21,5 @@ class TestTrianglePerimeter(unittest.TestCase):
     def test_perimeter(self):
         self.assertAlmostEqual(perimeter(3,4,5), 12)
     def test_perimeter(self):
-        self.assertAlmostEqual(perimeter(35616533,83274987,98473),35616533+83274987+98473)
+        self.assertAlmostEqual(perimeter(35616533,83274987,98473),118989993)
 

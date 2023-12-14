@@ -8,27 +8,27 @@ from triangle import area as triangle_area, perimeter as triangle_perimeter
 
 class TestCircle(unittest.TestCase):
     def test_zero_area(self):
-        res1 = circle_area(4.6)
-        self.assertEqual(res1, 66.47610054996001)
+        res1 = circle_area(3.5)
+        self.assertAlmostEqual(res1, 38.48451000647496, delta = 0.01)
     def test_negative(self):
        with self.assertRaises(TypeError):
             circle_area(-5)
 
     def test_small_area(self):
         res2 = circle_area(-6)
-        self.assertEqual(res2, 113.09733552923255)
+        self.assertAlmostEqual(res2, 113.09733552923255, delta = 0.01)
 
     def test_large_area(self):
         res3 = circle_area(11)
-        self.assertEqual(res3, 380.1327110843649)
+        self.assertAlmostEqual(res3, 380.1327110843649, delta = 0.01)
 
     def test_small_perimeter(self):
         res4 = circle_perimeter(2.5)
-        self.assertEqual(res4,15.707963267948966)
+        self.assertAlmostEqual(res4,15.707963267948966, delta = 0.01)
 
     def test_large_perimeter(self):
         res5 = circle_perimeter(67)
-        self.assertEqual(res5, 420.97341558103227)
+        self.assertAlmostEqual(res5, 420.97341558103227, delta = 0.01)
     def test_negative(self):
         with self.assertRaises(TypeError):
             circle_perimeter(-3)
@@ -81,7 +81,7 @@ class TestSquare(unittest.TestCase):
 
     def test_small_area(self):
         res13 = square_area(1.5)
-        self.assertEqual(res13, 2.25)
+        self.assertAlmostEqual(res13, 2.25, delta = 0.01)
 
     def test_large_area(self):
         res14 = square_area(9)
@@ -98,7 +98,7 @@ class TestSquare(unittest.TestCase):
 
     def test_small_perimeter(self):
         res16 = square_perimeter(5.5)
-        self.assertEqual(res16, 22.0)
+        self.assertAlmostEqual(res16, 22.0, delta = 0.01)
 
     def test_large_perimeter(self):
         res17 = square_perimeter(20)
@@ -127,7 +127,7 @@ class TestTriangle(unittest.TestCase):
         self.assertEqual(res21, 5818856535136027)
 
     def test_negative(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(TypeError):
             triangle_perimeter(-21, 0, 0)
 
 

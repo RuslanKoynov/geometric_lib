@@ -9,9 +9,9 @@ class TestSquareArea(unittest.TestCase):
     def test_area(self):
         self.assertAlmostEqual(area(1), 1)
     def test_area(self):
-        self.assertAlmostEqual(area(3), 9)
+        self.assertRaises(ValueError,area, -3)
     def test_area(self):
-        self.assertAlmostEqual(area(35616533), 1.26854e15)
+        self.assertAlmostEqual(area(35616533), 126854801372569)
 
 class TestSquarePerimeter(unittest.TestCase):
     def test_perimeter(self):

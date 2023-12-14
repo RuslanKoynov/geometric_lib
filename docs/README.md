@@ -1,10 +1,14 @@
 # Math formulas
+
 ## Area
+
 - Circle: S = πR²
 - Rectangle: S = ab
 - Square: S = a²
 - Triangle: S = ah/2
+
 ## Perimeter
+
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
@@ -115,10 +119,16 @@ print(perimeter(1, 2, 3))
 3
 6
 ```
+# Ручные тесты
+X=27 (всего было создано 27 тестов)
 
+Y=17 (успешно пройденно 17)
+
+P=63% (процент успешного выполнения теста)
 # История изменения проекта с хешами комитов
 | Hash | Author  | Date  |
 |--------|-------|-------|
+| c43bf12|  Mogohars <Qweqweqwe1232005@gmail.com>| Wed Dec 13 16:19:42 2023|
 | 6ebca62 |  Mogohars <Qweqweqwe1232005@gmail.com>|Wed Oct 4 19:48:20 2023|
 | a0967ca |  Mogohars <Qweqweqwe1232005@gmail.com>|Wed Sep 20 20:13:05 2023|
 | a2e7358 | Mogohars <Qweqweqwe1232005@gmail.com>|  Wed Sep 20 20:10:36 2023|

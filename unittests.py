@@ -127,7 +127,7 @@ class TestTriangle(unittest.TestCase):
         self.assertEqual(res21, 5818856535136027)
 
     def test_negative(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(TypeError):
             triangle_perimeter(-21, 0, 0)
 
 

@@ -17,7 +17,7 @@ class TestArea(unittest.TestCase):
     def test_rectangle_area_negative(self):
         self.assertEqual(TypeError,perimeter,0, -1)
     def test_circle_area_string(self):
-        self.assertEqual(TypeError,area, 'abc',7)
+        self.assertEqual(TypeError,area, 'abcыы',7)
 
 
 class TestPerimeter(unittest.TestCase):

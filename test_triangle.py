@@ -9,7 +9,7 @@ class TestTriangleArea(unittest.TestCase):
     def test_area(self):
         self.assertAlmostEqual(area(1,2), 1)
     def test_area(self):
-        self.assertAlmostEqual(area(3,4), 6)
+        self.assertAlmostEqual(area(-3,-4), error)
     def test_area(self):
         self.assertAlmostEqual(area(35616533,83274987), 1482983161280035.5)
 

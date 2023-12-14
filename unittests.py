@@ -9,26 +9,26 @@ from triangle import area as triangle_area, perimeter as triangle_perimeter
 class TestCircle(unittest.TestCase):
     def test_zero_area(self):
         res1 = circle_area(3.5)
-        self.assertAlmostEqual(res1, 38.48451000647496, delta = 0.1)
+        self.assertAlmostEqual(res1, 38.484, delta = 0.1)
     def test_negative(self):
        with self.assertRaises(ValueError):
             circle_area(-5)
 
     def test_small_area(self):
         res2 = circle_area(-6)
-        self.assertAlmostEqual(res2, 113.09733552923255, delta = 0.1)
+        self.assertAlmostEqual(res2, 113.097, delta = 0.1)
 
     def test_large_area(self):
         res3 = circle_area(11)
-        self.assertAlmostEqual(res3, 380.1327110843649, delta = 0.1)
+        self.assertAlmostEqual(res3, 380.134, delta = 0.1)
 
     def test_small_perimeter(self):
         res4 = circle_perimeter(2.5)
-        self.assertAlmostEqual(res4,15.707963267948966, delta = 0.1)
+        self.assertAlmostEqual(res4,15.707, delta = 0.1)
 
     def test_large_perimeter(self):
         res5 = circle_perimeter(67)
-        self.assertAlmostEqual(res5, 420.97341558103227, delta = 0.1)
+        self.assertAlmostEqual(res5, 420.973, delta = 0.1)
     def test_negative(self):
         with self.assertRaises(ValueError):
             circle_perimeter(-3)

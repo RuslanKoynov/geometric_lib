@@ -1,0 +1,41 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ "cicd_409917" ]
+  pull_request:
+    branches: [ "cicd_409917" ]
+
+jobs:
+
+  forUbuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository on Ubuntu
+        uses: actions/checkout@v3
+      - name: Install Python on Ubuntu
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+          architecture: x64
+      - name: Run Tests on Ubuntu
+        run: |
+          python -m unittest "test_circle.py"
+          python -m unittest "test_rectangle.py"
+          python -m unittest "test_square.py"
+
+  forWindows:
+    runs-on: windows-latest
+    steps:
+      - name: Clone Repository on Windows
+        uses: actions/checkout@v3
+      - name: Install Python on Windows
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+          architecture: x64
+      - name: Run Tests on Windows
+        run: |
+          python -m unittest "test_circle.py"
+          python -m unittest "test_rectangle.py"
+          python -m unittest "test_square.py"

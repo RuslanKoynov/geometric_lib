@@ -11,6 +11,5 @@ class TestRectangle(unittest.TestCase):
         result = rectangle.perimeter(4, 5)
         self.assertEqual(result, 18)
         
-    def test_perimeter(self):
-        result = rectangle.perimeter(-4, -5)
-        self.assertEqual(result, "Error")
+    def test_negative_mul(self):
+        self.assertRaises(TypeError, rectangle.area, -10, -5)

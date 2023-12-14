@@ -11,6 +11,5 @@ class TestTriangle(unittest.TestCase):
         result = triangle.perimeter(4, 5, 6)
         self.assertEqual(result, 15)
         
-    def test_perimeter(self):
-        result = triangle.perimeter(-4, -5, -6)
-        self.assertEqual(result, 'Error')
+    def test_negative_mul(self):
+        self.assertRaises(TypeError, triangle.area, -10. -5)

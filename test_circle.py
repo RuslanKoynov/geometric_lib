@@ -11,6 +11,5 @@ class TestCircle(unittest.TestCase):
         result = round(circle.perimeter(9), 2)
         self.assertEqual(result, 56.55)
         
-    def test_perimeter(self):
-        result = circle.perimeter(-9)
-        self.assertEqual(result, 'Error')
+    def test_negative(self):
+        self.assertRaises(TypeError, circle.area, -10)

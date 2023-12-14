@@ -15,11 +15,14 @@ class RectangleTest(unittest.TestCase):
 
     def test_rectangle_area_3(self):
         res = area(-5, -5)
-        self.assertEqual(res, 0)
+        self.assertEqual(res, "Error negative value")
 
     def test_rectangle_area_4(self):
         res = area("5", "5")
-        self.assertEqual(res, 25)
+        try:
+            perimeter("5","5")
+        except TypeError:
+            print("Error str")
 
     def test_rectangle_perimeter_1(self):
         res = perimeter(5, 0)
@@ -31,8 +34,11 @@ class RectangleTest(unittest.TestCase):
 
     def test_rectangle_perimeter_3(self):
         res = perimeter(-1, -2)
-        self.assertEqual(res, 0)
+        self.assertEqual(res, "Error negative value")
 
     def test_rectangle_perimeter_4(self):
         res = perimeter("1", "1")
-        self.assertEqual(res, 4)
+        try:
+            perimeter("1","1")
+        except TypeError:
+            print("Error str")

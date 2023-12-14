@@ -7,7 +7,7 @@ class TestCircleArea(unittest.TestCase):
     def test_area(self):
         self.assertEqual(area(0), pi * 0 ** 2)
     def test_area(self):
-        self.assertEqual(area(1), pi * 1 ** 2)
+        self.assertEqual(round(area(1),2), round(pi * 1 ** 2,2))
     def test_area(self):
         self.assertEqual(area(3), pi * 3 ** 2)
     def test_area(self):

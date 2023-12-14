@@ -2,9 +2,11 @@ name: CI/CD
 
 on:
   push:
-    branches: [ "cicd_409917" ]
+    branches:
+      - '*'
   pull_request:
-    branches: [ "cicd_409917" ]
+    branches: 
+      - '*'
 
 jobs:
 

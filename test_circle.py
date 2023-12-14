@@ -9,7 +9,7 @@ class TestCircleArea(unittest.TestCase):
     def test_area(self):
         self.assertAlmostEqual(area(1), 3.14)
     def test_area(self):
-        self.assertAlmostEqual(area(3), 28.26)
+        self.assertAlmostEqual(area(-3), error)
     def test_area(self):
         self.assertAlmostEqual(area(35616533), 3.98321e15)
 

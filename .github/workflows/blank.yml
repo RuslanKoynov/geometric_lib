@@ -28,10 +28,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run tests
         run: |
-          python -m unittest test_square.py
-          python -m unittest test_rectangle.py
-          python -m unittest test_triangle.py
-          python -m unittest test_circle.py
+            python -m unittest test_square.py
+            python -m unittest test_rectangle.py
+            python -m unittest test_triangle.py
+            python -m unittest test_circle.py
 
   build2:
     # The type of runner that the job will run on
@@ -45,7 +45,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run tests
         run: |
-          python -m unittest test_square.py
-          python -m unittest test_rectangle.py
-          python -m unittest test_triangle.py
-          python -m unittest test_circle.py
+            python -m unittest test_square.py
+            python -m unittest test_rectangle.py
+            python -m unittest test_triangle.py
+            python -m unittest test_circle.py

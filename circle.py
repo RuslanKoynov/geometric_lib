@@ -2,7 +2,7 @@ import math
 
 
 def area(r):
-    '''
+    """
     This function eval area of circle
         Parameters:
              r: radius of circle
@@ -10,12 +10,15 @@ def area(r):
             area: area of circle
         Example:
             area(2): 4pi
-    '''
+    """
+    if str(r).isdigit() and int(r) > 0:
+        return math.pi * int(r) * int(r)
+    else:
+        return 0
 
-    return math.pi * r * r
 
 def perimeter(r):
-    '''
+    """
     This function eval perimeter of circle
         Parameters:
             r: radius of circle
@@ -23,7 +26,8 @@ def perimeter(r):
             perimeter: perimeter of circle
         Example:
             perimeter(2): 4pi
-    '''
-
-    return 2 * math.pi * r
-
+    """
+    if str(r).isdigit() and int(r) > 0:
+        return 2 * math.pi * int(r)
+    else:
+        return 0

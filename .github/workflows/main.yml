@@ -1,0 +1,34 @@
+name: Testing functions for geometric shapes using unittests
+
+on:
+  push:
+
+jobs:
+  runtime-process-on-Ubuntu:
+    name: Ubuntu unittests
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v4
+        - name: running tests for circe.py
+          run: python -m unittest circle_tests.py
+        - name: running tests for rectangle.py
+          run: python -m unittest rectangle_tests.py
+        - name: running tests for square.py
+          run: python -m unittest square_test.py
+        - name: running tests for triangle.py
+          run: python -m unittest triangle_tests.py
+
+
+  runtime-process-on-Windows:
+      name: Windows unittests
+      runs-on: windows-latest
+      steps:
+        - uses: actions/checkout@v4
+        - name: running tests for circe.py
+          run: python -m unittest circle_tests.py
+        - name: running tests for rectangle.py
+          run: python -m unittest rectangle_tests.py
+        - name: running tests for square.py
+          run: python -m unittest square_test.py
+        - name: running tests for triangle.py
+          run: python -m unittest triangle_tests.py

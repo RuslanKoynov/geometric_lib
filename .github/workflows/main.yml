@@ -1,0 +1,42 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ "cicd_409440" ]
+  pull_request:
+    branches: [ "cicd_409440" ]
+
+jobs:
+  tests_for_ubuntu-latest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Copy repository
+        uses: actions/checkout@v2
+      - name: Install Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+      - name: Run CICD tests
+        run: |
+          python -m unittest "test_circle.py"
+          python -m unittest "test_rectangle.py"
+          python -m unittest "test_square.py"
+          python -m unittest "test_triangle.py"
+
+  tests_for_windows-latest:
+    runs-on: windows-latest
+
+    steps:
+      - name: Copy repository
+        uses: actions/checkout@v2
+      - name: Install Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+      - name: Run CICD tests
+        run: |
+          python -m unittest "test_circle.py"
+          python -m unittest "test_rectangle.py"
+          python -m unittest "test_square.py"
+          python -m unittest "test_triangle.py"

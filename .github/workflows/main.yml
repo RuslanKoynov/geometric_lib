@@ -8,35 +8,36 @@ on:
 
 jobs:
   test_ubuntu-latest
-    runs on: ubuntu-latest
-      steps:
-        - name: Checkout Rep in Ubuntu
-          uses: actions/checkout@v3
-        - name: Install Python
-          uses: actions/setup-python@V3
-          with:
-            python-verison: 3.10
-            architectur: x64
-        - name: Run Tests in Ubuntu
-          run : |
-            python3 -m unittest "circle_tests.py"
-            python3 -m unittest "rectangle_tests.py"
-            python3 -m unittest "square_tests.py"
-            python3 -m unittest "triangle_tests.py"
-
-  test_windows-latest
-    runs on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Rep in Ubuntu
         uses: actions/checkout@v3
       - name: Install Python
         uses: actions/setup-python@V3
         with:
-          python-verison: 3.10
-          architectur: x64
+          python-version: 3.10
+          architecture: x64
+      - name: Run Tests in Ubuntu
+        run : |
+          python3 -m unittest "circle\_tests.py"
+          python3 -m unittest "rectangle\_tests.py"
+          python3 -m unittest "square\_tests.py"
+          python3 -m unittest "triangle\_tests.py"
+
+  test_windows-latest
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Rep in Ubuntu
+        uses: actions/checkout@v3
+      - name: Install Python
+        uses: actions/setup-python@V3
+        with:
+          python-version: 3.10
+          architecture: x64
       - name: Run Tests in Windows
         run : |
-          python -m unittest "circle_tests.py"
-          python -m unittest "rectangle_tests.py"
-          python -m unittest "square_tests.py"
-          python -m unittest "triangle_tests.py"
+          python -m unittest "circle\_tests.py"
+          python -m unittest "rectangle\_tests.py"
+          python -m unittest "square\_tests.py"
+          python -m unittest "triangle\_tests.py"
+

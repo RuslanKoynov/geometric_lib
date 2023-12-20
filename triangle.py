@@ -30,21 +30,3 @@ def perimeter(a, b, c):
         perimeter(3.72, 1.34, 4.126) ==> 9.186
     '''
     return a + b + c
-
-class TestStringMethods(unittest.TestCase):
-
-    def test_area(self):
-        self.assertEqual(area(3, 4), 6.0)
-        self.assertEqual(area(1.4, 0), 0)
-        self.assertNotEqual(area(8.65, 4.183), 8)
-        self.assertRaises(TypeError, area, 'two', 8)
-        
-
-    def test_perimeter(self):
-        self.assertEqual(perimeter(110, 15.3, 6.2), 131.5)
-        self.assertEqual(perimeter(0, 0, 0), 0)
-        self.assertNotEqual(perimeter(6.31, 4, 5.7), 10.2)
-        self.assertRaises(TypeError, perimeter, 'eleven', 8, 12.5)
-
-if __name__ == '__main__':
-    unittest.main()

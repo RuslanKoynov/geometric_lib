@@ -2,24 +2,22 @@ name: "CI"
 
 on:
   push:
-    branches:
-      - "cicd_409221"
+    branches: ["cicd_409221"]
 
   pull_request:
-    branches:
-      - "cicd_409221"
+    branches: ["cicd_409221"]
 
 jobs:
   build_linux:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install python
+      - name: Install python 3.12
         uses: actions/setup-python@v3
         with:
           python-version: "3.12"
           architecture: x64
-      - name: CICD tests
+      - name: testing
         run: |
           python -m unittest "circle.py"
           python -m unittest "triangle.py"
@@ -30,12 +28,12 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install python
+      - name: Install python 3.12
         uses: actions/setup-python@v3
         with:
           python-version: 3.12
           architecture: x64
-      - name: CICD tests
+      - name: testing
         run: |
           python -m unittest "circle.py"
           python -m unittest "triangle.py"

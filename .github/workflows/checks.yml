@@ -1,0 +1,41 @@
+name: "CI"
+
+on:
+  push:
+    branches:
+      - "ci/cd409221"
+
+  pull_request:
+    branches:
+      - "ci/cd409221"
+
+jobs:
+  build_linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11
+      - name: run_tests
+        run: |
+          python -m unittest "сircle.py"
+          python -m unittest "rectangle.py"
+          python -m unittest "square.py"
+          python -m unittest "triangle.py"
+
+  build_windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11
+      - name: run_tests
+        run: |
+          python -m unittest "сircle.py"
+          python -m unittest "rectangle.py"
+          python -m unittest "square.py"
+          python -m unittest "triangle.py"

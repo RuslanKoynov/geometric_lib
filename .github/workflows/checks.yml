@@ -3,11 +3,11 @@ name: "CI"
 on:
   push:
     branches:
-      - "ci_cd409221"
+      - "cicd_409221"
 
   pull_request:
     branches:
-      - "ci_cd409221"
+      - "cicd_409221"
 
 jobs:
   build_linux:

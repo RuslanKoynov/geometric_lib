@@ -1,0 +1,29 @@
+name: Run unit tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
+
+      - name: Run tests
+        run: |
+          echo python -m unittest unit_tests.py
+          echo python -m unittest unit_tests2.py
+          echo python -m unittest unit_tests3.py
+          echo python -m unittest unit_tests4.py

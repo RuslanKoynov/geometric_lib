@@ -14,28 +14,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Instal python
+      - name: Install python
         uses: actions/setup-python@v3
         with:
-          python-version: 3.11
-      - name: run_tests
+          python-version: "3.12"
+          architecture: x64
+      - name: CICD tests
         run: |
-          python -m unittest "сircle.py"
+          python -m unittest "circle.py"
+          python -m unittest "triangle.py"
           python -m unittest "rectangle.py"
           python -m unittest "square.py"
-          python -m unittest "triangle.py"
 
   build_windows:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Instal python
+      - uses: actions/checkout@v2
+      - name: Install python
         uses: actions/setup-python@v3
         with:
-          python-version: 3.11
-      - name: run_tests
+          python-version: 3.12
+          architecture: x64
+      - name: CICD tests
         run: |
-          python -m unittest "сircle.py"
+          python -m unittest "circle.py"
+          python -m unittest "triangle.py"
           python -m unittest "rectangle.py"
           python -m unittest "square.py"
-          python -m unittest "triangle.py"

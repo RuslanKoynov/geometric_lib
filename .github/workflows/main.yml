@@ -2,13 +2,14 @@ name: CI/CD tests
 
 on:
   push:
-    branches: [ "cicd_413131" ]
+    branches:  
+      - "cicd_413131" 
   pull_request:
-    branches: [ "cicd_413131" ]
+    branches: 
+      - "cicd_413131"
 
 jobs:
-  test_ubuntu-latest
-    name:test_ubuntu
+  tests_ubuntu:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Rep in Ubuntu
@@ -20,13 +21,12 @@ jobs:
           architecture: x64
       - name: Run Tests in Ubuntu
         run : |
-          python3 -m unittest "circle\_tests.py"
-          python3 -m unittest "rectangle\_tests.py"
-          python3 -m unittest "square\_tests.py"
-          python3 -m unittest "triangle\_tests.py"
+          python3 -m unittest "circle_tests.py"
+          python3 -m unittest "rectangle_tests.py"
+          python3 -m unittest "square_tests.py"
+          python3 -m unittest "triangle_tests.py"
 
-  test_windows-latest
-    name:test_ubuntu
+  tests_windows:
     runs-on: windows-latest
     steps:
       - name: Checkout Rep in Ubuntu
@@ -38,8 +38,7 @@ jobs:
           architecture: x64
       - name: Run Tests in Windows
         run : |
-          python -m unittest "circle\_tests.py"
-          python -m unittest "rectangle\_tests.py"
-          python -m unittest "square\_tests.py"
-          python -m unittest "triangle\_tests.py"
-
+          python -m unittest "circle_tests.py"
+          python -m unittest "rectangle_tests.py"
+          python -m unittest "square_tests.py"
+          python -m unittest "triangle_tests.py"

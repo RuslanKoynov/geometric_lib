@@ -31,7 +31,7 @@ class TestRectangle(unittest.TestCase):
         Тест для проверки вычисления площади треугольника с положительными сторонами треугольника.
         '''
         res = rectangle.area(5, 5)
-        self.assertAlmostEqual(res, 24)
+        self.assertAlmostEqual(res, 25)
 
     # Проверка на периметр треугольника
 
@@ -40,14 +40,14 @@ class TestRectangle(unittest.TestCase):
         Тест для проверки вычисления периметра треугольника с отрицательными сторонами треугольника.
         '''
         res = rectangle.perimeter(-3, -3)
-        self.assertAlmostEqual(res, -11)
+        self.assertAlmostEqual(res, -12)
 
     def test_perimeter_zero(self):
         '''
         Тест для проверки вычисления периметра треугольника с нулевыми сторонами треугольника.
         '''
         res = rectangle.perimeter(0, 0)
-        self.assertAlmostEqual(res, 0.0)
+        self.assertAlmostEqual(res, 0)
 
     def test_perimeter_one(self):
         '''
@@ -62,3 +62,4 @@ class TestRectangle(unittest.TestCase):
         '''
         res = rectangle.perimeter(5, 5)
         self.assertAlmostEqual(res, 20)
+

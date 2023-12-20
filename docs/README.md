@@ -1,6 +1,6 @@
 # Общее описание
 
-Этот проект представляет собой набор модулей Python, которые реализуют функции для вычисления площадей и периметров различных геометрических фигур, таких как круг, прямоугольник, квадрат и треугольник. Каждый модуль содержит соответствующую функцию, которая принимает необходимые параметры и возвращает результат вычисления.
+Этот проект представляет собой набор модулей Python, которые реализуют функции для вычисления площадей и периметров различных геометрических фигур, таких как круг, прямоугольник, квадрат и треугольник. Каждый модуль содержит соответствующую функцию, которая принимает необходимые параметры и возвращает результат вычисления. Кроме того, к каждому модулю прилагаются модульные тесты.
 
 # Математические формулы
 ## Площадь
@@ -17,128 +17,165 @@
 
 # Описание функций с примерами вызовов
 
-## Circle.py
+## circle.py
 
-- **area(r)** - Функция принимает один параметр: r - радиус круга. Возвращает значение площади круга, вычисленной как math.pi * r * r.
-
-Пример кода на python
-
-    import circle
-    
-    radius = 5
-    area = circle.area(radius)
-    print(area)  # Вывод: 78.5
-    
-    radius = 10
-    area = circle.area(radius)
-    print(area)  # Вывод: 314.2
-
-
-- **perimeter(r)** - Функция принимает один параметр: r - радиус круга. Возвращает значение периметра круга, вычисленное как 2 * math.pi * r.
+- `area(r)` - Функция принимает один параметр: r - радиус круга. Возвращает значение площади круга, вычисленной как math.pi * r * r.
 
 Пример кода на python
 
-    import circle
+```python
+import circle
     
-    radius = 5
-    perimeter = circle.perimeter(radius)
-    print(perimeter)  # Вывод: 31.42
+radius = 5
+area = circle.area(radius)
+print(area)  # Вывод: 78.5
     
-    radius = 10
-    perimeter = circle.perimeter(radius)
-    print(perimeter)  # Вывод: 62.83
+radius = 10
+area = circle.area(radius)
+print(area)  # Вывод: 314.2
+```
 
 
-## Rectangle.py
-
-- **area(a, b)** -  Функция принимает два параметра: a - длина одной стороны прямоугольника, b - длина другой стороны прямоугольника. Возвращает значение площади прямоугольника, вычисленной по формуле a * b.
+- `perimeter(r)` - Функция принимает один параметр: r - радиус круга. Возвращает значение периметра круга, вычисленное как 2 * math.pi * r.
 
 Пример кода на python
 
-	import rectangle
+```python
+import circle
+    
+radius = 5
+perimeter = circle.perimeter(radius)
+print(perimeter)  # Вывод: 31.42
+    
+radius = 10
+perimeter = circle.perimeter(radius)
+print(perimeter)  # Вывод: 62.83
+```
 
-    side_a = 5
-    side_b = 10
-    area = rectangle.area(side_a, side_b)
-    print(area)  # Вывод: 50
+## rectangle.py
 
-    side_a = 15
-    side_b = 20
-    area = rectangle.area(side_a, side_b)
-    print(area)  # Вывод: 300
+- `area(a, b)` -  Функция принимает два параметра: a - длина одной стороны прямоугольника, b - длина другой стороны прямоугольника. Возвращает значение площади прямоугольника, вычисленной по формуле a * b.
 
-- **perimeter(a, b)** - Функция принимает два параметра: a - длина одной стороны прямоугольника, b - длина другой стороны прямоугольника. Возвращает значение периметра прямоугольника, вычисленное как (a + b) * 2.
+Пример кода на python
+
+```python
+import rectangle
+
+side_a = 5
+side_b = 10
+area = rectangle.area(side_a, side_b)
+print(area)  # Вывод: 50
+
+side_a = 15
+side_b = 20
+area = rectangle.area(side_a, side_b)
+print(area)  # Вывод: 300
+```
+
+- `perimeter(a, b)` - Функция принимает два параметра: a - длина одной стороны прямоугольника, b - длина другой стороны прямоугольника. Возвращает значение периметра прямоугольника, вычисленное как (a + b) * 2.
 
 Пример кода на python
     
-    import rectangle
+```python
+import rectangle
     
-    side_a = 5
-    side_b = 10
-    perimeter = rectangle.perimeter(side_a, side_b)
-    print(perimeter)  # Вывод: 40
+side_a = 5
+side_b = 10
+perimeter = rectangle.perimeter(side_a, side_b)
+print(perimeter)  # Вывод: 40
     
-    side_a = 15
-    side_b = 20
-    perimeter = rectangle.perimeter(side_a, side_b)
-    print(perimeter)  # Вывод: 90
+side_a = 15
+side_b = 20
+perimeter = rectangle.perimeter(side_a, side_b)
+print(perimeter)  # Вывод: 90
+```
 
-## Square.py
+## square.py
 
-- **area(side)** - Функция принимает один параметр: a - длина стороны квадрата.
+- `area(side)` - Функция принимает один параметр: a - длина стороны квадрата.
     Возвращает значение площади квадрата, вычисленной по формуле a * a.
 
 Пример кода на python
 
-    import square
+```python
+import square
     
-    side = 5
-    area = square.area(side)
-    print(area)  # Вывод: 25
+side = 5
+area = square.area(side)
+print(area)  # Вывод: 25
     
-    side = 10
-    area = square.area(side)
-    print(area)  # Вывод: 100
+side = 10
+area = square.area(side)
+print(area)  # Вывод: 100
+```
 
-- **perimeter(a)** - Функция принимает один параметр: a - длина стороны квадрата.
+- `perimeter(a)` - Функция принимает один параметр: a - длина стороны квадрата.
     Возвращает значение периметра квадрата, вычисленное как 4 * a.
 
 Пример кода на python
 
-	import square
+```python
+import square
     
-    side = 5
-    perimeter = square.perimeter(side)
-    print(perimeter)  # Вывод: 20
+side = 5
+perimeter = square.perimeter(side)
+print(perimeter)  # Вывод: 20
     
-    side = 10
-    perimeter = square.perimeter(side)
-    print(perimeter)  # Вывод: 40
+side = 10
+perimeter = square.perimeter(side)
+print(perimeter)  # Вывод: 40
+```
 
-## Triangle.py
+## triangle.py
 
-- **area(a, h)** - Функция принимает два параметра: a - длина основания треугольника, h - высота треугольника.Возвращает значение площади треугольника, вычисленной по формуле a * h / 2.
+- `area(a, h)` - Функция принимает два параметра: a - длина основания треугольника, h - высота треугольника.Возвращает значение площади треугольника, вычисленной по формуле a * h / 2.
 
 Пример кода на python
 
-	import triangle
+```python
+import triangle
     
-    base = 4
-    height = 10
-    area = triangle.area(base, height)
-    print(area)  # Вывод: 7
+base = 4
+height = 10
+area = triangle.area(base, height)
+print(area)  # Вывод: 7
+```
 
-- **perimeter(a, b, c)** - Функция принимает три параметра: a, b и c - длины сторон треугольника. Возвращает значение периметра треугольника, вычисленное как a + b + c.
+- `perimeter(a, b, c)` - Функция принимает три параметра: a, b и c - длины сторон треугольника. Возвращает значение периметра треугольника, вычисленное как a + b + c.
 
 Пример кода на python
 
-    import triangle
+```python
+import triangle
     
-    side_a = 4
-    side_b = 8
-    side_c = 6
-    perimeter = triangle.perimeter(side_a, side_b, side_c)
-    print(perimeter)  # Вывод: 18
+side_a = 4
+side_b = 8
+side_c = 6
+perimeter = triangle.perimeter(side_a, side_b, side_c)
+print(perimeter)  # Вывод: 18
+```
+
+# Модульные тесты
+
+Результат тестирования - все тесты были успешно пройдены. (32 из 32)
+
+## Класс `TestCircle` (circle_tests.py)
+
+Класс `TestCircle` содержит модульные тесты для модуля circle.py. Этот класс включает в себя различные тесты, чтобы убедиться, что функции в модуле circle.py работают правильно. Тесты покрывают различные сценарии, включая правильные и неправильные входные данные, чтобы убедиться, что функции работают правильно в разных ситуациях.
+
+## Класс `TestRectangle` (rectangle_tests.py)
+
+Класс `TestRectangle` содержит модульные тесты для модуля rectangle.py. Этот класс включает в себя различные тесты, чтобы убедиться, что функции в модуле rectangle.py работают правильно. Тесты покрывают различные сценарии, включая правильные и неправильные входные данные, чтобы убедиться, что функции работают правильно в разных ситуациях.
+
+
+## Класс `TestSquare` (square_tests.py)
+
+Класс `TestSquare` содержит модульные тесты для модуля square.py. Этот класс включает в себя различные тесты, чтобы убедиться, что функции в модуле square.py работают правильно. Тесты покрывают различные сценарии, включая правильные и неправильные входные данные, чтобы убедиться, что функции работают правильно в разных ситуациях.
+
+## Класс `TestTriangle` (triangle_tests.py)
+
+Класс `TestTriangle` содержит модульные тесты для модуля triangle.py. Этот класс включает в себя различные тесты, чтобы убедиться, что функции в модуле triangle.py работают правильно. Тесты покрывают различные сценарии, включая правильные и неправильные входные данные, чтобы убедиться, что функции работают правильно в разных ситуациях.
+
 
 # Изменения в проекте
 

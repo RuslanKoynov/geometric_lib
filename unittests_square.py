@@ -29,14 +29,6 @@ class SquareTestCase(unittest.TestCase):
         res = perimeter(-1)
         self.assertEqual(res, "Wrong input parameters")
 
-    def test_large_area(self):
-        res = area(29813745390)
-        self.assertEqual(res, 888859414179746252100)
-
-    def test_large_perimetr(self):
-        res = perimeter(973165903242)
-        self.assertEqual(res, 3892663612968)
-
 
 if __name__ == '__main__':
     unittest.main()

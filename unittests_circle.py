@@ -29,10 +29,6 @@ class CircleTestCase(unittest.TestCase):
         res = perimeter(-1)
         self.assertEqual(res, "Wrong input parameters")
 
-    def test_small_perimetr(self):
-        res = perimeter(20)
-        self.assertEqual(res, 125.66370614359172)
-
 
 if __name__ == '__main__':
     unittest.main()

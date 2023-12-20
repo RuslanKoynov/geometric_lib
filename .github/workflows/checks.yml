@@ -1,0 +1,41 @@
+name: "CI"
+
+on:
+  push:
+    branches: ["cicd_409221"]
+
+  pull_request:
+    branches: ["cicd_409221"]
+
+jobs:
+  build_linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install python 3.12
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+          architecture: x64
+      - name: testing
+        run: |
+          python -m unittest "circle.py"
+          python -m unittest "triangle.py"
+          python -m unittest "rectangle.py"
+          python -m unittest "square.py"
+
+  build_windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install python 3.12
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+          architecture: x64
+      - name: testing
+        run: |
+          python -m unittest "circle.py"
+          python -m unittest "triangle.py"
+          python -m unittest "rectangle.py"
+          python -m unittest "square.py"

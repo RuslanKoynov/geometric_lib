@@ -16,14 +16,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Set up Python
+        uses: actions/setup-python@v2
         with:
-          node-version: 14
+          python-version: 3.x
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Install Python Dependencies
+        run: pip install -r requirements.txt
 
       - name: Run Unit Tests
-        run: npm test
+        run: python autotest_script.py
 

@@ -7,10 +7,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v4
+        - name: run circe tests 
           run: python -m unittest test_circle.py
+        - name: run rectangle tests
           run: python -m unittest test_rectangle.py
+        - name: run square tests
           run: python -m unittest test_square.py
+        - name: run triangle tests
           run: python -m unittest test_triangle.py
+
 
 
   test-on-Windows:
@@ -18,7 +23,11 @@ jobs:
       runs-on: windows-latest
       steps:
         - uses: actions/checkout@v4
-          run: python -m unittest circle_tests.py
-          run: python -m unittest rectangle_tests.py
-          run: python -m unittest square_tests.py
-          run: python -m unittest triangle_tests.py
+        - name: run circe tests 
+          run: python -m unittest test_circle.py
+        - name: run rectangle tests
+          run: python -m unittest test_rectangle.py
+        - name: run square tests
+          run: python -m unittest test_square.py
+        - name: run triangle tests
+          run: python -m unittest test_triangle.py

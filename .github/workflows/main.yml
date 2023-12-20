@@ -17,24 +17,24 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v3
         with:
-          python-version: 3.10
+          python-version: 3.11
           architecture: x64
       - name: Run Tests in Ubuntu
         run : |
-          python3 -m unittest "circle_tests.py"
-          python3 -m unittest "rectangle_tests.py"
-          python3 -m unittest "square_tests.py"
-          python3 -m unittest "triangle_tests.py"
+          python -m unittest "circle_tests.py"
+          python -m unittest "rectangle_tests.py"
+          python -m unittest "square_tests.py"
+          python -m unittest "triangle_tests.py"
 
   tests_windows:
     runs-on: windows-latest
     steps:
-      - name: Checkout Rep in Ubuntu
+      - name: Checkout Rep in Windows
         uses: actions/checkout@v2
       - name: Install Python
         uses: actions/setup-python@v3
         with:
-          python-version: 3.10
+          python-version: 3.11
           architecture: x64
       - name: Run Tests in Windows
         run : |

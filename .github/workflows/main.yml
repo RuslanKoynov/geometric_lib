@@ -1,0 +1,33 @@
+on:
+  push:
+
+jobs:
+  test-on-Ubuntu:
+    name: Ubuntu tests
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v4
+        - name: run circe tests 
+          run: python -m unittest test_circle.py
+        - name: run rectangle tests
+          run: python -m unittest test_rectangle.py
+        - name: run square tests
+          run: python -m unittest test_square.py
+        - name: run triangle tests
+          run: python -m unittest test_triangle.py
+
+
+
+  test-on-Windows:
+      name:   Windows tests 
+      runs-on: windows-latest
+      steps:
+        - uses: actions/checkout@v4
+        - name: run circe tests 
+          run: python -m unittest test_circle.py
+        - name: run rectangle tests
+          run: python -m unittest test_rectangle.py
+        - name: run square tests
+          run: python -m unittest test_square.py
+        - name: run triangle tests
+          run: python -m unittest test_triangle.py

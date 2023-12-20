@@ -68,21 +68,3 @@
 | _41d3607_ | fixed rectangle |
 | _bc6917c_ | Function descriptions added, documentation added |
 
-# Autotests succes:
-~~~
-- 32 - all tests;
-- 8 - tests with errors;
-- 24 - correct tests;
-- Percentage of tests with errors = 8/32 = 25%
-- Percentage of correct tests = 24/32 = 75%
-~~~
-
-# Log:
-| Hashes    | Commits                       |
-| :-        | :---------:                   |
-| _67b120e_ | added circle.py to branch tests_341110 and unit-tests for circle.py |
-| _2bcdb90_ | corrected tests in circle_tests.py for zero-case |
-| _a8e600c_ | added rectangle.py and rectangle_tests.py to branch tests_341110 |
-| _dd58b00_ | added triangle.py and triangle_tests.py to branch tests_341110 |
-| _5496871_ | added square.py and square_tests.py to branch tests_341110 |
-

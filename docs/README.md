@@ -99,3 +99,9 @@ def perimeter(a, b, c):
 |  bd4a7fb   |  Ivannka  | Wed Sep 27 19:10:46 2023|Added triangle.py and Fixed rectangle.py| |  6c2e215   |  Ivannka  | Wed Oct 11 23:09:34 2023|           docs circle.py               |
 |  24f801c   |  Ivannka  | Wed Oct 11 23:18:58 2023|          docs rectangle.py             |
 |  2c8613e   |  Ivannka  | Wed Oct 11 23:24:41 2023|           docs square.py               |
+
+
+# Ручное тестирование
+Количество тестов - 24
+Успешно выполненные тесты 18/24
+В результате выполнения тестирования было выявленно,что 75% тестов успешно выполнены 

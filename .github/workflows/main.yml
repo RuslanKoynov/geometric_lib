@@ -25,6 +25,7 @@ jobs:
           python -m unittest "test_circle.py"
           python -m unittest "test_rectangle.py"
           python -m unittest "test_square.py"
+          python -m unittest "test_triangle.py"
 
   forWindows:
     runs-on: windows-latest
@@ -41,3 +42,4 @@ jobs:
           python -m unittest "test_circle.py"
           python -m unittest "test_rectangle.py"
           python -m unittest "test_square.py"
+          python -m unittest "test_triangle.py"

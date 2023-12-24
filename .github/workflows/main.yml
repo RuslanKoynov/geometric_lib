@@ -31,19 +31,19 @@ jobs:
     - name: Test rectangle.py
       if: always()
       run: |
-        python3 rectangle.py
+        python3 test rectangle.py
 
     - name: Test square.py
       if: always()
       run: |
-        python3 square.py
+        python3 test square.py
 
     - name: Test circle.py
       if: always()
       run: |
-        python3 circle.py
+        python3 test circle.py
 
     - name: Test triangle.py
       if: always()
       run: |
-        python3 triangle.py
+        python3 test triangle.py

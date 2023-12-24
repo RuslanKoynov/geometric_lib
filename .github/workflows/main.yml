@@ -1,49 +1,50 @@
-# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: geometric_lib testing
+name: test-geometric-lib testing
 
-on:
+on:  
   push:
-    branches: [ "main" ]
+    branches:
+      - '*'
 
 jobs:
-  build:
-
-    runs-on: ${{ matrix.os }}
+  test:
+  
+    runs-on: ${{ matrix.os }} 
     strategy:
       matrix:
-        python-version: ["3.9", "3.10", "3.11"]
         os: [ubuntu-latest, windows-latest]
-
+  
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python ${{ matrix.python-version }}
-      if: always()
-      uses: actions/setup-python@v3
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
-      if: always()
-      run: |
-        pip install --upgrade pip
-
-    - name: Test rectangle.py
-      if: always()
-      run: |
-        python3 rectangle.py
-
-    - name: Test square.py
-      if: always()
-      run: |
-        python3 square.py
-
-    - name: Test circle.py
-      if: always()
-      run: |
-        python3 circle.py
-
-    - name: Test triangle.py
-      if: always()
-      run: |
-        python3 triangle.py
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.
+        if: always()
+        uses: actions/setup-python@v3 
+        with:  
+          python-version: "3.10"
+          
+      - name: Install dependencies
+        if: always()
+        run: |
+          pip install --upgrade pip
+          
+      - name: Test rectangle.py
+        if: always()
+        run: |
+          python3 rectangle.py
+        
+      - name: Test square.py
+        if: always()
+        run: |
+          python3 test_square.py
+          
+      - name: Test circle.py
+        if: always()
+        run: |
+          python3 circle.py
+          
+      - name: Test triangle.py
+        if: always()
+        run: |
+          python3 triangle.py

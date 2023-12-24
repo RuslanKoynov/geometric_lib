@@ -1,7 +1,7 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: test-geometric-lib testing
+name: geometric-lib testing
 
 on:  
   push:
@@ -37,7 +37,7 @@ jobs:
       - name: Test square.py
         if: always()
         run: |
-          python3 test_square.py
+          python3 square.py
           
       - name: Test circle.py
         if: always()

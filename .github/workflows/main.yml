@@ -7,7 +7,7 @@ on:
 jobs:
   job-run-tests:
     runs-on: ubuntu-latest
-    runs-on: ${{ matrix.os }}
+
 
     strategy: 
       matrix:
@@ -17,7 +17,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
     
-    - name: Running the Unit-tests on Sl matrix.os )} 
+    - name: Running the Unit-tests on ubuntu-latest
+      name: Running the Ubit-tests on ${{ matrix.os }} 
       run: |
         python -m unittest circle.py 
         python -m unittest square.py 

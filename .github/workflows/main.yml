@@ -6,7 +6,8 @@ on:
     
 jobs:
   job-run-tests:
-    runs-on: $|{ matrix.os )}
+    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
 
     strategy: 
       matrix:

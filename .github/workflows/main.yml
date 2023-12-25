@@ -1,0 +1,42 @@
+
+name: "Tests"
+
+on:
+  push:
+    branches:
+      - cicd_408246
+  pull_request:
+    branches:
+      - cicd_408246
+
+jobs:
+  tests-for-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repo for checkout
+        uses: actions/checkout@v2
+      - name: Install python for check
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+      - name: Run tests for module
+        run: |
+          python -m unittest "circle.py"
+          python -m unittest "rectangle.py"
+          python -m unittest "square.py"
+          python -m unittest "triangle.py"
+  tests-for-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Clone repo for checkout
+        uses: actions/checkout@v2
+      - name: Install python for check
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+      - name: Run tests for module
+        run: |
+          python -m unittest "circle.py"
+          python -m unittest "rectangle.py"
+          python -m unittest "square.py"
+          python -m unittest "triangle.py"

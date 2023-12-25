@@ -21,7 +21,7 @@ jobs:
             architecture: x64
         - name: Run Tests in Ubuntu
           run : |
-            python -m unittest "Test_circle.py"
+            python -m unittest "tests_circle.py"
             python -m unittest "tests_rectangle.py"
             python -m unittest "tests_square.py"
             python -m unittest "tests_triangle.py"
@@ -37,7 +37,7 @@ jobs:
           architecture: x64
       - name: Run Tests in Windows
         run : |
-          python -m unittest "Test_circle.py"
+          python -m unittest "tests_circle.py"
           python -m unittest "tests_rectangle.py"
           python -m unittest "tests_square.py"
           python -m unittest "tests_triangle.py"

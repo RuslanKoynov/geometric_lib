@@ -27,10 +27,10 @@ jobs:
       # Выполняет набор команд с использованием оболочки исполнителя.
       - name: Run tests on Ubuntu
         run: |
-           pyhton -m unittest "Circle_unit_test.py"
-           pyhton -m unittest "rectangle_unit_test.py"
-           pyhton -m unittest "square_unit_test.py"
-           pyhton -m unittest "triangle_unit_test.py"
+           python -m unittest "Circle_unit_test.py"
+           python -m unittest "rectangle_unit_test.py"
+           python -m unittest "square_unit_test.py"
+           python -m unittest "triangle_unit_test.py"
   build_2:
       runs-on: windows-latest
       steps:

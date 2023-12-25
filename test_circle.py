@@ -15,11 +15,8 @@ class circleTest(unittest.TestCase):
 
 
     def test_circle_area_3(self):
-        res = area("3")
-        try:
-            perimeter("3")
-        except TypeError:
-            print("Error str")
+        with self.assertRaises(TypeError):
+            (area('3'))
 
     def test_circle_area_4(self):
         res = area(0)
@@ -39,8 +36,5 @@ class circleTest(unittest.TestCase):
         self.assertEqual(res, 0)
 
     def test_circle_perimeter_4(self):
-        res = perimeter("3")
-        try:
-            perimeter("3")
-        except TypeError:
-            print("Error str")
+        with self.assertRaises(TypeError):
+            (perimeter('3'))

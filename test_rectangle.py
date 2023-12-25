@@ -18,11 +18,8 @@ class RectangleTest(unittest.TestCase):
         self.assertEqual(res, "Error negative value")
 
     def test_rectangle_area_4(self):
-        res = area("5", "5")
-        try:
-            perimeter("5","5")
-        except TypeError:
-            print("Error str")
+        with self.assertRaises(TypeError):
+            (area('5','5'))
 
     def test_rectangle_perimeter_1(self):
         res = perimeter(5, 0)
@@ -37,8 +34,5 @@ class RectangleTest(unittest.TestCase):
         self.assertEqual(res, "Error negative value")
 
     def test_rectangle_perimeter_4(self):
-        res = perimeter("1", "1")
-        try:
-            perimeter("1","1")
-        except TypeError:
-            print("Error str")
+        with self.assertRaises(TypeError):
+            (perimeter('1','5'))

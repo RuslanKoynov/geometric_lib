@@ -14,8 +14,9 @@ class triangleTest(unittest.TestCase):
         self.assertEqual(res, 5)
 
     def test_triangle_area_3(self):
-        res = area(-5, -5)
-        self.assertEqual(res, "Error negative value")
+         with self.assertRaises(ValueError):
+            (area(-1,-2))
+
 
     def test_triangle_area_4(self):
         with self.assertRaises(TypeError):
@@ -30,8 +31,8 @@ class triangleTest(unittest.TestCase):
         self.assertEqual(res, 9)
 
     def test_triangle_perimeter_3(self):
-        res = perimeter(-1, -2, -1)
-        self.assertEqual(res, "Error negative value")
+        with self.assertRaises(ValueError):
+            (perimeter(-1,-2,-5))
 
     def test_triangle_perimeter_4(self):
         with self.assertRaises(TypeError):

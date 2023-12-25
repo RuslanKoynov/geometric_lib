@@ -9,8 +9,9 @@ class squareTest(unittest.TestCase):
         self.assertEqual(res, 25)
 
     def test_square_area_2(self):
-        res = area(-5)
-        self.assertEqual(res, "Error negative value")
+         with self.assertRaises(ValueError):
+            (area(-5))
+
 
     def test_square_area_3(self):
         with self.assertRaises(TypeError):
@@ -24,8 +25,9 @@ class squareTest(unittest.TestCase):
         self.assertEqual(res,20)
 
     def test_square_perimeter_2(self):
-        res = perimeter(-5)
-        self.assertEqual(res, "Error negative value")
+         with self.assertRaises(ValueError):
+            (perimeter(-1,-2,-5))
+
 
     def test_square_perimeter_3(self):
         res = perimeter(0)

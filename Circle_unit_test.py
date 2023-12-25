@@ -7,7 +7,7 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(res, 0)
 
     def test_circle_rational_area(self):
-        res = area(3)
+        res = area(3.5)
         self.assertAlmostEqual(res, 38.484, delta=0.001)
 
     def test_circle_negative_area(self):

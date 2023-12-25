@@ -1,5 +1,7 @@
-def area(a, b): 
+def area(a, b):
+    '''Принимает знаечния сторон a b, возвращает их произведение'''
     return a * b 
 
-def perimeter(a, b): 
-    return a * b 
+def perimeter(a, b):
+    '''Принимает знаечния сторон a b, возвращает их произведение'''
+    return 2*a + 2*b

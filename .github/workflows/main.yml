@@ -3,7 +3,11 @@ name: Run Tests
 on:
   push:
     branches:
+<<<<<<< HEAD
       - main
+=======
+      - cicd_413745
+>>>>>>> cicd_413745
 
 jobs:
   test:
@@ -16,6 +20,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+<<<<<<< HEAD
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -26,3 +31,16 @@ jobs:
 
       - name: Run Unit Tests
         run: npm test
+=======
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install Python Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Unit Tests
+        run: python autotest_script.py
+
+>>>>>>> cicd_413745

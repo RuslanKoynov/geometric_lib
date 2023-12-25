@@ -1,23 +1,34 @@
-name: CI
+name: Run Unit Tests
 
 on:
   push:
-    branches: ["cicd_409512"]
+    branches:
+      - cicd_409512
 
 jobs:
-  job-run-tests:
+  test:
     runs-on: ${{ matrix.os }}
+
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-      - name: Running the Unit-tests on ${{ matrix.os }}
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
         run: |
-          python -m unittest circle.py
-          python -m unittest square.py
-          python -m unittest rectangle.py
-          python -m unittest triangle.py
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  
+
+      - name: Run Unit Tests
+        run: |
+          python -m unittest discover -p '*_test.py'  
+
+

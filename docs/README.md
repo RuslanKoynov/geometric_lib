@@ -164,3 +164,5 @@
 | d078c8d9ee6155f3cb0e577d28d337b791de28e2 | smartiqa <info@smartiqa.ru>       | Thu Mar 4 14:55:29 2021 +0300     | Docs added                          |
 | 8ba9aeb3cea847b63a91ac378a2a6db758682460 | smartiqa <info@smartiqa.ru>       | Thu Mar 4 14:54:08 2021 +0300     | Circle and square added             |
                                      
+=======
+

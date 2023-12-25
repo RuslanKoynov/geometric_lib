@@ -1,0 +1,43 @@
+name: CI/CD tests
+
+on:
+  push:
+    branches:  
+      - "cicd_334148" 
+  pull_request:
+    branches: 
+      - "cicd_334148"
+
+jobs:
+  tests_ubuntu:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout Rep in Ubuntu
+          uses: actions/checkout@v2
+        - name: Install Python
+          uses: actions/setup-python@v3
+          with:
+            python-version: 3.9
+            architecture: x64
+        - name: Run Tests in Ubuntu
+          run : |
+            python -m unittest "tests_circle.py"
+            python -m unittest "tests_rectangle.py"
+            python -m unittest "tests_square.py"
+            python -m unittest "tests_triangle.py"
+  tests_windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Rep in Windows
+        uses: actions/checkout@v2
+      - name: Install Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.10
+          architecture: x64
+      - name: Run Tests in Windows
+        run : |
+          python -m unittest "tests_circle.py"
+          python -m unittest "tests_rectangle.py"
+          python -m unittest "tests_square.py"
+          python -m unittest "tests_triangle.py"

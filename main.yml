@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [ "cicd_409512" ]
+
+jobs:
+  job-run-tests:
+    runs-on: ${{ matrix.os }}
+    strategy: 
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Running the Unit-tests in ubuntu-latest
+    - name: Running the Unit-tests on ${{ matrix.os }}
+      run: |
+        python -m unittest circle.py 
+        python -m unittest square.py 
+        python -m unittest rectangle.py
+        python -m unittest triangle.py

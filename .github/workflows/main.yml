@@ -39,7 +39,8 @@ jobs:
       - name: Install Python V3
         uses: actions/setup-python@v3
         with: 
-          python-version: 3.10
+          python-version: "3.10"
+          architecture: x64
       - name: Run tests on Ubuntu
         run: |
            -m unittest "Circle_unit_test.py"

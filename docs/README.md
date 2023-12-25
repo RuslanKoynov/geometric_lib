@@ -140,6 +140,7 @@ Rectangle with first side 4.0 and second side 5.0 has perimeter: 18.0
 ## Git history:
 |                   hash                   |           date           |   author  |                commit                |
 |:----------------------------------------:|:------------------------:|:---------:|:------------------------------------:|
+| 8ba9aeb3cea847b63a91ac378a2a6db758682460 | Thu Mar 4 14:54:08 2021  | smartiqa  | Circle and square added              |
 | d078c8d9ee6155f3cb0e577d28d337b791de28e2 | Thu Mar 4 14:55:29 2021  | smartiqa  | Docs added                           |
 | ea95969922996038ff6e46b6b643cc4a14a7c10c | Wed Sep 20 23:42:15 2023 | Rostyslav | added file rectangle.py              |
 | ed58a683200fe2b4243340f96c9e7e00facf0606 | Wed Sep 20 23:46:26 2023 | Rostyslav | fixed a bug in file rectangle.py     |

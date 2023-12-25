@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "cicd_409512" ]
     
 jobs:
   job-run-tests:

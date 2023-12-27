@@ -13,8 +13,7 @@ class CircleAreaTestCase(unittest.TestCase):
         self.assertEqual(res, 0)
     
     def test_negative_radius(self):
-        res = circle.area(-1)
-        self.assertEqual(res, 0)
+        self.assertRaises(Exception, circle.area, -1)
 
     def test_string_radius(self):
         self.assertRaises(Exception, circle.area, "hello")
@@ -28,11 +27,10 @@ class CirclePerimeterTestCase(unittest.TestCase):
         self.assertEqual(res, 6 * math.pi)
     
     def test_negative_radius(self):
-        res = circle.perimeter(-1)
-        self.assertEqual(res, 0)
+        self.assertRaises(Exception, circle.perimeter, -1)
     
     def test_zero_radius(self):
-        res = circle.perimeter(0)
+        res = circle.area(0)
         self.assertEqual(res, 0)
 
     def test_string_radius(self):

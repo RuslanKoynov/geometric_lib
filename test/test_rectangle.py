@@ -8,11 +8,9 @@ class RectangleAreaTestCase(unittest.TestCase):
         self.assertEqual(res, 12)
     
     def test_negative_side(self):
-        res = rectangle.area(-3, 4)
         self.assertRaises(Exception, rectangle.area, -3, 4)
 
     def test_zero_side(self):
-        res = rectangle.area(0, 1)
         self.assertRaises(Exception, rectangle.area, 0, 1)
 
     def test_string_side(self):

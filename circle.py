@@ -10,6 +10,9 @@ def area(r):
     Возвращаемое значение:
         area (float) - площадь круга
     '''
+    if isinstance(r, bool) or isinstance(r, bool) or (not isinstance(r, float) and not isinstance(r, int)) or r < 0:
+        raise Exception
+
     return math.pi * r * r
 
 
@@ -22,5 +25,9 @@ def perimeter(r):
     Возвращаемое значение:
         area (float) - длина окружности
     '''
+
+    if isinstance(r, bool) or (not isinstance(r, float) and not isinstance(r, int)) or r < 0:
+        raise Exception
+    
     return 2 * math.pi * r
 

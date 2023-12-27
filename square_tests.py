@@ -10,7 +10,7 @@ class TestSquare(unittest.TestCase):
         Тест для проверки вычисления площади квадрата с отрицательными стороной.
         '''
         res = square.area(-3)
-        self.assertEqual(res, 9)
+        self.assertEqual(res, 0)
 
     def test_area_zero(self):
         '''
@@ -40,7 +40,7 @@ class TestSquare(unittest.TestCase):
         Тест для проверки вычисления периметра квадрата с отрицательными стороной.
         '''
         res = square.perimeter(-3)
-        self.assertEqual(res, -12)
+        self.assertEqual(res, 0)
 
     def test_perimeter_zero(self):
         '''

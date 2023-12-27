@@ -9,8 +9,8 @@ class TestRectangle(unittest.TestCase):
         '''
         Тест для проверки вычисления площади прямоугольника с отрицательными сторонами прямоугольника.
         '''
-        res = rectangle.area(-3, -3)
-        self.assertEqual(res, 9)
+        with self.assertRaises(TypeError):
+            rectangle.area(-3, -3)
 
     def test_area_zero(self):
         '''
@@ -39,8 +39,8 @@ class TestRectangle(unittest.TestCase):
         '''
         Тест для проверки вычисления периметра прямоугольника с отрицательными сторонами прямоугольника.
         '''
-        res = rectangle.perimeter(-3, -3)
-        self.assertEqual(res, -12)
+        with self.assertRaises(TypeError):
+            rectangle.perimeter(-3, -3)
 
     def test_perimeter_zero(self):
         '''

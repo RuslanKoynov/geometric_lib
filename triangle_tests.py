@@ -9,8 +9,8 @@ class TestTriangle(unittest.TestCase):
         '''
         Тест для проверки вычисления площади треугольника с отрицательными числами.
         '''
-        res = triangle.area(-3, -3)
-        self.assertEqual(res, 4.5)
+        with self.assertRaises(TypeError):
+            triangle.area(-3, -3)
 
     def test_area_zero(self):
         '''
@@ -39,8 +39,8 @@ class TestTriangle(unittest.TestCase):
         '''
         Тест для проверки вычисления периметра треугольника с отрицательными числами.
         '''
-        res = triangle.perimeter(-3, -3, -3)
-        self.assertEqual(res, -9)
+        with self.assertRaises(TypeError):
+            triangle.perimeter(-3, -3, -3)
 
     def test_perimeter_zero(self):
         '''

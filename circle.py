@@ -22,7 +22,6 @@ def perimeter(r):
             r (float): радиус окружности
 
         Возвращаемое значение:
-            area (float): площадь окружности
+            area (float): периметр окружности
     """
     return 2 * math.pi * r
-

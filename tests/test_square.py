@@ -23,7 +23,10 @@ class TestSquare(unittest.TestCase):
                         str(context.exception)
                     )
                 else:
-                    self.assertTrue(excepted - eps <= res <= excepted + eps)
+                    self.assertTrue(
+                        excepted - eps <= res <= excepted + eps,
+                        f'{res}(result) != {excepted}(excepted result)'
+                    )
 
     def test_perimeter(self):
         eps = 0.1 ** 10
@@ -44,4 +47,7 @@ class TestSquare(unittest.TestCase):
                         str(context.exception)
                     )
                 else:
-                    self.assertTrue(excepted - eps <= res <= excepted + eps)
+                    self.assertTrue(
+                        excepted - eps <= res <= excepted + eps,
+                        f'{res}(result) != {excepted}(excepted result)'
+                    )

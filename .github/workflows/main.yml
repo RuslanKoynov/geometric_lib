@@ -3,7 +3,7 @@ name: Run Unit Tests
 on:
   push:
     branches:
-      - main
+      - cicd_409512
 
 jobs:
   test:
@@ -29,5 +29,7 @@ jobs:
 
     - name: Run tests
       run: |
-        python -m unittest discover -s . -p "test_*.py"
-
+        python -m unittest discover -s . -p "circle.py"
+        python -m unittest discover -s . -p "square.py"
+        python -m unittest discover -s . -p "rectangle.py"
+        python -m unittest discover -s . -p "triangle.py"

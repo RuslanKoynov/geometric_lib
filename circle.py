@@ -1,23 +1,15 @@
 import unittest
 import math
 
-'''Принимает число r и возвращает площадь круга'''
-
 def area(r):
+    if r < 0:
+        raise ValueError("Radius cannot be negative")
     return math.pi * r * r
 
-'''Пример вызова:
-    result = area(5)
-    print(result) # Выведет 78.5'''
-
-'''Приннимает число r и возвращает периметр круга'''
-
 def perimeter(r):
+    if r < 0:
+        raise ValueError("Radius cannot be negative")
     return 2 * math.pi * r
-
-'''Пример вызова:
-    result = perimeter(5)
-    print(result) # Выведет 31.4'''
 
 class CircleTestCase(unittest.TestCase):
     def test_area_1(self):

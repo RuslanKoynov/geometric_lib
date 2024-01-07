@@ -39,7 +39,7 @@ class CircleTestCase(unittest.TestCase):
     def test_area_negative(self):
         try:
             area(-5)
-       except ValueError:
+        except ValueError:
             pass
 
     def test_perimeter_negative(self):

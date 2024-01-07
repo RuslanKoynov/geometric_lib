@@ -13,21 +13,15 @@ jobs:
         os: [ubuntu-latest, windows-latest]
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v3
+      - name: Set up Python
+        uses: actions/setup-python@v2
 
-    - name: Run circle.py tests
-      run: python -m unittest discover -s . -p "circle.py" 
-
-    - name: Run square.py tests
-      run: python -m unittest discover -s . -p "square.py" 
-
-    - name: Run rectangle.py tests
-      run: python -m unittest discover -s . -p "rectangle.py"
-
-    - name: Run triangle.py tests
-      run: python -m unittest discover -s . -p "triangle.py" 
-
+      - name: Run Unit Tests
+        run: |
+          python -m unittest discover -p "*circle.py"
+          python -m unittest discover -p "rectangle.py" 
+          python -m unittest discover -p "square.py"
+          python -m unittest discover -p "triangle.py"

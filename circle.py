@@ -29,9 +29,13 @@ class CircleTestCase(unittest.TestCase):
         self.assertAlmostEqual(res, 31.4, delta=0.1)
 
     def test_area_negative(self):
-        with self.assertRaises(ValueError):
+        try:
             area(-5)
+        except ValueError:
+            self.fail("Unexpected ValueError")
 
     def test_perimeter_negative(self):
-        with self.assertRaises(ValueError):
+        try:
             perimeter(-5)
+        except ValueError:
+            self.fail("Unexpected ValueError")

@@ -27,7 +27,7 @@ class CircleTest(unittest.TestCase):
 
     def test_area2(self):
         res = area(4.5)
-        self.assertAlmostEqual(res, 63.61,places=2)
+        self.assertAlmostEqual(res, 63.62,places=2)
 
     def test_perimeter2(self):
         res = perimeter(4.5)

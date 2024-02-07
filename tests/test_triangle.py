@@ -22,7 +22,7 @@ class TestSquare(unittest.TestCase):
                 with exc as context:
                     res = triangle.area(a, h)
                 if context is not None:
-                    self.assertEquals(
+                    self.assertEqual(
                         exc_message,
                         str(context.exception)
                     )
@@ -37,7 +37,7 @@ class TestSquare(unittest.TestCase):
         params = [
             (0.001, 0.002, 0.0025, 0.0055, does_not_raise(), ''),
             (10, 20, 25, 55, does_not_raise(), ''),
-            (10, 20, 30,  None, self.assertRaises(ValueError), 'The sum of two sides of a rectangle must be greater than last side'),
+            (10, 20, 30,  None, self.assertRaises(ValueError), 'The sum of two sides of a triangle must be greater than last side'),
             ('ab', 20, 25, None, self.assertRaises(TypeError), 'All sides of a triangle must be int or float'),
             (10, 'ab', 25, None, self.assertRaises(TypeError), 'All sides of a triangle must be int or float'),
             (10, 20, 'ab', None, self.assertRaises(TypeError), 'All sides of a triangle must be int or float'),
@@ -47,7 +47,7 @@ class TestSquare(unittest.TestCase):
                 with exc as context:
                     res = triangle.perimeter(a, b, c)
                 if context is not None:
-                    self.assertEquals(
+                    self.assertEqual(
                         exc_message,
                         str(context.exception)
                     )

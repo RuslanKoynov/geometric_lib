@@ -18,7 +18,7 @@ class TestCircle(unittest.TestCase):
                 with exc as context:
                     res = circle.area(r)
                 if context is not None:
-                    self.assertEquals(
+                    self.assertEqual(
                         exc_message,
                         str(context.exception)
                     )
@@ -42,7 +42,7 @@ class TestCircle(unittest.TestCase):
                 with exc as context:
                     res = circle.perimeter(r)
                 if context is not None:
-                    self.assertEquals(
+                    self.assertEqual(
                         exc_message,
                         str(context.exception)
                     )

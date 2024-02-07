@@ -18,7 +18,7 @@ class TestSquare(unittest.TestCase):
                 with exc as context:
                     res = square.area(a)
                 if context is not None:
-                    self.assertEquals(
+                    self.assertEqual(
                         exc_message,
                         str(context.exception)
                     )
@@ -42,7 +42,7 @@ class TestSquare(unittest.TestCase):
                 with exc as context:
                     res = square.perimeter(a)
                 if context is not None:
-                    self.assertEquals(
+                    self.assertEqual(
                         exc_message,
                         str(context.exception)
                     )

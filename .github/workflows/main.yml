@@ -1,0 +1,49 @@
+name: CI
+
+# Controls when the workflow will run
+on:
+  # События, которые запускают jobs
+  push:
+    branches: [ "cicd_409646" ]
+  pull_request:
+    branches: [ "cicd_409646" ]
+
+# Запуск рабочего процесса состоит из одной или нескольких задач, которые могут выполняться последовательно или параллельно.
+jobs:
+  # Этот рабочий процесс содержит одну задачу под названием "build" (сборка).
+  build_1:
+    # Тип исполнителя, на котором будет выполняться задача.
+    runs-on: ubuntu-latest
+    # Steps представляют последовательность задач, которые будут выполнены в рамках задачи.
+    steps:
+      # Checks-out вашего репозитория в $GITHUB_WORKSPACE, так что ваша задача может получить к нему доступ.
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Python V3
+        uses: actions/setup-python@v3
+        with: 
+          python-version: "3.10"
+          architecture: x64
+      # Выполняет набор команд с использованием оболочки исполнителя.
+      - name: Run tests on Ubuntu
+        run: |
+           python -m unittest "Circle_unit_test.py"
+           python -m unittest "rectangle_unit_test.py"
+           python -m unittest "square_unit_test.py"
+           python -m unittest "triangle_unit_test.py"
+  build_2:
+      runs-on: windows-latest
+      steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Python V3
+        uses: actions/setup-python@v3
+        with: 
+          python-version: "3.10"
+          architecture: x64
+      - name: Run tests on Ubuntu
+        run: |
+           python -m unittest "Circle_unit_test.py"
+           python -m unittest "rectangle_unit_test.py"
+           python -m unittest "square_unit_test.py"
+           python -m unittest "triangle_unit_test.py"

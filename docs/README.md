@@ -159,3 +159,31 @@ d078c8d: "L-03: Docs added"
 | Исключение ValueError, все стороны треугольника должны быть числами             | Исключение TypeError, можно конкатенировать только строку с другой строкой            | failed  |
 | Исключение ValueError, все стороны треугольника должны быть числами             | Исключение TypeError, можно конкатенировать только строку с другой строкой            | failed  |
 | Исключение ValueError, все стороны треугольника должны быть числами             | Исключение TypeError, можно конкатенировать только строку с другой строкой            | failed  |
+
+## CI/CD
+
+### main.yml
+```yaml
+name: CI/CD
+
+on:
+  push
+
+jobs:
+  unit_tests:
+    runs-on: ${{ matrix.on_os }}
+
+    strategy:
+      matrix:
+        on_os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: python_setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: unit_tests_runner
+        run: python -m unittest tests/test_*.py
+```

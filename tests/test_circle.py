@@ -1,6 +1,5 @@
 import unittest
 import circle
-from contextlib import nullcontext as does_not_raise
 
 
 class TestCircle(unittest.TestCase):

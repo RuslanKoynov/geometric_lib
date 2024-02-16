@@ -3,7 +3,7 @@ import rectangle
 from contextlib import nullcontext as does_not_raise
 
 
-class TestSquare(unittest.TestCase):
+class TestRectangle(unittest.TestCase):
     def test_area(self):
         eps = 0.1 ** 5
         params = [

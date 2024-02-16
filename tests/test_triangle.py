@@ -3,7 +3,7 @@ import triangle
 from contextlib import nullcontext as does_not_raise
 
 
-class TestSquare(unittest.TestCase):
+class TestTriangle(unittest.TestCase):
     def test_area_integer(self):
         res = triangle.area(1, 2)
         excepted = 1

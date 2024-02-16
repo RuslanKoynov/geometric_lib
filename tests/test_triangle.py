@@ -1,6 +1,5 @@
 import unittest
 import triangle
-from contextlib import nullcontext as does_not_raise
 
 
 class TestTriangle(unittest.TestCase):

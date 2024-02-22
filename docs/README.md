@@ -122,7 +122,7 @@ Project change history with commit hashes:
 
 | Hash  | Commit | Branch |
 | ---------| ------------------------------------------- | ------------------------------- |
-| d3aa15   | added documentation for triangle.py         | (HEAD -> gitlab2)                 |
+| d3aa15   | added documentation for triangle.py         | (HEAD -> gitlab2)               |
 | 63fb83   | added documentation for square.py           | -                               |
 | dc69d3   | added documentation for rectangle.py        | -                               |
 | 5e071d   | added documentation for circle.py           | -                               |

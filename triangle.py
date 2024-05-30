@@ -23,5 +23,5 @@ def perimeter(a, b, c):
     Возвращаемое значение:
     float: периметр треугольника.
     """
-    return a * h / 2
+    return a + b + c
 

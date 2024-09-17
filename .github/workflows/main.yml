@@ -1,0 +1,41 @@
+name: run unit-tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ubuntu-latest-runner:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      
+      - name: setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+
+      - name: run tests
+        run: python3 test_figures.py
+
+
+
+  windows-latest-runner:
+    runs-on: windows-latest
+  
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        
+      - name: setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+  
+      - name: run tests
+        run: python3 test_figures.py        
+  
+    

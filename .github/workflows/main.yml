@@ -1,0 +1,37 @@
+name: Test Func
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test_linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Py
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11
+
+      - name: Testing Files
+        run: |
+          python3 -m unittest tests.py
+  test_windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Py
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11
+
+      - name: Testing Files
+        run: |
+          python3 -m unittest tests.py

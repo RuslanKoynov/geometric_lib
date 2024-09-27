@@ -1,0 +1,45 @@
+name: CI
+on:
+  # Triggers the workflow on push event
+  push:
+      branches: [ "main" ]
+      
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  test_ubuntu:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run circleUnitTest.py
+        run: python circleUnitTest.py
+
+      - name: Run rectangleUnitTest.py
+        run: python rectangleUnitTest.py
+
+      - name: Run squareUnitTest.py
+        run: python squareUnitTest.py
+
+      - name: Run triangleUnitTest.py
+        run: python triangleUnitTest.py
+  
+  test_windows:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run circleUnitTest.py
+        run: python circleUnitTest.py
+
+      - name: Run rectangleUnitTest.py
+        run: python rectangleUnitTest.py
+
+      - name: Run squareUnitTest.py
+        run: python squareUnitTest.py
+
+      - name: Run triangleUnitTest.py
+        run: python triangleUnitTest.py

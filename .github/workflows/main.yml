@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  forUbuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ubuntu
+        uses: actions/checkout@v3
+      - name: Install Python
+        uses: actions/setup-python@v3
+      - name: Tests Ubuntu
+        run: |
+          python -m unittest "tests.py"
+          
+  forWindows:
+    runs-on: windows-latest
+    steps:
+      - name: Windows
+        uses: actions/checkout@v3
+      - name: Install Python
+        uses: actions/setup-python@v3
+      - name: Tests Windows
+        run: |
+          python -m unittest "tests.py"
